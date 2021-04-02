@@ -8,9 +8,9 @@ import { Container } from "@material-ui/core";
 import NavBar from "../../components/NavBar";
 
 const useStyles = makeStyles((theme) => ({}));
-function HomePage() {
+function AboutPage() {
   const classes = useStyles();
-  return <div>This is the Home Page</div>;
+  return <div>This is the about page</div>;
 }
 
-export default HomePage;
+export default AboutPage;
