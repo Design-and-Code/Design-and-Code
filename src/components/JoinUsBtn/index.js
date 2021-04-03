@@ -15,6 +15,8 @@ function JoinUsBtn() {
       className={classes.joinUsBtn}
       variant="contained"
       color="primary.mainGradient"
+      href="https://discord.gg/druweDMn3s"
+      target="_blank"
     >
       Join Discord
     </Button>
