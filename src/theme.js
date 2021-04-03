@@ -3,7 +3,7 @@ import { createMuiTheme } from "@material-ui/core/styles";
 const darkTheme = {
   palette: {
     primary: {
-      main: "#23272A",
+      main: "#171A1C",
       mainGradient: "linear-gradient(to right, #39AFFD, #477FFF)",
     },
     secondary: {
@@ -15,6 +15,9 @@ const darkTheme = {
     },
     contrastThreshold: 3,
     tonalOffset: 0.2,
+  },
+  typography: {
+    fontFamily: ["Poppins"].join(","),
   },
 };
 
