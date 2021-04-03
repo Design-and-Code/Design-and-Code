@@ -4,6 +4,8 @@ const darkTheme = {
   palette: {
     primary: {
       main: "#171A1C",
+      gradient1: "#39AFFD",
+      gradient2: "#477FFF",
       mainGradient: "linear-gradient(to right, #39AFFD, #477FFF)",
     },
     secondary: {

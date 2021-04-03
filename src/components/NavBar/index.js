@@ -14,7 +14,7 @@ import routesData from "../../routes/routesData";
 import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.svg";
 
 //Importing Components
-import JoinUsBtn from "../JoinUsBtn";
+import { ContainedButton } from "../Buttons";
 
 const useStyles = makeStyles(style);
 function NavBar() {
@@ -61,7 +61,9 @@ function NavBar() {
       </Grid>
 
       <Grid container xs={2}>
-        <JoinUsBtn />
+        <ContainedButton href="https://discord.gg/druweDMn3s" target="_blank">
+          Join Discord
+        </ContainedButton>
       </Grid>
     </Grid>
   );
