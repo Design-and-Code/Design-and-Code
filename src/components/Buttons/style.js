@@ -5,13 +5,11 @@ export default function style(theme) {
       color: theme.palette.text.primary,
       borderRadius: 80,
       height: "fit-content",
-      margin: "auto",
       textTransform: "unset !important",
     },
     outlinedBtn: {
       borderRadius: 80,
       height: "fit-content",
-      margin: "auto",
       textTransform: "unset !important",
       border: `2px solid ${theme.palette.primary.gradient1}`,
 

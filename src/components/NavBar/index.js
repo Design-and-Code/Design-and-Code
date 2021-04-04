@@ -61,9 +61,11 @@ function NavBar() {
       </Grid>
 
       <Grid container xs={2}>
-        <ContainedButton href="https://discord.gg/druweDMn3s" target="_blank">
-          Join Discord
-        </ContainedButton>
+        <div className={classes.joinDiscordBtn}>
+          <ContainedButton href="https://discord.gg/druweDMn3s" target="_blank">
+            Join Discord
+          </ContainedButton>
+        </div>
       </Grid>
     </Grid>
   );

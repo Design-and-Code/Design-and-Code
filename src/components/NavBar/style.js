@@ -1,6 +1,7 @@
 export default function style(theme) {
   return {
     navBar: {
+      position: "sticky",
       padding: "30px 0",
     },
     brandingLogo: {
@@ -26,6 +27,9 @@ export default function style(theme) {
       fontWeight: 700,
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
+    },
+    joinDiscordBtn: {
+      margin: "auto",
     },
   };
 }
