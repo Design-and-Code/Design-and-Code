@@ -7,10 +7,11 @@ export default function style(theme) {
       backdropFilter: "blur(100px)",
     },
     navBar: {
-      padding: "30px 0",
+      padding: "15px 0",
     },
     brandingLogo: {
       margin: "auto",
+      width: 75,
     },
     navLinks: {
       height: "100%",
