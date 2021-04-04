@@ -10,7 +10,8 @@ const darkTheme = {
       mainGradient: "linear-gradient(to right, #39AFFD, #477FFF)",
     },
     secondary: {
-      main: "#23272A",
+      main: "#0e10117a",
+      darkGrey: "#4040407a",
     },
     text: {
       primary: "#FFFFFF",

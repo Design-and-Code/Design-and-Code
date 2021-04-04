@@ -58,7 +58,7 @@ export default function style(theme) {
       },
     },
     divider: {
-      backgroundColor: theme.palette.primary.gradient1,
+      backgroundColor: theme.palette.secondary.darkGrey,
     },
     footerEnd: {
       padding: "30px 0 0 0",
