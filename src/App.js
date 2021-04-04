@@ -24,8 +24,8 @@ function Content() {
 
   return (
     <Router>
+      <NavBar />
       <Container maxWidth="lg" disableGutters>
-        <NavBar />
         <Routes />
       </Container>
       <Footer />

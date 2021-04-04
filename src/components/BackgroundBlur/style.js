@@ -10,7 +10,7 @@ export default function style(theme) {
     },
     blurredCircle: {
       borderRadius: 9999,
-      backgroundColor: theme.palette.primary.bubbleColor,
+      backgroundColor: theme.palette.primary.blurColor,
       position: "absolute",
       filter: "blur(190px)",
     },

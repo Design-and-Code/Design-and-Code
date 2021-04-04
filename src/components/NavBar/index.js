@@ -5,7 +5,7 @@ import style from "./style";
 
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { AppBar, Container, Grid } from "@material-ui/core";
 
 //Import Nav Routes Data
 import routesData from "../../routes/routesData";
@@ -30,44 +30,55 @@ function NavBar() {
   }, []);
 
   return (
-    <Grid container className={classes.navBar}>
-      <Grid container xs={1}>
-        <img
-          className={classes.brandingLogo}
-          src={brandingLogo}
-          alt="branding-logo"
-        />
-      </Grid>
+    <AppBar position="sticky" className={classes.appBar}>
+      <Container
+        className={classes.navBarBackground}
+        maxWidth="lg"
+        disableGutters
+      >
+        <Grid container className={classes.navBar}>
+          <Grid container xs={1}>
+            <img
+              className={classes.brandingLogo}
+              src={brandingLogo}
+              alt="branding-logo"
+            />
+          </Grid>
 
-      <Grid container xs={9}>
-        <div className={classes.navLinks}>
-          {routesData.map((data, index) => (
-            <div key={`link-index-${index}`}>
-              {data.showOnHeader && (
-                <Link
-                  className={
-                    data.pageURL !== pathname
-                      ? classes.navLink
-                      : classes.navLinkHighlighted
-                  }
-                  to={data.pageURL}
-                >
-                  {data.pageName}
-                </Link>
-              )}
+          <Grid container xs={9}>
+            <div className={classes.navLinks}>
+              {routesData.map((data, index) => (
+                <div key={`link-index-${index}`}>
+                  {data.showOnHeader && (
+                    <Link
+                      className={
+                        data.pageURL !== pathname
+                          ? classes.navLink
+                          : classes.navLinkHighlighted
+                      }
+                      to={data.pageURL}
+                    >
+                      {data.pageName}
+                    </Link>
+                  )}
+                </div>
+              ))}
             </div>
-          ))}
-        </div>
-      </Grid>
+          </Grid>
 
-      <Grid container xs={2}>
-        <div className={classes.joinDiscordBtn}>
-          <ContainedButton href="https://discord.gg/druweDMn3s" target="_blank">
-            Join Discord
-          </ContainedButton>
-        </div>
-      </Grid>
-    </Grid>
+          <Grid container xs={2}>
+            <div className={classes.joinDiscordBtn}>
+              <ContainedButton
+                href="https://discord.gg/druweDMn3s"
+                target="_blank"
+              >
+                Join Discord
+              </ContainedButton>
+            </div>
+          </Grid>
+        </Grid>
+      </Container>
+    </AppBar>
   );
 }
 

@@ -1,7 +1,12 @@
 export default function style(theme) {
   return {
+    appBar: {
+      backgroundColor: "transparent",
+      boxShadow: "none",
+      // background: theme.palette.primary.blurColor,
+      backdropFilter: "blur(100px)",
+    },
     navBar: {
-      position: "sticky",
       padding: "30px 0",
     },
     brandingLogo: {

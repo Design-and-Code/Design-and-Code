@@ -4,7 +4,7 @@ const darkTheme = {
   palette: {
     primary: {
       main: "#121415",
-      bubbleColor: "rgba(64, 68, 83, 0.47)",
+      blurColor: "rgb(64 113 222 / 67%)",
       gradient1: "#39AFFD",
       gradient2: "#477FFF",
       mainGradient: "linear-gradient(to right, #39AFFD, #477FFF)",
