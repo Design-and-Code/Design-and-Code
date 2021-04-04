@@ -3,13 +3,14 @@ import { createMuiTheme } from "@material-ui/core/styles";
 const darkTheme = {
   palette: {
     primary: {
-      main: "#171A1C",
+      main: "#121415",
+      bubbleColor: "rgba(64, 68, 83, 0.47)",
       gradient1: "#39AFFD",
       gradient2: "#477FFF",
       mainGradient: "linear-gradient(to right, #39AFFD, #477FFF)",
     },
     secondary: {
-      main: "#2C2F33",
+      main: "#23272A",
     },
     text: {
       primary: "#FFFFFF",

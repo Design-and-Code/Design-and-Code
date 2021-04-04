@@ -4,12 +4,13 @@ export default function styles(theme) {
     section: {
       alignItems: "center",
       justifyContent: "center",
+      marginBottom: 120,
     },
     title: {
       display: "block",
       width: "100%",
       textAlign: "center",
-      fontSize: 58,
+      fontSize: 85,
 
       color: theme.palette.text.primary,
       background: theme.palette.primary.mainGradient,
@@ -22,7 +23,7 @@ export default function styles(theme) {
       marginBottom: 24,
       width: "100%",
       textAlign: "center",
-      fontSize: 42,
+      fontSize: 48,
 
       color: theme.palette.text.primary,
       background: theme.palette.primary.mainGradient,
@@ -36,7 +37,7 @@ export default function styles(theme) {
       display: "block",
       width: "80%",
       textAlign: "center",
-      fontSize: 22,
+      fontSize: 18,
 
       color: theme.palette.text.primary,
     },
@@ -49,7 +50,6 @@ export default function styles(theme) {
       height: "65vh",
       background: `url(${heroIllustration}) no-repeat center`,
       backgroundSize: "contain",
-      marginBottom: 48,
     },
     heroSectionContent: {
       width: "100%",
@@ -61,8 +61,14 @@ export default function styles(theme) {
       justifyContent: "center",
       gap: 40,
     },
-    featuresSection: {
-      marginBottom: 24,
+    categoriesIllustration: {
+      marginLeft: "auto",
+    },
+    video: {
+      width: "100%",
+    },
+    videoDesc: {
+      marginTop: 40,
     },
   };
 }

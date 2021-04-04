@@ -8,6 +8,8 @@ import { darkTheme, createMuiTheme } from "./theme";
 
 //Importing Components
 import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import BackgroundBlur from "./components/BackgroundBlur";
 
 //Importing Routes
 import Routes from "./routes";
@@ -26,6 +28,8 @@ function Content() {
         <NavBar />
         <Routes />
       </Container>
+      <Footer />
+      <BackgroundBlur />
     </Router>
   );
 }

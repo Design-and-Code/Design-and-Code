@@ -10,8 +10,15 @@ const useStyles = makeStyles(style);
 
 function ContainedButton(props) {
   const classes = useStyles();
+  const { size } = props;
+
   return (
-    <Button {...props} className={classes.containedBtn} variant="contained">
+    <Button
+      {...props}
+      style={{ padding: size === "large" ? "12px 50px" : "8px 22px" }}
+      className={classes.containedBtn}
+      variant="contained"
+    >
       {props.children}
     </Button>
   );
@@ -19,8 +26,15 @@ function ContainedButton(props) {
 
 function OutlinedButton(props) {
   const classes = useStyles();
+  const { size } = props;
+
   return (
-    <Button {...props} className={classes.outlinedBtn} variant="outlined">
+    <Button
+      {...props}
+      style={{ padding: size === "large" ? "12px 50px" : "8px 22px" }}
+      className={classes.outlinedBtn}
+      variant="outlined"
+    >
       {props.children}
     </Button>
   );

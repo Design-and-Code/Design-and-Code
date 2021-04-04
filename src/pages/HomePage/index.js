@@ -28,8 +28,14 @@ function HomePage() {
             A place for Designers and Developers to Learn & Grow together.
           </div>
           <div className={classes.heroBtns}>
-            <ContainedButton>JOIN US</ContainedButton>
-            <OutlinedButton>ABOUT US</OutlinedButton>
+            <ContainedButton
+              href="https://discord.gg/druweDMn3s"
+              target="_blank"
+              size="large"
+            >
+              JOIN US
+            </ContainedButton>
+            <OutlinedButton size="large">ABOUT US</OutlinedButton>
           </div>
         </div>
       </Grid>
@@ -81,7 +87,7 @@ function HomePage() {
           </Grid>
         </Grid>
       </Grid>
-      {/* Categoris Section */}
+      {/* Categories Section */}
       <Grid
         container
         className={`${classes.section} ${classes.categoriesSection}`}
@@ -100,9 +106,54 @@ function HomePage() {
             Designing Category. Similarly, for Development related messages.
           </div>
         </Grid>
-        <Grid xs={6}>
-          <img src={categoriesIllustration} alt="Categories Illustration" />
+        <Grid container xs={6}>
+          <img
+            src={categoriesIllustration}
+            className={classes.categoriesIllustration}
+            alt="Categories Illustration"
+          />
         </Grid>
+      </Grid>
+      {/* Videos Section */}
+      <Grid container className={`${classes.section} ${classes.videoSection}`}>
+        <Grid container xs={12}>
+          <iframe
+            width="560"
+            height="680"
+            className={classes.video}
+            src="https://www.youtube-nocookie.com/embed/Ky0xZH3W-n4?rel=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div
+            className={`${classes.videoDesc} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
+          >
+            Responsive Colors Landing Page, a project that we've been working on
+            so that people can easily get inspiration about colors for their
+            website. Very Easy to make. I would soon be making tutorials about
+            Python and Java. If You have any problem in coding, be it web
+            designing or algorithms, mention down in the comments down below.
+            Filmed with Microsoft PowerPoint 2013 in built screen recorder at
+            720p HD.
+          </div>
+        </Grid>
+      </Grid>
+      {/* Ready to start Journey section */}
+      <Grid
+        container
+        className={`${classes.section} ${classes.journeySection}`}
+      >
+        <div className={classes.subtitle}>Ready to start your journey?</div>
+
+        <ContainedButton
+          size="large"
+          href="https://discord.gg/druweDMn3s"
+          target="_blank"
+        >
+          JOIN DISCORD
+        </ContainedButton>
       </Grid>
     </div>
   );
