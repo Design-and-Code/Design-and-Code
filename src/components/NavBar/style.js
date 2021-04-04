@@ -10,7 +10,6 @@ export default function style(theme) {
       padding: "15px 0",
     },
     brandingLogo: {
-      margin: "auto",
       width: 75,
     },
     navLinks: {
