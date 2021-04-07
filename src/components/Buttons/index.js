@@ -16,7 +16,7 @@ function ContainedButton(props) {
     <Button
       {...props}
       style={{ padding: size === "large" ? "12px 50px" : "8px 22px" }}
-      className={classes.containedBtn}
+      className={`${classes.containedBtn} ${props.className}`}
       variant="contained"
     >
       {props.children}

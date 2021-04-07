@@ -39,5 +39,49 @@ export default function style(theme) {
     menuBtn: {
       color: theme.palette.primary.gradient1,
     },
+    mobileNav: {
+      background: theme.palette.primary.main,
+      height: "100%",
+    },
+    // branding: {
+    //   display: "grid",
+    //   gridTemplateColumns: "auto 1fr",
+    // },
+    brandingTitle: {
+      fontSize: 24,
+      color: theme.palette.text.primary,
+      background: theme.palette.primary.mainGradient,
+      fontWeight: 600,
+      "-webkit-background-clip": "text",
+      "-webkit-text-fill-color": "transparent",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 20,
+      },
+    },
+    brandingDesc: {
+      color: theme.palette.text.secondary,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 14,
+      },
+    },
+    listItem: {
+      color: theme.palette.text.primary,
+      cursor: "default",
+      "& *": {
+        color: theme.palette.text.primary,
+      },
+    },
+    mobileJoinDiscordBtn: {
+      width: "100%",
+    },
+    divider: {
+      // background: theme.palette.primary.mainGradient,
+      height: 10,
+    },
+    listItemIcon: {
+      display: "flex",
+      margin: "auto",
+      marginRight: 10,
+    },
   };
 }
