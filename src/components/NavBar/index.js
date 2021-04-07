@@ -34,7 +34,7 @@ function NavBar() {
   const classes = useStyles();
   const history = useHistory();
   const [pathname, setPathname] = useState(window.location.pathname),
-    [drawerOpen, setDrawerOpen] = useState(true);
+    [drawerOpen, setDrawerOpen] = useState(false);
 
   useEffect(() => {
     setPathname(window.location.pathname);
