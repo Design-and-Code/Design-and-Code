@@ -53,7 +53,7 @@ function HomePage() {
             Design & Code is on a mission to conect and support Designers and
             Developers from around the world.
           </div>
-          <Grid container xs={6}>
+          <Grid container xs={12} sm={6}>
             <Feature
               image={mentoring}
               title={"Mentoring Students"}
@@ -69,7 +69,7 @@ function HomePage() {
               }
             />
           </Grid>
-          <Grid container xs={6}>
+          <Grid container xs={12} sm={6}>
             <Feature
               image={opportunities}
               title={"Opportunities"}
@@ -88,11 +88,8 @@ function HomePage() {
         </Grid>
       </Grid>
       {/* Categories Section */}
-      <Grid
-        container
-        className={`${classes.section} ${classes.categoriesSection}`}
-      >
-        <Grid xs={6}>
+      <Grid container className={classes.section}>
+        <Grid xs={12} sm={6} className={classes.categoriesSection}>
           <div className={`${classes.subtitle} ${classes.textAlignLeft}`}>
             Categories
           </div>
@@ -106,7 +103,7 @@ function HomePage() {
             Designing Category. Similarly, for Development related messages.
           </div>
         </Grid>
-        <Grid container xs={6}>
+        <Grid container xs={12} sm={6}>
           <img
             src={categoriesIllustration}
             className={classes.categoriesIllustration}

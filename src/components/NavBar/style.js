@@ -36,5 +36,8 @@ export default function style(theme) {
     joinDiscordBtn: {
       margin: "auto",
     },
+    menuBtn: {
+      color: theme.palette.primary.gradient1,
+    },
   };
 }

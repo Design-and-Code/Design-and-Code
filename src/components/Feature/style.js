@@ -7,7 +7,7 @@ export default function style(theme) {
     },
     infoHolder: {
       display: "flex",
-      padding: 20,
+      padding: "20px 0 20px 20px",
       flexDirection: "column",
       justifyContent: "center",
     },
@@ -26,10 +26,16 @@ export default function style(theme) {
       fontSize: 24,
       fontWeight: 600,
       marginBottom: 8,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 18,
+      },
     },
     description: {
       color: theme.palette.text.secondary,
       fontSize: 16,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 14,
+      },
     },
   };
 }

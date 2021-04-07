@@ -11,20 +11,8 @@ function BackgroundBlur() {
 
   return (
     <div className={classes.backgroundBlur}>
-      <div
-        className={classes.blurredCircle1}
-        style={{
-          height: window.innerWidth / 6,
-          width: window.innerWidth / 6,
-        }}
-      ></div>
-      <div
-        className={classes.blurredCircle2}
-        style={{
-          height: window.innerWidth / 6,
-          width: window.innerWidth / 6,
-        }}
-      ></div>
+      <div className={classes.blurredCircle1}></div>
+      <div className={classes.blurredCircle2}></div>
     </div>
   );
 }

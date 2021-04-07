@@ -5,7 +5,8 @@ import style from "./style";
 
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
-import { AppBar, Container, Grid } from "@material-ui/core";
+import { MenuRounded } from "@material-ui/icons";
+import { AppBar, Container, Grid, Hidden, IconButton } from "@material-ui/core";
 
 //Import Nav Routes Data
 import routesData from "../../routes/routesData";
@@ -31,11 +32,7 @@ function NavBar() {
 
   return (
     <AppBar position="sticky" className={classes.appBar}>
-      <Container
-        className={classes.navBarBackground}
-        maxWidth="lg"
-        disableGutters
-      >
+      <Container className={classes.navBarBackground} maxWidth="lg">
         <Grid container className={classes.navBar}>
           <Grid container xs={1}>
             <img
@@ -44,36 +41,44 @@ function NavBar() {
               alt="branding-logo"
             />
           </Grid>
-
           <Grid container xs={9}>
-            <div className={classes.navLinks}>
-              {routesData.map((data, index) => (
-                <div key={`link-index-${index}`}>
-                  {data.showOnHeader && (
-                    <Link
-                      className={
-                        data.pageURL !== pathname
-                          ? classes.navLink
-                          : classes.navLinkHighlighted
-                      }
-                      to={data.pageURL}
-                    >
-                      {data.pageName}
-                    </Link>
-                  )}
-                </div>
-              ))}
-            </div>
+            <Hidden smDown>
+              <div className={classes.navLinks}>
+                {routesData.map((data, index) => (
+                  <div key={`link-index-${index}`}>
+                    {data.showOnHeader && (
+                      <Link
+                        className={
+                          data.pageURL !== pathname
+                            ? classes.navLink
+                            : classes.navLinkHighlighted
+                        }
+                        to={data.pageURL}
+                      >
+                        {data.pageName}
+                      </Link>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </Hidden>
           </Grid>
 
           <Grid container xs={2}>
             <div className={classes.joinDiscordBtn}>
-              <ContainedButton
-                href="https://discord.gg/druweDMn3s"
-                target="_blank"
-              >
-                Join Discord
-              </ContainedButton>
+              <Hidden smDown>
+                <ContainedButton
+                  href="https://discord.gg/druweDMn3s"
+                  target="_blank"
+                >
+                  Join Discord
+                </ContainedButton>
+              </Hidden>
+              <Hidden smUp>
+                <IconButton className={classes.menuBtn}>
+                  <MenuRounded />
+                </IconButton>
+              </Hidden>
             </div>
           </Grid>
         </Grid>

@@ -18,24 +18,39 @@ export default function style(theme) {
       fontWeight: 600,
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 20,
+      },
     },
     brandingDesc: {
       color: theme.palette.text.secondary,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 14,
+      },
     },
     getInTouchTitle: {
       color: theme.palette.text.primary,
       fontWeight: 500,
       fontSize: 18,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 16,
+      },
     },
     getInTouchEmailLink: {
       textDecoration: "none",
       fontSize: 18,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 16,
+      },
       color: theme.palette.text.secondary,
     },
     footerSectionTitle: {
       color: theme.palette.text.primary,
       fontWeight: 600,
       fontSize: 20,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 16,
+      },
     },
     footerLinks: {
       textDecoration: "none",
@@ -48,6 +63,9 @@ export default function style(theme) {
         listStyle: "none",
         fontSize: 18,
         margin: "10px 0",
+        [theme.breakpoints.down("sm")]: {
+          fontSize: 14,
+        },
       },
     },
     socialLinks: {

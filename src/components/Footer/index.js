@@ -7,7 +7,7 @@ import { ContainedButton } from "../Buttons";
 
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
-import { Container, Grid, Divider } from "@material-ui/core";
+import { Container, Grid, Divider, Hidden } from "@material-ui/core";
 
 //Importing assets
 import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.svg";
@@ -21,9 +21,9 @@ function Footer() {
   const classes = useStyles();
   return (
     <div className={classes.footerBackground}>
-      <Container maxWidth="lg" disableGutters>
+      <Container maxWidth="lg">
         <Grid container className={classes.footerContent}>
-          <Grid item xs={4}>
+          <Grid item md={4} xs={12}>
             <div className={classes.branding}>
               <div className={classes.brandingLogo}>
                 <img src={brandingLogo} alt="branding-logo" />
@@ -51,7 +51,7 @@ function Footer() {
               <img src={websiteIcon} alt="Website icon" />
             </div>
           </Grid>
-          <Grid item xs={2}>
+          <Grid item md={2} xs={6}>
             <div className={classes.footerSectionTitle}>Home</div>
             <div className={classes.footerLinks}>
               <ul>
@@ -63,7 +63,7 @@ function Footer() {
             </div>
           </Grid>
 
-          <Grid item xs={2}>
+          <Grid item md={2} xs={6}>
             <div className={classes.footerSectionTitle}>About</div>
             <div className={classes.footerLinks}>
               <ul>
@@ -73,7 +73,7 @@ function Footer() {
             </div>
           </Grid>
 
-          <Grid item xs={2}>
+          <Grid item md={2} xs={6}>
             <div className={classes.footerSectionTitle}>How To Use</div>
             <div className={classes.footerLinks}>
               <ul>
@@ -84,7 +84,7 @@ function Footer() {
             </div>
           </Grid>
 
-          <Grid item xs={2}>
+          <Grid item md={2} xs={6}>
             <div className={classes.footerSectionTitle}>Support/Contact</div>
             <div className={classes.footerLinks}>
               <ul>
@@ -96,16 +96,18 @@ function Footer() {
         </Grid>
         <Divider className={classes.divider} />
         <Grid container className={classes.footerEnd}>
-          <Grid xs={10}>
+          <Grid md={10} xs={12}>
             <div className={classes.footerLinks}>
               @Copyright {new Date().getFullYear()}. All rights reserved.
             </div>
           </Grid>
-          <Grid xs={2}>
-            <div className={classes.joinUsBtn}>
-              <ContainedButton size="large">JOIN US</ContainedButton>
-            </div>
-          </Grid>
+          <Hidden smDown>
+            <Grid xs={2}>
+              <div className={classes.joinUsBtn}>
+                <ContainedButton size="large">JOIN US</ContainedButton>
+              </div>
+            </Grid>
+          </Hidden>
         </Grid>
       </Container>
     </div>

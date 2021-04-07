@@ -17,6 +17,9 @@ export default function styles(theme) {
       fontWeight: 600,
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 60,
+      },
     },
     subtitle: {
       display: "block",
@@ -30,6 +33,9 @@ export default function styles(theme) {
       fontWeight: 600,
       "-webkit-background-clip": "text",
       "-webkit-text-fill-color": "transparent",
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 32,
+      },
     },
     description: {
       margin: "auto",
@@ -40,12 +46,23 @@ export default function styles(theme) {
       fontSize: 18,
 
       color: theme.palette.text.primary,
+      [theme.breakpoints.down("sm")]: {
+        fontSize: 14,
+      },
     },
     secondaryDesc: {
       color: theme.palette.text.secondary,
       fontSize: 16,
+      width: "100%",
     },
-    textAlignLeft: { margin: 0, marginBottom: 24, textAlign: "left" },
+    textAlignLeft: {
+      margin: 0,
+      marginBottom: 24,
+      textAlign: "left",
+      [theme.breakpoints.down("sm")]: {
+        textAlign: "center",
+      },
+    },
     heroSection: {
       height: "65vh",
       background: `url(${heroIllustration}) no-repeat center`,
@@ -55,17 +72,26 @@ export default function styles(theme) {
       width: "100%",
     },
     heroBtns: {
-      display: "block",
-      width: "100%",
       display: "flex",
+      width: "100%",
       justifyContent: "center",
       gap: 40,
     },
+    categoriesSection: {
+      // [theme.breakpoints.down("sm")]: {
+      //   display: "flex",
+      // },
+    },
     categoriesIllustration: {
       marginLeft: "auto",
+      width: "100%",
     },
     video: {
       width: "100%",
+      [theme.breakpoints.down("sm")]: {
+        height: 300,
+        // display: "flex",
+      },
     },
     videoDesc: {
       marginTop: 40,

@@ -16,6 +16,12 @@ export default function style(theme) {
       filter: "blur(190px)",
       top: 0,
       left: 0,
+      height: 400,
+      width: 400,
+      [theme.breakpoints.down("sm")]: {
+        height: 200,
+        width: 200,
+      },
     },
     blurredCircle2: {
       borderRadius: 9999,
@@ -24,6 +30,12 @@ export default function style(theme) {
       filter: "blur(190px)",
       bottom: 0,
       right: 0,
+      height: 400,
+      width: 400,
+      [theme.breakpoints.down("sm")]: {
+        height: 200,
+        width: 200,
+      },
     },
   };
 }
