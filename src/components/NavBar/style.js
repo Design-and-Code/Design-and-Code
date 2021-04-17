@@ -1,10 +1,8 @@
 export default function style(theme) {
   return {
     appBar: {
-      backgroundColor: "transparent",
       boxShadow: "none",
-      // background: theme.palette.primary.blurColor,
-      backdropFilter: "blur(100px)",
+      transition: "0.7s"
     },
     navBar: {
       padding: "15px 0",
@@ -18,7 +16,7 @@ export default function style(theme) {
       display: "flex",
       justifyContent: "flex-end",
       alignItems: "center",
-      gap: 50,
+      gap: 70,
     },
     navLink: {
       textDecoration: "none",
@@ -26,15 +24,12 @@ export default function style(theme) {
       fontWeight: 500,
     },
     navLinkHighlighted: {
-      background: theme.palette.primary.mainGradient,
+      ...theme.palette.text.gradient,
       color: theme.palette.text.primary,
       textDecoration: "none",
-      fontWeight: 700,
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
     },
     joinDiscordBtn: {
-      margin: "auto",
+      margin: "auto 0 auto auto",
     },
     menuBtn: {
       color: theme.palette.primary.gradient1,
@@ -48,21 +43,8 @@ export default function style(theme) {
     //   gridTemplateColumns: "auto 1fr",
     // },
     brandingTitle: {
-      fontSize: 24,
       color: theme.palette.text.primary,
-      background: theme.palette.primary.mainGradient,
-      fontWeight: 600,
-      "-webkit-background-clip": "text",
-      "-webkit-text-fill-color": "transparent",
-      [theme.breakpoints.down("sm")]: {
-        fontSize: 20,
-      },
-    },
-    brandingDesc: {
-      color: theme.palette.text.secondary,
-      [theme.breakpoints.down("sm")]: {
-        fontSize: 14,
-      },
+      ...theme.palette.text.gradient
     },
     listItem: {
       color: theme.palette.text.primary,
@@ -80,7 +62,6 @@ export default function style(theme) {
     },
     listItemIcon: {
       display: "flex",
-      margin: "auto",
       marginRight: 10,
     },
   };

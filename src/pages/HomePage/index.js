@@ -2,7 +2,7 @@ import React from "react";
 
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
-import { Grid } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 //Importing Components
 import { ContainedButton, OutlinedButton } from "../../components/Buttons";
@@ -23,10 +23,10 @@ function HomePage() {
       {/* Hero Section */}
       <Grid container className={`${classes.section} ${classes.heroSection}`}>
         <div className={classes.heroSectionContent}>
-          <div className={classes.title}>Design And Code</div>
-          <div className={classes.description}>
+          <Typography variant="h1" className={classes.title}>Design And Code</Typography>
+          <Typography variant="subtitle1" gutterBottom className={classes.description}>
             A place for Designers and Developers to Learn & Grow together.
-          </div>
+          </Typography>
           <div className={classes.heroBtns}>
             <ContainedButton
               href="https://discord.gg/druweDMn3s"
@@ -48,11 +48,11 @@ function HomePage() {
           container
           className={classes.whatsInsideDesignAndCodeSectionContent}
         >
-          <div className={classes.subtitle}>What's Inside Design And Code?</div>
-          <div className={classes.description}>
+          <Typography variant="h3" gutterBottom className={classes.subtitle}>What's Inside Design And Code?</Typography>
+          <Typography variant="subtitle1" className={classes.description}>
             Design & Code is on a mission to conect and support Designers and
             Developers from around the world.
-          </div>
+          </Typography>
           <Grid container xs={12} sm={6}>
             <Feature
               image={mentoring}
@@ -90,10 +90,11 @@ function HomePage() {
       {/* Categories Section */}
       <Grid container className={classes.section}>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
-          <div className={`${classes.subtitle} ${classes.textAlignLeft}`}>
+          <Typography variant="h3" className={`${classes.subtitle} ${classes.textAlignLeft}`}>
             Categories
-          </div>
-          <div
+          </Typography>
+          <Typography 
+            variant="subtitle2"
             className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
           >
             We have two main Categories: Designing and Development. Make sure
@@ -101,7 +102,7 @@ function HomePage() {
             respective channel description to know more). Such as all Design
             oriented messages should be put under the appropriate channel in the
             Designing Category. Similarly, for Development related messages.
-          </div>
+          </Typography>
         </Grid>
         <Grid container xs={12} sm={6}>
           <img
@@ -124,7 +125,8 @@ function HomePage() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-          <div
+          <Typography
+            variant="subtitle2"
             className={`${classes.videoDesc} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
           >
             Responsive Colors Landing Page, a project that we've been working on
@@ -134,7 +136,7 @@ function HomePage() {
             designing or algorithms, mention down in the comments down below.
             Filmed with Microsoft PowerPoint 2013 in built screen recorder at
             720p HD.
-          </div>
+          </Typography>
         </Grid>
       </Grid>
       {/* Ready to start Journey section */}
@@ -142,7 +144,7 @@ function HomePage() {
         container
         className={`${classes.section} ${classes.journeySection}`}
       >
-        <div className={classes.subtitle}>Ready to start your journey?</div>
+        <Typography variant="h3" gutterBottom className={classes.subtitle}>Ready to start your journey?</Typography>
 
         <ContainedButton
           size="large"

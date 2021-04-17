@@ -18,6 +18,8 @@ import {
   ListItemIcon,
   ListItemText,
   Divider,
+  useScrollTrigger,
+  Typography
 } from "@material-ui/core";
 
 //Import Nav Routes Data
@@ -29,23 +31,40 @@ import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.
 //Importing Components
 import { ContainedButton } from "../Buttons";
 
+import {darkTheme, createMuiTheme} from "../../theme";
+
 const useStyles = makeStyles(style);
-function NavBar() {
+function NavBar(props) {
   const classes = useStyles();
   const history = useHistory();
-  const [pathname, setPathname] = useState(window.location.pathname),
+  const { children, window } = props;
+  const [pathname, setPathname] = useState(history.pathname),
     [drawerOpen, setDrawerOpen] = useState(false);
+  const trigger = useScrollTrigger({
+    disableHysteresis: true,
+    threshold: 0,
+    target: window ? window() : undefined,
+  });
 
   useEffect(() => {
-    setPathname(window.location.pathname);
+    setPathname(history.pathname);
     history.listen(() => {
-      setPathname(window.location.pathname);
+      setPathname(history.pathname);
     });
   }, []);
 
   return (
     <>
-      <AppBar position="sticky" className={classes.appBar}>
+      <AppBar 
+        position="sticky" 
+        className={classes.appBar} 
+        style={trigger ? {
+          background: `${createMuiTheme(darkTheme).palette.primary.main}7a`,
+          backdropFilter: "blur(20px)",} : {
+          background: `transparent`,
+          backdropFilter: "none"}
+        }
+      >
         <Container className={classes.navBarBackground} maxWidth="lg">
           <Grid container className={classes.navBar}>
             <Grid container xs={1}>
@@ -69,7 +88,7 @@ function NavBar() {
                           }
                           to={data.pageURL}
                         >
-                          {data.pageName}
+                          <Typography variant="subtitle1">{data.pageName}</Typography>
                         </Link>
                       )}
                     </div>
@@ -113,10 +132,10 @@ function NavBar() {
                 <img src={brandingLogo} alt="branding-logo" />
               </div>
               <div className={classes.brandingInfo}>
-                <div className={classes.brandingTitle}>Design And Code</div>
-                <div className={classes.brandingDesc}>
+                <Typography variant="h4" className={classes.brandingTitle}>Design And Code</Typography>
+                <Typography variant="subtitle2" className={classes.brandingDesc}>
                   Connect, Collaborate, Comprehend
-                </div>
+                </Typography>
               </div>
             </div>
           </ListItem>
@@ -127,7 +146,7 @@ function NavBar() {
                   <Link to={data.pageURL} className={classes.listItem}>
                     <ListItem button key={data.pageName}>
                       <div className={classes.listItemIcon}>{data.icon}</div>
-                      <ListItemText primary={data.pageName} />
+                      <Typography variant="subtitle1">{data.pageName}</Typography>
                     </ListItem>
                   </Link>
                   <Divider className={classes.divider} />
@@ -141,7 +160,7 @@ function NavBar() {
               target="_blank"
               className={classes.mobileJoinDiscordBtn}
             >
-              Join Discord
+              <Typography variant="h5">Join Discord</Typography>
             </ContainedButton>
           </ListItem>
         </List>

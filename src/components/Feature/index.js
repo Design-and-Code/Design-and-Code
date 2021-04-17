@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 //Importing Components
@@ -14,11 +15,11 @@ function Feature({ image, title, description }) {
   return (
     <div className={classes.feature}>
       <div className={classes.imageHolder}>
-        <img src={image} alt="feature" />
+        <img className={classes.image} src={image} alt="feature" />
       </div>
       <div className={classes.infoHolder}>
-        <div className={classes.title}>{title}</div>
-        <div className={classes.description}>{description}</div>
+        <Typography variant="h5" className={classes.title}>{title}</Typography>
+        <Typography variant="subtitle1" className={classes.description}>{description}</Typography>
       </div>
     </div>
   );
