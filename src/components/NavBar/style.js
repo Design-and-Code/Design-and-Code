@@ -47,11 +47,24 @@ export default function style(theme) {
       ...theme.palette.text.gradient
     },
     listItem: {
+      padding: "12px 16px",
       color: theme.palette.text.primary,
       cursor: "default",
       "& *": {
         color: theme.palette.text.primary,
       },
+      background: "transparent",
+      borderLeft: `2px solid transparent`,
+    },
+    listItemHighlighted: {
+      padding: "12px 16px",
+      color: theme.palette.text.primary,
+      cursor: "default",
+      "& *": {
+        color: theme.palette.text.primary,
+      },
+      background: `${theme.palette.secondary.darkGrey} !important`,
+      borderLeft: `2px solid ${theme.palette.primary.gradient1}`,
     },
     mobileJoinDiscordBtn: {
       width: "100%",

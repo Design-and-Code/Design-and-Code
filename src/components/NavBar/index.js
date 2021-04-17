@@ -38,7 +38,7 @@ function NavBar(props) {
   const classes = useStyles();
   const history = useHistory();
   const { children, window } = props;
-  const [pathname, setPathname] = useState(history.pathname),
+  const [pathname, setPathname] = useState(history.location.pathname),
     [drawerOpen, setDrawerOpen] = useState(false);
   const trigger = useScrollTrigger({
     disableHysteresis: true,
@@ -47,9 +47,9 @@ function NavBar(props) {
   });
 
   useEffect(() => {
-    setPathname(history.pathname);
+    setPathname(history.location.pathname);
     history.listen(() => {
-      setPathname(history.pathname);
+      setPathname(history.location.pathname);
     });
   }, []);
 
@@ -143,9 +143,17 @@ function NavBar(props) {
             <>
               {data.showOnHeader && (
                 <>
-                  <Link to={data.pageURL} className={classes.listItem}>
-                    <ListItem button key={data.pageName}>
-                      <div className={classes.listItemIcon}>{data.icon}</div>
+                  <Link to={data.pageURL}>
+                    <ListItem 
+                      button 
+                      focusVisible={false}
+                      className={
+                        data.pageURL !== pathname
+                          ? classes.listItem
+                          : classes.listItemHighlighted
+                      } 
+                      key={data.pageName}>
+                      <Typography className={classes.listItemIcon}>{data.icon}</Typography>
                       <Typography variant="subtitle1">{data.pageName}</Typography>
                     </ListItem>
                   </Link>
@@ -160,7 +168,7 @@ function NavBar(props) {
               target="_blank"
               className={classes.mobileJoinDiscordBtn}
             >
-              <Typography variant="h5">Join Discord</Typography>
+              <Typography variant="h6">Join Discord</Typography>
             </ContainedButton>
           </ListItem>
         </List>
