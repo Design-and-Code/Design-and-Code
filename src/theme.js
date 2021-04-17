@@ -59,7 +59,7 @@ const darkTheme = {
       },
     },
     h4: {
-      fontSize: "2.125rem",      
+      fontSize: "1.75rem",      
       fontWeight: 500,
       lineHeight: 1.235,
       letterSpacing: "0.00735em",
@@ -77,7 +77,7 @@ const darkTheme = {
       },
     },
     h6: {
-      fontSize: "1.25rem",      
+      fontSize: "1rem",      
       fontWeight: 500,
       lineHeight: 1.6,
       letterSpacing: "0.0075em",

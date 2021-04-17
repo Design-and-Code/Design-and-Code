@@ -94,7 +94,7 @@ function HomePage() {
             Categories
           </Typography>
           <Typography 
-            variant="subtitle2"
+            variant="subtitle1"
             className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
           >
             We have two main Categories: Designing and Development. Make sure
@@ -126,7 +126,7 @@ function HomePage() {
             allowfullscreen
           ></iframe>
           <Typography
-            variant="subtitle2"
+            variant="subtitle1"
             className={`${classes.videoDesc} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
           >
             Responsive Colors Landing Page, a project that we've been working on

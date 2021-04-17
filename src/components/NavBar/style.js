@@ -27,6 +27,7 @@ export default function style(theme) {
       ...theme.palette.text.gradient,
       color: theme.palette.text.primary,
       textDecoration: "none",
+      fontWeight: 600
     },
     joinDiscordBtn: {
       margin: "auto 0 auto auto",

@@ -81,14 +81,16 @@ function NavBar(props) {
                     <div key={`link-index-${index}`}>
                       {data.showOnHeader && (
                         <Link
-                          className={
-                            data.pageURL !== pathname
-                              ? classes.navLink
-                              : classes.navLinkHighlighted
-                          }
                           to={data.pageURL}
                         >
-                          <Typography variant="subtitle1">{data.pageName}</Typography>
+                          <Typography
+                            className={
+                              data.pageURL !== pathname
+                                ? classes.navLink
+                                : classes.navLinkHighlighted
+                            } 
+                            variant="subtitle1"
+                          >{data.pageName}</Typography>
                         </Link>
                       )}
                     </div>
