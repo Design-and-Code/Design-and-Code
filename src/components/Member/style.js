@@ -1,8 +1,6 @@
 export default function style(theme) {
     return {
-      feature: {
-       
-      },
+     
       infoHolder: {
         display: "flex",
         padding: "0% 10%",
