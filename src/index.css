@@ -12,3 +12,6 @@ code {
 * {
   font-family: Poppins;
 }
+.MuiTab-wrapper{
+  align-items: start !important;
+}
