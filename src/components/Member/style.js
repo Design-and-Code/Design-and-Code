@@ -3,7 +3,6 @@ export default function style(theme) {
      
       infoHolder: {
         display: "flex",
-        padding: "0% 10%",
         flexDirection: "column",
         justifyContent: "center",
       },
@@ -13,8 +12,8 @@ export default function style(theme) {
       },
       image: {
         width: "100%",
-        padding: "5rem 2.5rem 2% 2.5rem",
-        objectFit:'contain'
+        objectFit:'contain',
+        marginBottom: 16
       },
       title: {
         color: theme.palette.text.primary,

@@ -23,20 +23,22 @@ export default function styles(theme) {
       ...theme.palette.text.gradient,
     },
     description: {
-      margin: "auto",
       display: "block",
-      width: "60%",
+      maxWidth: "60%",
       textAlign: "center",
       fontSize:'1.1rem',
       color: theme.palette.text.secondary,
+      [theme.breakpoints.down("sm")]: {
+        maxWidth: "100%",
+      },
     },
     description2: {
-      margin: "auto",
       display: "block",
       width: "100%",
       textAlign: "center",
       fontSize:'1.1rem',
       color: theme.palette.text.secondary,
+      marginBottom: 16
     },
     member_grid:{
         justifyContent:'center'
@@ -53,8 +55,10 @@ export default function styles(theme) {
     },
     community_grid1:{
       color:theme.palette.text.secondary,
-        margin:'0rem 2rem 0rem 2rem',
-        paddingTop:'2rem'
+        paddingTop:'2rem',
+      [theme.breakpoints.down("sm")]: {
+        textAlign: 'center',
+      },
     },
     community_grid2:{
         display:'flex',
@@ -67,7 +71,7 @@ export default function styles(theme) {
         width:'50%'
     },
     heroSection: {
-      height: "80vh",
+      height: "50vh",
     
     },
     heroSectionContent: {
