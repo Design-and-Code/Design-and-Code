@@ -10,8 +10,7 @@ export default function styles(theme) {
       display: "block",
       width: "100%",
       textAlign: "center",
-        fontWeight:'600',
-        margin:'8rem 0rem 2rem 0rem',
+      fontWeight:'600',
       ...theme.palette.text.gradient
     },
     title1: {
@@ -53,6 +52,7 @@ export default function styles(theme) {
       },
       heroSectionContent: {
         width: "100%",
+        height: "70vh",
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
