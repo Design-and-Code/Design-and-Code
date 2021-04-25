@@ -5,6 +5,7 @@ export default function style(theme) {
       },
       appBar: {
         width: "100%",
+        position: "relative",
       },
       tabpanel: {
         color: "white",
@@ -17,12 +18,15 @@ export default function style(theme) {
         }
       },
       tab:{
+        padding: "12px 18px",
         maxWidth: "100%",
-        padding: "6px 16px",
+        color: "white",
         fontSize: theme.typography.subtitle1.fontSize,
-        textAlign:'left',
         textTransform: "unset !important",
-        margin: "6px 0",
+        "& span": {
+          display: "unset",
+          textAlign:'center',
+        },
         "&.MuiTab-textColorInherit": {
           opacity: 1
         },
@@ -32,7 +36,9 @@ export default function style(theme) {
       },
       tabIndicator: {
         width: "100%",
-        background: theme.palette.primary.gradient1,
+        height: "100%",
+        background: theme.palette.secondary.darkGrey,
+        borderBottom: `2px solid ${theme.palette.primary.gradient1}`,
         right: 'unset',
         left: 0,
         zIndex: -9,
@@ -42,6 +48,7 @@ export default function style(theme) {
         height: 2,
         width: "100%",
         left: 0,
+        right: 0,
         bottom: 0,
         backgroundColor: theme.palette.secondary.darkGrey,
         zIndex: -10,

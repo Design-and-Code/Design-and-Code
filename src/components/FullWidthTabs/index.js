@@ -61,7 +61,6 @@ export default function FullWidthTabs() {
           value={value}
           onChange={handleChange}
           indicatorColor="primary"
-          textColor="primary"
           variant="scrollable"
           scrollButtons="auto"
           aria-label="full width tabs example"
@@ -74,8 +73,8 @@ export default function FullWidthTabs() {
           <Tab className={classes.tab} label="Development" {...a11yProps(3)} />
           <Tab className={classes.tab} label="Voice Channels" {...a11yProps(4)} />
           <Tab className={classes.tab} label="Fun" {...a11yProps(5)} />
-          <div className={classes.inactiveBorder}></div>
         </Tabs>
+        <div className={classes.inactiveBorder}></div>
       </Container>
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
