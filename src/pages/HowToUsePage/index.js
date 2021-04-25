@@ -17,8 +17,8 @@ import HeroImage from '../../assets/placeholders/Frame 21.png'
 import style from "./style";
 import Guideline from "../../components/Guideline";
 import Bot from "../../components/Bot";
-import VerticalTabs from "../../components/Tabs";
-import FullWidthTabs from "../../components/minTabs";
+import VerticalTabs from "../../components/VerticalTabs";
+import FullWidthTabs from "../../components/FullWidthTabs";
 
 const useStyles = makeStyles(style);
 function HowToUsePage() {

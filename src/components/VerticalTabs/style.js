@@ -16,6 +16,7 @@ export default function style(theme) {
             textAlign:'left',
             textTransform: "unset !important",
             color: theme.palette.text.primary,
+            margin: "6px 0",
             "&.Mui-selected": {
               ...theme.palette.text.gradient,
             }
