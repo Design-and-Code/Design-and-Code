@@ -9,7 +9,7 @@ export default function style(theme) {
             // borderLeft: `2px solid ${theme.palette.text.secondary}`,
           },
           tab:{
-            width: "100%",
+            maxWidth: "100%",
             padding: "6px 16px",
             fontSize: theme.typography.h5.fontSize,
             fontWeight: '100',
@@ -26,6 +26,14 @@ export default function style(theme) {
             borderLeft: `2px solid ${theme.palette.primary.gradient1}`,
             right: 'unset',
             left: 0,
+            zIndex: -9,
+          },
+          inactiveBorder:{
+            position: 'absolute',
+            height: "100%",
+            width: 2,
+            left: 0,
+            backgroundColor: theme.palette.secondary.darkGrey,
             zIndex: -10,
           },
           tabpanel: {
