@@ -126,7 +126,7 @@ const darkTheme = {
       fontWeight: 500,
       lineHeight: 1.75,
       letterSpacing: "0.02857em",
-      textTransform: "uppercase",
+      textTransform: "unset !important",
       [theme.breakpoints.down("sm")]: {
         fontSize:  "0.5rem",
       },

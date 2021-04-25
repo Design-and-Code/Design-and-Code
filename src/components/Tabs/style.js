@@ -1,46 +1,51 @@
 export default function style(theme) {
     return {
         root: {
-            flexGrow: 1,
-            backgroundColor: '#23272a',
-            display: "flex",
-            width:'85vw',
-            color:'white',
-            textAlign:'start',
-            height:'90vh',
-            overflowY:'auto',
-            borderRadius:'0px 0px 10px 10px'
+            display: "grid",
+            gridTemplateColumns: "300px 1fr",
+            color: theme.palette.text.primary
           },
           tabs: {
-            borderRight: `1px solid ${theme.palette.divider}`,
-            
+            // borderLeft: `2px solid ${theme.palette.text.secondary}`,
           },
           tab:{
-              padding:'2rem 1rem 1rem 1rem',
-              marginLeft:'2rem',
-              fontSize:'1.5rem',
-              fontWeight:'600',
-              textAlign:'left',
-              width:'60rem',
-             
+            padding: "6px 16px",
+            fontSize: theme.typography.h5.fontSize,
+            fontWeight: '100',
+            textAlign:'left',
+            textTransform: "unset !important",
+            color: theme.palette.text.primary,
+            "&.Mui-selected": {
+              ...theme.palette.text.gradient,
+            }
           },
-          divider:{
-            width:'80vw'
+          tabIndicator: {
+            width: "100%",
+            background: theme.palette.secondary.darkGrey,
+            borderLeft: `2px solid ${theme.palette.primary.gradient1}`,
+            right: 'unset',
+            left: 0,
+            zIndex: -10,
+          },
+          tabpanel: {
+            padding: "0 16px",
+            "& h5": {
+              color: theme.palette.text.primary,
+            },
+            "& h6": {
+              color: theme.palette.text.secondary,
+            }
           },
           main:{
             textAlign:'start',
-            width:'85vw',
             color:'white',
             display:'flex',
             background:'#23272a',
-            padding:'2vw',
             borderRadius:'10px 10px 0px 0px',
-            marginBottom:'-0.5%'
           },
           subject:{
-            width:'16rem',
-            fontSize:'2rem',
-            paddingLeft:'1rem'
+            color: theme.palette.text.secondary,
+            padding: 16
           }
 
     };
