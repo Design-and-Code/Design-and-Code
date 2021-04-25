@@ -9,6 +9,7 @@ export default function style(theme) {
             // borderLeft: `2px solid ${theme.palette.text.secondary}`,
           },
           tab:{
+            width: "100%",
             padding: "6px 16px",
             fontSize: theme.typography.h5.fontSize,
             fontWeight: '100',
