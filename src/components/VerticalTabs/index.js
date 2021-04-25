@@ -34,7 +34,7 @@ function TabPanel(props) {
     };
   
     return (
-      <Container>
+      <Container disableGutters>
       <div className={classes.root}>
         <div>
           <Typography variant="h4" className={classes.subject}>CATEGORY</Typography>
@@ -60,9 +60,76 @@ function TabPanel(props) {
         
         <div>
           <Typography variant="h4" className={classes.subject}>CHANNELS</Typography>
+          
           <TabPanel value={value} index={0} className={classes.tabpanel}>
             <Typography variant="h5" gutterBottom>
               Welcome :
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              This is Info Bruh...
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              About and Links:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Rules:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sintollit. Exercitation veniam consequat sunt nostrud
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Roles:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Announcements:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </Typography>
+          </TabPanel>
+          <TabPanel value={value} index={1} className={classes.tabpanel}>
+            <Typography variant="h5" gutterBottom>
+              Welcome :
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              My name is General Khan
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              About and Links:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Rules:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sintollit. Exercitation veniam consequat sunt nostrud
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Roles:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Announcements:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </Typography>
+          </TabPanel>
+          <TabPanel value={value} index={2} className={classes.tabpanel}>
+            <Typography variant="h5" gutterBottom>
+              I am Design Bi*ch
             </Typography>
             <Typography variant="subtitle2" gutterBottom>
               Amet minim mollit non deserunt ullamco est si
@@ -93,24 +160,105 @@ function TabPanel(props) {
               Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
             </Typography>
           </TabPanel>
-          <TabPanel value={value} index={1} className={classes.tabpanel}>
-            Item Two
-          </TabPanel>
-          <TabPanel value={value} index={2} className={classes.tabpanel}>
-            Item Three
-          </TabPanel>
           <TabPanel value={value} index={3} className={classes.tabpanel}>
-            Item Four
+            <Typography variant="h5" gutterBottom>
+              Welcome :
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Me Debhelopment
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              About and Links:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Rules:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sintollit. Exercitation veniam consequat sunt nostrud
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Roles:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Announcements:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </Typography>
           </TabPanel>
           <TabPanel value={value} index={4} className={classes.tabpanel}>
-            Item Five
+            <Typography variant="h5" gutterBottom>
+              Welcome :
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Me hu bhoice channel
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              About and Links:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Rules:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor
+            do amet sintollit. Exercitation veniam consequat sunt nostrud
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Roles:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+            </Typography>
+            <Typography variant="h5" gutterBottom>
+              Announcements:
+            </Typography>
+            <Typography variant="subtitle2" gutterBottom>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </Typography>
           </TabPanel>
           <TabPanel value={value} index={5} className={classes.tabpanel}>
-            Item Six
-          </TabPanel>
-          <TabPanel value={value} index={6} className={classes.tabpanel}>
-            Item Seven
-          </TabPanel>
+          <Typography variant="h5" gutterBottom>
+            Welcome :
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Hahahahahahaa
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            About and Links:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Rules:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sintollit. Exercitation veniam consequat sunt nostrud
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Roles:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Announcements:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Typography>
+        </TabPanel>
         </div>
       </div>
       </Container>

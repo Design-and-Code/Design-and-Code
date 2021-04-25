@@ -2,11 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import Typography from '@material-ui/core/Typography';
-import Box from '@material-ui/core/Box';
+import { Container, Tabs, Tab, Typography, Box} from '@material-ui/core';
 import style from './style';
 
 function TabPanel(props) {
@@ -21,7 +17,7 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
+        <Box>
           <Typography>{children}</Typography>
         </Box>
       )}
@@ -59,8 +55,8 @@ export default function FullWidthTabs() {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" color="default">
+    <Container disableGutters className={classes.root}>
+      <Container disableGutters className={classes.appBar}>
         <Tabs
           value={value}
           onChange={handleChange}
@@ -69,39 +65,222 @@ export default function FullWidthTabs() {
           variant="scrollable"
           scrollButtons="auto"
           aria-label="full width tabs example"
+          TabIndicatorProps={{className: classes.tabIndicator}}
+          className={classes.tabs}
         >
-          <Tab label="Info" {...a11yProps(0)} />
-          <Tab label="General" {...a11yProps(1)} />
-          <Tab label="Design" {...a11yProps(2)} />
-          <Tab label="Development" {...a11yProps(3)} />
-          <Tab label="Voice Channels" {...a11yProps(4)} />
-          <Tab label="Fun" {...a11yProps(5)} />
+          <Tab className={classes.tab} label="Info" {...a11yProps(0)} />
+          <Tab className={classes.tab} label="General" {...a11yProps(1)} />
+          <Tab className={classes.tab} label="Design" {...a11yProps(2)} />
+          <Tab className={classes.tab} label="Development" {...a11yProps(3)} />
+          <Tab className={classes.tab} label="Voice Channels" {...a11yProps(4)} />
+          <Tab className={classes.tab} label="Fun" {...a11yProps(5)} />
+          <div className={classes.inactiveBorder}></div>
         </Tabs>
-      </AppBar>
+      </Container>
       <SwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={value}
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction} className={classes.tabpanel}>
-          Info
+          <Typography variant="h5" gutterBottom>
+            Welcome :
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            This is Info Bruh...
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            About and Links:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Rules:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sintollit. Exercitation veniam consequat sunt nostrud
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Roles:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Announcements:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Typography>
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction} className={classes.tabpanel}>
-          General
+          <Typography variant="h5" gutterBottom>
+            Welcome :
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            My name is General Khan
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            About and Links:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Rules:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sintollit. Exercitation veniam consequat sunt nostrud
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Roles:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Announcements:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Typography>
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction} className={classes.tabpanel}>
-          Design
+          <Typography variant="h5" gutterBottom>
+            I am Design Bi*ch
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est si
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            About and Links:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Rules:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sintollit. Exercitation veniam consequat sunt nostrud
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Roles:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Announcements:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Typography>
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Development
+        <TabPanel value={value} index={3} dir={theme.direction} className={classes.tabpanel}>
+          <Typography variant="h5" gutterBottom>
+            Welcome :
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Me Debhelopment
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            About and Links:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Rules:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sintollit. Exercitation veniam consequat sunt nostrud
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Roles:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Announcements:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Typography>
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Voice Channels
+        <TabPanel value={value} index={4} dir={theme.direction} className={classes.tabpanel}>
+          <Typography variant="h5" gutterBottom>
+            Welcome :
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Me hu bhoice channel
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            About and Links:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Rules:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sintollit. Exercitation veniam consequat sunt nostrud
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Roles:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Announcements:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Typography>
         </TabPanel>
-        <TabPanel value={value} index={2} dir={theme.direction}>
-          Fun
+        <TabPanel value={value} index={5} dir={theme.direction} className={classes.tabpanel}>
+          <Typography variant="h5" gutterBottom>
+            Welcome :
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Hahahahahahaa
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            About and Links:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do 
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Rules:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+          do amet sintollit. Exercitation veniam consequat sunt nostrud
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Roles:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mol
+          </Typography>
+          <Typography variant="h5" gutterBottom>
+            Announcements:
+          </Typography>
+          <Typography variant="subtitle2" gutterBottom>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+          </Typography>
         </TabPanel>
       </SwipeableViews>
-    </div>
+    </Container>
   );
 }

@@ -4,7 +4,7 @@ export default function styles(theme) {
     section: {
       alignItems: "center",
       justifyContent: "center",
-      marginBottom: 120,
+      marginBottom: 80,
     },
     title: {
       display: "block",
@@ -52,7 +52,7 @@ export default function styles(theme) {
       },
       heroSectionContent: {
         width: "100%",
-        height: "70vh",
+        padding: "20px 0",
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
