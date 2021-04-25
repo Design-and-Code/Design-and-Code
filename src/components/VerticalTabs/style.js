@@ -15,11 +15,13 @@ export default function style(theme) {
             fontWeight: '100',
             textAlign:'left',
             textTransform: "unset !important",
-            color: theme.palette.text.primary,
             margin: "6px 0",
+            "&.MuiTab-textColorInherit": {
+              opacity: 1
+            },
             "&.Mui-selected": {
               ...theme.palette.text.gradient,
-            }
+            },
           },
           tabIndicator: {
             width: "100%",
