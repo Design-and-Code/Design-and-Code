@@ -1,7 +1,8 @@
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import HowToUsePage from "../pages/HowToUsePage";
-import SupportPage from "../pages/SupportPage";
+import ContactPage from "../pages/ContactPage"
+import TeamPage from "../pages/TeamPage"
 
 import {
   HomeRounded,
@@ -33,11 +34,18 @@ const routesData = [
     icon: <CodeRounded />,
   },
   {
-    pageName: "Support",
-    pageURL: "/support",
+    pageName: "Contact",
+    pageURL: "/contact",
     showOnHeader: true,
-    component: <SupportPage />,
-    icon: <HelpRounded />,
+    component: <ContactPage />,
+    icon: <HelpRounded/>,
+  },
+  {
+    pageName: "Team",
+    pageURL: "/team",
+    showOnHeader: false,
+    component: <TeamPage />,
+    icon: <HelpRounded/>,
   },
 ];
 

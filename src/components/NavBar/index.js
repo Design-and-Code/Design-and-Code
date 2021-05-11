@@ -59,7 +59,7 @@ function NavBar(props) {
         position="sticky" 
         className={classes.appBar} 
         style={trigger ? {
-          background: `${createMuiTheme(darkTheme).palette.primary.main}7a`,
+          background: createMuiTheme(darkTheme).palette.primary.backgroundBlurColor,
           backdropFilter: "blur(20px)",} : {
           background: `transparent`,
           backdropFilter: "none"}

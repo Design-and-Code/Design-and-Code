@@ -7,6 +7,7 @@ const darkTheme = {
     primary: {
       main: "#121415",
       blurColor: "rgb(64 113 222 / 67%)",
+      backgroundBlurColor: "rgba(32, 38, 48, 0.5)",
       gradient1: "#39AFFD",
       gradient2: "#477FFF",
       mainGradient: "linear-gradient(to right, #39AFFD, #477FFF)",
@@ -77,7 +78,7 @@ const darkTheme = {
       },
     },
     h6: {
-      fontSize: "1rem",      
+      fontSize: "1.18rem",      
       fontWeight: 500,
       lineHeight: 1.6,
       letterSpacing: "0.0075em",
@@ -126,7 +127,7 @@ const darkTheme = {
       fontWeight: 500,
       lineHeight: 1.75,
       letterSpacing: "0.02857em",
-      textTransform: "uppercase",
+      textTransform: "unset !important",
       [theme.breakpoints.down("sm")]: {
         fontSize:  "0.5rem",
       },
