@@ -11,12 +11,12 @@ import style from "./style";
 import SimpleAccordion from "../../components/Accordions";
 
 const useStyles = makeStyles(style);
-function AboutPage() {
+function ContactPage() {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
 
   return( 
-    <div className={classes.aboutPage}>
+    <div className={classes.contactPage}>
       
       {/* Hero Section */}
       <Grid container className={`${classes.section} ${classes.heroSection}`}>
@@ -95,4 +95,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default ContactPage;
