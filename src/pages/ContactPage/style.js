@@ -10,6 +10,7 @@ export default function styles(theme) {
       section: {
         alignItems: "center",
         justifyContent: "center",
+        marginTop: 40,
         marginBottom: 120,
       },
       title: {
@@ -28,92 +29,68 @@ export default function styles(theme) {
       description: {
         margin: "auto",
         display: "block",
-        width: "60%",
         textAlign: "center",
-        fontSize:'1.1rem',
         color: theme.palette.text.secondary,
+        maxWidth: "40pc"
       },
-      description2: {
-        margin: "auto",
-        display: "block",
-        width: "100%",
-        textAlign: "center",
-        fontSize:'1.1rem',
-        color: theme.palette.text.secondary,
-      },
-      member_grid:{
-          justifyContent:'center'
-      },
-      secondaryDesc: {
-        color: theme.palette.text.secondary,
-        width: "100%",
-      },
-      
-      faq_grid:{
-         
-          color:theme.palette.text.secondary
+      contactGrid: {
+        maxHeight: 1060,
+        display: "grid",
+        gridGap: 20,
+        gridTemplateColumns: "1fr 1fr",
+        marginTop: theme.spacing(4),
+        [theme.breakpoints.down("sm")]: { 
+          gridTemplateRows: "1fr 1fr",
+          gridTemplateColumns: "unset",
           
-      },
-      faq_grid1:{
-        color:theme.palette.text.secondary,
-          margin:'0rem 2rem 0rem 2rem',
-          paddingTop:'2rem'
-      },
-      faq_grid2:{
-          display:'flex',
-          justifyContent:'center',
-          width:'100%',
-          paddingTop:'2rem'
-      },
-      cgimage:{
-          objectFit:'contain',
-          width:'50%'
-      },
-      heroSection: {
-        padding:'5rem 0rem 5rem 0rem'
-      
-      },
-      heroSectionContent: {
-        width: "100%",
+        }
       },
       contactForm:{
         width: '100%',
-        background: '#191d23',
-     
-        
-        padding:'3rem',
-        marginBottom:'2rem',
-        borderRadius:'20px'
+        background: theme.palette.primary.backgroundBlurColor,
+        display: 'grid',
+        gridTemplateRows: "repeat(5, auto)",
+        borderRadius:'20px',
+        padding:'2rem',
       },
       textInput:{
         border:'1px solid white',
-        margin:'1rem 2rem 1rem 2rem',
-      },
-      submitBtn:{
-        margin:'1rem 2rem 1rem 2rem',
       },
       textLabel:{
         color:'white !important',
         background:'#191d23',
-        margin:'1rem 2rem 1rem 2rem'
       },
-      contact:{
-        padding:'1rem',
-        marginTop:'2rem'
+      textFieldOutline: {
+        "& .Mui-focused.MuiInputLabel-animated": {
+          color: theme.palette.primary.gradient1
+        },
+        "& .MuiOutlinedInput-notchedOutline": {
+          borderColor: theme.palette.text.secondary,
+        },
+        "& .Mui-focused .MuiOutlinedInput-notchedOutline": {
+          borderColor: theme.palette.primary.gradient1,
+        }
+      },
+      btn:{
+        width: "fit-content",
+      },
+      options: {
+        display: 'grid',
+        gridGap: 20,
+        gridTemplateRows: "auto auto"
       },
       optionBlock:{
-        background: '#191d23',
+        background: theme.palette.primary.backgroundBlurColor,
         padding:'2rem',
         width:'100%',
         borderRadius:'20px',
-        marginBottom:'2rem'
       },
       optionTitle:{
         color:theme.palette.text.primary
       },
       optionInfo:{
         color:theme.palette.text.secondary,
-        padding:'0.5rem 0rem'
+        marginBottom: theme.spacing(2)
       }
     };
   }

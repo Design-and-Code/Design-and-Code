@@ -10,9 +10,8 @@ import style from './style'
 
 const useStyles = makeStyles(style)
 
-export default function SimpleAccordion({title, description}) {
+export default function SimpleAccordion({index, expanded, setExpanded, title, description}) {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
@@ -21,10 +20,15 @@ export default function SimpleAccordion({title, description}) {
   return (
     <div className={classes.root}>
       
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+      <Accordion classes={{
+        root: classes.root
+      }} expanded={expanded === index} onChange={handleChange(index)}>
         <AccordionSummary
-          expandIcon={expanded === 'panel1' ? <RemoveIcon />  : <AddIcon />}
-          className={classes.heading}
+          expandIcon={expanded === index ? <RemoveIcon />  : <AddIcon />}
+          classes={{
+            root: classes.heading,
+            expandIcon: classes.icon
+          }}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >

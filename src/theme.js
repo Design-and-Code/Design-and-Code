@@ -7,6 +7,7 @@ const darkTheme = {
     primary: {
       main: "#121415",
       blurColor: "rgb(64 113 222 / 67%)",
+      backgroundBlurColor: "rgba(32, 38, 48, 0.5)",
       gradient1: "#39AFFD",
       gradient2: "#477FFF",
       mainGradient: "linear-gradient(to right, #39AFFD, #477FFF)",

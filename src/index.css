@@ -12,16 +12,3 @@ code {
 * {
   font-family: Poppins;
 }
-.MuiTab-wrapper{
-  align-items: start !important;
-}
-.MuiFormControl-root{
-  width: 100%;
-}
-.MuiAccordion-rounded{
-  box-shadow: none !important;
-  background-color: transparent !important;
-}
-.MuiAccordionSummary-expandIcon{
-  color: #39AFFD  !important;
-}
