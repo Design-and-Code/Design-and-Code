@@ -2,6 +2,8 @@ import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import HowToUsePage from "../pages/HowToUsePage";
 import ContactPage from "../pages/ContactPage"
+import TeamPage from "../pages/TeamPage"
+
 import {
   HomeRounded,
   InfoRounded,
@@ -36,6 +38,13 @@ const routesData = [
     pageURL: "/contact",
     showOnHeader: true,
     component: <ContactPage />,
+    icon: <HelpRounded/>,
+  },
+  {
+    pageName: "Team",
+    pageURL: "/team",
+    showOnHeader: true,
+    component: <TeamPage />,
     icon: <HelpRounded/>,
   },
 ];
