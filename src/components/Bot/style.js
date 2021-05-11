@@ -1,8 +1,7 @@
 export default function style(theme) {
     return {
-        guideline: {
+      guideline: {
        width:'100%',
-       margin:'2rem 4rem'
       },
       infoHolder: {
         display: "flex",
@@ -19,8 +18,7 @@ export default function style(theme) {
         width: 100,
         color:'white',
         borderRadius: 9999,
-        background:
-          "#64B1F330",
+        background: theme.palette.text.secondary,
         [theme.breakpoints.down("sm")]: {
           height: 80,
           width: 80,
@@ -65,6 +63,6 @@ export default function style(theme) {
         fontWeight:'600',
         color:theme.palette.text.secondary
       }
-    };
+    }
   }
   

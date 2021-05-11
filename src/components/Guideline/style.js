@@ -1,7 +1,6 @@
 export default function style(theme) {
     return {
-        guideline: {
-        margin: "40px 4rem",
+      guideline: {
         display: "grid",
         gridTemplateColumns: "auto 1fr",
         [theme.breakpoints.down("sm")]: {
@@ -23,8 +22,7 @@ export default function style(theme) {
         width: 100,
         color:'white',
         borderRadius: 9999,
-        background:
-          "#64B1F330",
+        background: theme.palette.secondary.darkGrey,
         [theme.breakpoints.down("sm")]: {
           height: 80,
           width: 80,

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Typography } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 //Importing Components
@@ -12,15 +12,15 @@ const useStyles = makeStyles(style);
 function Guideline({ number, description }) {
   const classes = useStyles();
 
-  return (
-    <div className={classes.guideline}>
+  return (         
+    <Grid item xs={12} sm={6} className={classes.guideline}>
       <div className={classes.imageHolder}>
         <h1> {number} </h1>
       </div>
       <div className={classes.infoHolder}>
-        <Typography variant="h5" className={classes.title}>{description}</Typography>
+        <Typography variant="h6" className={classes.title}>{description}</Typography>
       </div>
-    </div>
+    </Grid>
   );
 }
 

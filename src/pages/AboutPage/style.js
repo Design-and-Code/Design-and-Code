@@ -23,6 +23,7 @@ export default function styles(theme) {
       ...theme.palette.text.gradient,
     },
     description: {
+      margin: "auto",
       display: "block",
       maxWidth: "60%",
       textAlign: "center",

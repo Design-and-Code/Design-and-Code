@@ -45,41 +45,37 @@ function HowToUsePage() {
       <Grid
         container
         className={`${classes.section} ${classes.Guidelines}`}
+        spacing={4}
       >
+        <Grid item xs={12}>
           <Typography variant="h2" gutterBottom className={classes.title1}>Community</Typography>
-          <Grid container xs={12} sm={6}>
-              <Guideline number={1} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={2} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={3} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={4} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={5} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-          </Grid>
-          <Grid container xs={12} sm={6}>
-              <Guideline number={6} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={7} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={8} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={9} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Guideline number={10} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-          </Grid>
         </Grid>
+        <Guideline number={1} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={2} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={3} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={4} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={5} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={6} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={7} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={8} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={9} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Guideline number={10} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+      </Grid>
      
       {/* Bots Section */}
       <Grid
         container
         className={`${classes.section} ${classes.Guidelines}`}
+        spacing={4}
       >
+        <Grid xs={12} container item>
           <Typography variant="h2" gutterBottom className={classes.title1}>Bots</Typography>
-          <Grid container xs={12} sm={6}>
-              <Bot number={1} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Bot number={2} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              
-          </Grid>
-          <Grid container xs={12} sm={6}>
-              <Bot number={6} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              <Bot number={7} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
-              
-          </Grid>
         </Grid>
+        <Bot number={1} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Bot number={2} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Bot number={6} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
+        <Bot number={7} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />  
+      </Grid>
       
     </div>
   );

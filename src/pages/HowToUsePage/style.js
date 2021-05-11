@@ -82,7 +82,8 @@ export default function styles(theme) {
       marginTop: 40,
     },
     Guidelines:{
-        alignItems:"baseline"
+        // alignItems:"baseline",
+        gap: 0
     }
   };
 }
