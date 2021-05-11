@@ -5,8 +5,6 @@ export default function styles(theme) {
     return {
       
       section: {
-        alignItems: "center",
-        justifyContent: "center",
         marginBottom: 120,
       },
       title: {
@@ -26,18 +24,12 @@ export default function styles(theme) {
       description: {
         margin: "auto",
         display: "block",
-        width: "60%",
+        maxWidth: "40pc",
         textAlign: "center",
-        fontSize:'1.1rem',
         color: theme.palette.text.secondary,
       },
-      description2: {
-        margin: "auto",
-        display: "block",
-        width: "100%",
-        textAlign: "center",
-        fontSize:'1.1rem',
-        color: theme.palette.text.secondary,
+      foundDesc: {
+        marginTop: theme.spacing(2)
       },
       member_grid:{
           justifyContent:'center'
@@ -45,75 +37,44 @@ export default function styles(theme) {
       secondaryDesc: {
         color: theme.palette.text.secondary,
         width: "100%",
-      },
-      
-      community_grid:{
-          alignItems:'center',
-          color:theme.palette.text.secondary
-          
-      },
-      community_grid1:{
-        color:theme.palette.text.secondary,
-          margin:'0rem 2rem 0rem 2rem',
-          paddingTop:'2rem'
-      },
-      community_grid2:{
-          display:'flex',
-          justifyContent:'center',
-          width:'100%',
-          paddingTop:'2rem'
-      },
-      cgimage:{
-          objectFit:'contain',
-          width:'50%'
-      },
-      
+      },      
       heroSectionContent: {
         width: "100%",
       },
       infoHolder: {
         display:'flex',
         alignItems:'center',
-        width:'90%',
-        background:'#202630',
+        background: theme.palette.primary.backgroundBlurColor,
         marginTop:'4rem',
         borderRadius:'8px',
-        padding:'1rem 3rem'
+        padding:`${theme.spacing(3)}px ${theme.spacing(8)}px`,
+        [theme.breakpoints.down("sm")]: {
+          flexDirection:'column',
+          padding:theme.spacing(3),
+        },
       },
       imageWrapper:{
-        width:'80%',
         display:'flex',
-        justifyContent:'center'
-      },
-      infoHolder2: {
-        display:'flex',
-        flexDirection:'column',
-        alignItems:'center',
-        padding: "0% 10%",
-        background:'#202630',
-        borderRadius:'8px',
-        marginTop:'4rem',
-        width:'100%',
+        justifyContent:'center',
+        marginRight: theme.spacing(6),
+        [theme.breakpoints.down("sm")]: {
+          margin: "auto",
+        },
       },
       role:{
         ...theme.palette.text.gradient ,
         fontWeight:'600'
       },
       image: {
-        width: "220px",
-        height: '220px',
+        width: 220,
+        height: 220,
         border:'3px solid grey',
         objectFit:'contain',
-        borderRadius:'50%',      
-      },
-      image2: {
-        width: "150px",
-        height: '150px',
-        margin:'0rem 4.5rem',
-        border:'3px solid grey',
-        objectFit:'contain',
-        borderRadius:'50%',
-        marginTop:'-4rem'        
+        borderRadius:'50%',    
+        [theme.breakpoints.down("sm")]: {
+          height: 150,
+          width: 150,
+        },  
       },
       title__color: {
         color: theme.palette.text.primary,
@@ -122,24 +83,14 @@ export default function styles(theme) {
       description__color: {
         color: theme.palette.text.secondary,
       },
-      member:{
-        display:'flex',
-        flexDirection:'column',
-        alignItems:'center',
-        justifyContent:'center',
-        margin:'1rem'
-        
-      },
       infoBox:{
         width:'100%',
         paddingTop:'1rem',
         
       },
-      teamPage:{
-        textAlign:'center',
-        paddingBottom:'5rem'
-      },
-     
+      linkToAbout: {
+        margin: 'auto'
+      }
     };
   }
   

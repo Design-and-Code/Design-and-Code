@@ -5,7 +5,8 @@ export default function style(theme) {
             gridTemplateColumns: "300px 1fr",
             color: theme.palette.text.primary
           },
-          tabs: {
+          tabWrapper: {
+            alignItems: "flex-start",
             // borderLeft: `2px solid ${theme.palette.text.secondary}`,
           },
           tab:{

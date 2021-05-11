@@ -2,8 +2,6 @@ import heroIllustration from "../../assets/illustrations/hero-section.svg";
 export default function styles(theme) {
   return {
     section: {
-      alignItems: "center",
-      justifyContent: "center",
       marginBottom: 80,
     },
     title: {

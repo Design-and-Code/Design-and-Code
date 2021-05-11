@@ -47,12 +47,12 @@ function TabPanel(props) {
             color="primary"
             TabIndicatorProps={{className: classes.tabIndicator}}
           >
-            <Tab label="Info" className={classes.tab}/>
-            <Tab label="General" className={classes.tab}/>
-            <Tab label="Design" className={classes.tab}/>
-            <Tab label="Development" className={classes.tab}/>
-            <Tab label="Voice Channels" className={classes.tab}/>
-            <Tab label="Fun" className={classes.tab}/>
+            <Tab label="Info" classes={{root: classes.tab, wrapper: classes.tabWrapper}} />
+            <Tab label="General" classes={{root: classes.tab, wrapper: classes.tabWrapper}} />
+            <Tab label="Design" classes={{root: classes.tab, wrapper: classes.tabWrapper}} />
+            <Tab label="Development" classes={{root: classes.tab, wrapper: classes.tabWrapper}} />
+            <Tab label="Voice Channels" classes={{root: classes.tab, wrapper: classes.tabWrapper}} />
+            <Tab label="Fun" classes={{root: classes.tab, wrapper: classes.tabWrapper}} />
             <div className={classes.inactiveBorder}></div>
             
           </Tabs>
