@@ -45,7 +45,7 @@ function AboutPage() {
           </Grid>
           <Grid container xs={12} sm={6}>
             <div className={classes.community_grid2}>
-              <img src={heroIllustration} className={classes.cgimage}/>
+              <img src={heroIllustration} className={classes.cgimage} alt="Hero "/>
             </div>
           </Grid>
         </Grid>
@@ -62,7 +62,7 @@ function AboutPage() {
           
         >
           <Typography variant="h2" gutterBottom className={classes.title}>Our Team</Typography>
-          <Typography variant="subtitle1" className={classes.description2}>
+          <Typography variant="subtitle1" className={classes.description2} gutterBottom>
             Meet the spirited team that worked behind the scenes to establish this platform.
           </Typography>
           

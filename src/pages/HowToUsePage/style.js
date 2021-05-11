@@ -4,14 +4,13 @@ export default function styles(theme) {
     section: {
       alignItems: "center",
       justifyContent: "center",
-      marginBottom: 120,
+      marginBottom: 80,
     },
     title: {
       display: "block",
       width: "100%",
       textAlign: "center",
-        fontWeight:'600',
-        margin:'8rem 0rem 2rem 0rem',
+      fontWeight:'600',
       ...theme.palette.text.gradient
     },
     title1: {
@@ -53,6 +52,7 @@ export default function styles(theme) {
       },
       heroSectionContent: {
         width: "100%",
+        padding: "20px 0",
         display:'flex',
         justifyContent:'center',
         alignItems:'center',
