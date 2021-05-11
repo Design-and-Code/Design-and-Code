@@ -78,7 +78,7 @@ const darkTheme = {
       },
     },
     h6: {
-      fontSize: "1rem",      
+      fontSize: "1.18rem",      
       fontWeight: 500,
       lineHeight: 1.6,
       letterSpacing: "0.0075em",

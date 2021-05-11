@@ -43,7 +43,7 @@ const routesData = [
   {
     pageName: "Team",
     pageURL: "/team",
-    showOnHeader: true,
+    showOnHeader: false,
     component: <TeamPage />,
     icon: <HelpRounded/>,
   },

@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from "react";
 
-import { Typography } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 //Importing Components
@@ -20,11 +20,11 @@ function Member({ image, linkedIn, instagram, youtube, website}) {
     return () => window.removeEventListener("resize", updateMedia);
   });
   return (
-    <div className={classes.member}>
+    <Grid item className={classes.member} xs={12} sm={6} md={4}>
 
-      <div className={ IsDesktop ? classes.infoHolder : classes.infoHolder2}>
+      <div className={ classes.infoHolder}>
         <div className={classes.imageWrapper}>
-          <img className={IsDesktop ? classes.image : classes.image2 } src={image} alt="Member" />
+          <img className={classes.image} src={image} alt="Member" />
         </div>
         <div className={classes.infoBox}>
           <Typography variant="h5" className={classes.title}>Devraj Chatribin</Typography>
@@ -35,7 +35,7 @@ function Member({ image, linkedIn, instagram, youtube, website}) {
           </div>
         </div>
       </div>
-    </div>
+    </Grid>
   );
 }
 

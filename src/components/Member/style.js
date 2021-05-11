@@ -2,45 +2,25 @@ export default function style(theme) {
     return {
      
       infoHolder: {
-        display:'flex',
-        flexDirection:'column',
-        alignItems:'center',
-        padding: "0% 10%",
-        background:'#202630',
-        marginTop:'4rem',
+        width: '100%',
+        background: theme.palette.primary.backgroundBlurColor,
         borderRadius:'8px'
-      },
-      infoHolder2: {
-        display:'flex',
-        alignItems:'center',
-        width:'100%',
-        background:'#202630',
-        marginTop:'4rem',
-        borderRadius:'8px',
-        padding:'1rem 3rem'
       },
       role:{
         ...theme.palette.text.gradient ,
         fontWeight:'600'
       },
       image: {
+        transform: 'translateY(-50%)',
+        margin: "auto",
         width: "150px",
         height: '150px',
-        margin:'0rem 4.5rem',
-        border:'3px solid grey',
+        border:`5px solid ${theme.palette.secondary.darkGrey}`,
         objectFit:'contain',
         borderRadius:'50%',
-        marginTop:'-4rem'        
-      },
-      image2: {
-        width: "150px",
-        height: '150px',
-        border:'3px solid grey',
-        objectFit:'contain',
-        borderRadius:'50%',           
       },
       imageWrapper:{
-        width:'80%',
+        height: 80,
         display:'flex',
         justifyContent:'center'
       },
@@ -56,13 +36,11 @@ export default function style(theme) {
         flexDirection:'column',
         alignItems:'center',
         justifyContent:'center',
-        margin:'1rem'
-        
+        height: '24pc'
       },
       infoBox:{
         width:'100%',
-        paddingTop:'1rem',
-        
+        padding: `${theme.spacing(2)}px ${theme.spacing(3)}px`
       }
     };
   }

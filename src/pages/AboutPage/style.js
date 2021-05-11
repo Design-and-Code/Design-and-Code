@@ -7,42 +7,27 @@ export default function styles(theme) {
     section: {
       alignItems: "center",
       justifyContent: "center",
+      marginTop: 40,
       marginBottom: 120,
     },
     title: {
-      display: "block",
       width: "100%",
       textAlign: "center",
-      fontWeight:'600',  
       ...theme.palette.text.gradient
     },
     subtitle: {
-      display: "block",
       width: "100%",
       textAlign: "center",
       ...theme.palette.text.gradient,
     },
     description: {
       margin: "auto",
-      display: "block",
       maxWidth: "60%",
       textAlign: "center",
-      fontSize:'1.1rem',
       color: theme.palette.text.secondary,
       [theme.breakpoints.down("sm")]: {
         maxWidth: "100%",
       },
-    },
-    description2: {
-      display: "block",
-      width: "100%",
-      textAlign: "center",
-      fontSize:'1.1rem',
-      color: theme.palette.text.secondary,
-      marginBottom: 16
-    },
-    member_grid:{
-        justifyContent:'center'
     },
     secondaryDesc: {
       color: theme.palette.text.secondary,
@@ -62,22 +47,32 @@ export default function styles(theme) {
       },
     },
     community_grid2:{
-        display:'flex',
-        justifyContent:'center',
-        width:'100%',
-        paddingTop:'2rem'
+      display:'flex',
+      justifyContent:'center',
+      width:'100%',
+      paddingTop:'2rem'
     },
     cgimage:{
-        objectFit:'contain',
-        width:'50%'
+      objectFit:'contain',
+      width:'80%',
+      [theme.breakpoints.down("sm")]: {
+        textAlign: 'center',
+        width:'100%'
+      },
     },
     heroSection: {
-      height: "50vh",
+      height: "20vh",
     
     },
     heroSectionContent: {
       width: "100%",
     },
-   
+    divider: {
+      backgroundColor: "transparent"
+    },
+    visitTeamsBtn: {
+      display: "flex",
+      justifyContent: "center"
+    }
   };
 }
