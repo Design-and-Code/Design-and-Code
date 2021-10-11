@@ -7,7 +7,13 @@ import { ContainedButton } from "../Buttons";
 
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
-import { Container, Grid, Divider, Hidden, Typography } from "@material-ui/core";
+import {
+  Container,
+  Grid,
+  Divider,
+  Hidden,
+  Typography,
+} from "@material-ui/core";
 
 //Importing assets
 import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.svg";
@@ -29,21 +35,63 @@ function Footer() {
                 <img src={brandingLogo} alt="branding-logo" />
               </div>
               <div className={classes.brandingInfo}>
-                <Typography variant="h4" className={classes.brandingTitle}>Design And Code</Typography>
-                <Typography variant="subtitle1" className={classes.brandingDesc}>
+                <Typography variant="h4" className={classes.brandingTitle}>
+                  Design And Code
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  className={classes.brandingDesc}
+                >
                   Connect, Collaborate, Comprehend
                 </Typography>
               </div>
             </div>
-            <div className={classes.getInTouch}>
-              <Typography variant="h6"className={classes.getInTouchTitle}>Get in touch</Typography>
-              <a
-                className={classes.getInTouchEmailLink}
-                href="mailto:designandcode.community@gmail.com"
+          </Grid>
+          <Grid item md={8} xs={12} className={classes.footerSectionGrid}>
+            <Grid container className={classes.footerSectionContainer}>
+              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
+              <Typography
+                variant=""
+                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
               >
-                <Typography variant="h6">designandcode.community@gmail.com</Typography>
-              </a>
-            </div>
+                Home
+              </Typography>
+              {/* </Grid> */}
+              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
+              <Typography
+                variant=""
+                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
+              >
+                About
+              </Typography>
+              {/* </Grid> */}
+              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
+              <Typography
+                variant=""
+                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
+              >
+                Events
+              </Typography>
+              {/* </Grid> */}
+              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
+              <Typography
+                variant=""
+                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
+              >
+                Team
+              </Typography>
+              {/* </Grid> */}
+              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
+              <Typography variant="" className={classes.footerSectionTitle}>
+                Contact
+              </Typography>
+              {/* </Grid> */}
+            </Grid>
+          </Grid>
+        </Grid>
+        <Divider className={classes.divider} />
+        <Grid container className={classes.footerEnd}>
+          <Grid md={4}>
             <div className={classes.socialLinks}>
               <img src={linkedInIcon} alt="Linked in icon" />
               <img src={instagramIcon} alt="Instagram icon" />
@@ -51,58 +99,13 @@ function Footer() {
               <img src={websiteIcon} alt="Website icon" />
             </div>
           </Grid>
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>Home</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">Main</Typography></li>
-                <li><Typography variant="subtitle1">What We Offer</Typography></li>
-                <li><Typography variant="subtitle1">Categories</Typography></li>
-                <li><Typography variant="subtitle1">Video</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>About</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">About Us</Typography></li>
-                <li><Typography variant="subtitle1">Team</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>How To Use</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">Rules</Typography></li>
-                <li><Typography variant="subtitle1">Channels</Typography></li>
-                <li><Typography variant="subtitle1">Bots</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-
-          <Grid item md={2} xs={6}>
-            <Typography variant="h6" className={classes.footerSectionTitle}>Support/Contact</Typography>
-            <div className={classes.footerLinks}>
-              <ul>
-                <li><Typography variant="subtitle1">FAQ</Typography></li>
-                <li><Typography variant="subtitle1">Contact</Typography></li>
-              </ul>
-            </div>
-          </Grid>
-        </Grid>
-        <Divider className={classes.divider} />
-        <Grid container className={classes.footerEnd}>
-          <Grid md={10} xs={12}>
+          <Grid md={4} xs={12}>
             <Typography variant="subtitle1" className={classes.footerLinks}>
               @Copyright {new Date().getFullYear()}. All rights reserved.
             </Typography>
           </Grid>
           <Hidden smDown>
-            <Grid xs={2}>
+            <Grid md={4} xs={2}>
               <Typography variant="subtitle1" className={classes.joinUsBtn}>
                 <ContainedButton size="large">JOIN US</ContainedButton>
               </Typography>

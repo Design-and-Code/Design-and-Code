@@ -12,7 +12,7 @@ export default function style(theme) {
       gridTemplateColumns: "auto 1fr",
     },
     brandingTitle: {
-      ...theme.palette.text.gradient
+      ...theme.palette.text.gradient,
     },
     brandingDesc: {
       color: theme.palette.text.secondary,
@@ -26,12 +26,18 @@ export default function style(theme) {
       color: theme.palette.text.secondary,
     },
     footerSectionTitle: {
+      padding: "0 10px",
       color: theme.palette.text.primary,
-      fontWeight: 600,
+      maxHeight: "fit-content",
+    },
+    footerSectionBorder: {
+      borderRight: "1px solid white",
     },
     footerLinks: {
+      lineHeight: "60px",
       textDecoration: "none",
-      margin: "auto 0",
+      width: "fit-content",
+      margin: "auto",
       color: theme.palette.text.secondary,
       "& ul": {
         padding: 0,
@@ -41,15 +47,27 @@ export default function style(theme) {
         margin: "10px 0",
       },
     },
+    footerSectionGrid: {
+      textAlign: "right",
+    },
+    footerSectionContainer: {
+      verticalAlign: "center",
+      width: "100%",
+      justifyContent: "right",
+      paddingTop: "2.5%",
+    },
+    footerSectionItem: {
+      textAlign: "right",
+      width: "50%",
+    },
     socialLinks: {
-      marginTop: 20,
       "& img": {
         height: 60,
         marginRight: 10,
       },
     },
     divider: {
-      backgroundColor: theme.palette.secondary.darkGrey,
+      backgroundColor: theme.palette.primary.gradient2,
     },
     footerEnd: {
       padding: "30px 0 0 0",
