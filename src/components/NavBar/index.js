@@ -19,7 +19,7 @@ import {
   ListItemText,
   Divider,
   useScrollTrigger,
-  Typography
+  Typography,
 } from "@material-ui/core";
 
 //Import Nav Routes Data
@@ -31,7 +31,7 @@ import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.
 //Importing Components
 import { ContainedButton } from "../Buttons";
 
-import {darkTheme, createMuiTheme} from "../../theme";
+import { darkTheme, createMuiTheme } from "../../theme";
 
 const useStyles = makeStyles(style);
 function NavBar(props) {
@@ -55,14 +55,20 @@ function NavBar(props) {
 
   return (
     <>
-      <AppBar 
-        position="sticky" 
-        className={classes.appBar} 
-        style={trigger ? {
-          background: createMuiTheme(darkTheme).palette.primary.backgroundBlurColor,
-          backdropFilter: "blur(20px)",} : {
-          background: `transparent`,
-          backdropFilter: "none"}
+      <AppBar
+        position="sticky"
+        className={classes.appBar}
+        style={
+          trigger
+            ? {
+                background:
+                  createMuiTheme(darkTheme).palette.primary.backgroundBlurColor,
+                backdropFilter: "blur(20px)",
+              }
+            : {
+                background: `transparent`,
+                backdropFilter: "none",
+              }
         }
       >
         <Container className={classes.navBarBackground} maxWidth="lg">
@@ -80,17 +86,17 @@ function NavBar(props) {
                   {routesData.map((data, index) => (
                     <div key={`link-index-${index}`}>
                       {data.showOnHeader && (
-                        <Link
-                          to={data.pageURL}
-                        >
+                        <Link to={data.pageURL}>
                           <Typography
                             className={
                               data.pageURL !== pathname
                                 ? classes.navLink
                                 : classes.navLinkHighlighted
-                            } 
+                            }
                             variant="subtitle1"
-                          >{data.pageName}</Typography>
+                          >
+                            {data.pageName}
+                          </Typography>
                         </Link>
                       )}
                     </div>
@@ -106,7 +112,7 @@ function NavBar(props) {
                     href="https://discord.gg/druweDMn3s"
                     target="_blank"
                   >
-                    Join Discord
+                    Join Us
                   </ContainedButton>
                 </Hidden>
                 <Hidden smUp>
@@ -134,8 +140,13 @@ function NavBar(props) {
                 <img src={brandingLogo} alt="branding-logo" />
               </div>
               <div className={classes.brandingInfo}>
-                <Typography variant="h4" className={classes.brandingTitle}>Design And Code</Typography>
-                <Typography variant="subtitle2" className={classes.brandingDesc}>
+                <Typography variant="h4" className={classes.brandingTitle}>
+                  Design And Code
+                </Typography>
+                <Typography
+                  variant="subtitle2"
+                  className={classes.brandingDesc}
+                >
                   Connect, Collaborate, Comprehend
                 </Typography>
               </div>
@@ -146,17 +157,22 @@ function NavBar(props) {
               {data.showOnHeader && (
                 <>
                   <Link to={data.pageURL}>
-                    <ListItem 
-                      button 
+                    <ListItem
+                      button
                       focusVisible={false}
                       className={
                         data.pageURL !== pathname
                           ? classes.listItem
                           : classes.listItemHighlighted
-                      } 
-                      key={data.pageName}>
-                      <Typography className={classes.listItemIcon}>{data.icon}</Typography>
-                      <Typography variant="subtitle1">{data.pageName}</Typography>
+                      }
+                      key={data.pageName}
+                    >
+                      <Typography className={classes.listItemIcon}>
+                        {data.icon}
+                      </Typography>
+                      <Typography variant="subtitle1">
+                        {data.pageName}
+                      </Typography>
                     </ListItem>
                   </Link>
                   <Divider className={classes.divider} />

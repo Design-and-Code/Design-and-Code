@@ -23,8 +23,14 @@ function HomePage() {
       {/* Hero Section */}
       <Grid container className={`${classes.section} ${classes.heroSection}`}>
         <div className={classes.heroSectionContent}>
-          <Typography variant="h1" className={classes.title}>Design And Code</Typography>
-          <Typography variant="subtitle1" gutterBottom className={classes.description}>
+          <Typography variant="h1" className={classes.title}>
+            Design And Code
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            gutterBottom
+            className={classes.description}
+          >
             A place for Designers and Developers to Learn & Grow together.
           </Typography>
           <div className={classes.heroBtns}>
@@ -35,7 +41,9 @@ function HomePage() {
             >
               JOIN US
             </ContainedButton>
-            <OutlinedButton size="large">ABOUT US</OutlinedButton>
+            <OutlinedButton href="/about" size="large">
+              ABOUT US
+            </OutlinedButton>
           </div>
         </div>
       </Grid>
@@ -48,7 +56,9 @@ function HomePage() {
           container
           className={classes.whatsInsideDesignAndCodeSectionContent}
         >
-          <Typography variant="h3" gutterBottom className={classes.subtitle}>What's Inside Design And Code?</Typography>
+          <Typography variant="h3" gutterBottom className={classes.subtitle}>
+            What's Inside Design And Code?
+          </Typography>
           <Typography variant="subtitle1" className={classes.description}>
             Design & Code is on a mission to conect and support Designers and
             Developers from around the world.
@@ -90,10 +100,13 @@ function HomePage() {
       {/* Categories Section */}
       <Grid container className={classes.section}>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
-          <Typography variant="h3" className={`${classes.subtitle} ${classes.textAlignLeft}`}>
+          <Typography
+            variant="h3"
+            className={`${classes.subtitle} ${classes.textAlignLeft}`}
+          >
             Categories
           </Typography>
-          <Typography 
+          <Typography
             variant="subtitle1"
             className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
           >
@@ -144,7 +157,9 @@ function HomePage() {
         container
         className={`${classes.section} ${classes.journeySection}`}
       >
-        <Typography variant="h3" gutterBottom className={classes.subtitle}>Ready to start your journey?</Typography>
+        <Typography variant="h3" gutterBottom className={classes.subtitle}>
+          Ready to start your journey?
+        </Typography>
 
         <ContainedButton
           size="large"
