@@ -1,9 +1,7 @@
-
+import { Repeat } from "@material-ui/icons";
 
 export default function styles(theme) {
-    
   return {
-    
     section: {
       alignItems: "center",
       justifyContent: "center",
@@ -13,7 +11,7 @@ export default function styles(theme) {
     title: {
       width: "100%",
       textAlign: "center",
-      ...theme.palette.text.gradient
+      ...theme.palette.text.gradient,
     },
     subtitle: {
       width: "100%",
@@ -33,46 +31,48 @@ export default function styles(theme) {
       color: theme.palette.text.secondary,
       width: "100%",
     },
-    
-    community_grid:{
-        alignItems:'center',
-        color:theme.palette.text.secondary
-        
+
+    community_grid: {
+      alignItems: "center",
+      color: theme.palette.text.secondary,
     },
-    community_grid1:{
-      color:theme.palette.text.secondary,
-        paddingTop:'2rem',
+    community_grid1: {
+      color: theme.palette.text.secondary,
+      paddingTop: "2rem",
       [theme.breakpoints.down("sm")]: {
-        textAlign: 'center',
+        textAlign: "center",
       },
     },
-    community_grid2:{
-      display:'flex',
-      justifyContent:'center',
-      width:'100%',
-      paddingTop:'2rem'
+    community_grid2: {
+      display: "flex",
+      justifyContent: "center",
+      width: "100%",
+      paddingTop: "2rem",
     },
-    cgimage:{
-      objectFit:'contain',
-      width:'80%',
+    cgimage: {
+      objectFit: "contain",
+      width: "80%",
       [theme.breakpoints.down("sm")]: {
-        textAlign: 'center',
-        width:'100%'
+        textAlign: "center",
+        width: "100%",
       },
     },
     heroSection: {
       height: "20vh",
-    
     },
     heroSectionContent: {
       width: "100%",
     },
     divider: {
-      backgroundColor: "transparent"
+      backgroundColor: "transparent",
     },
     visitTeamsBtn: {
       display: "flex",
-      justifyContent: "center"
-    }
+      justifyContent: "center",
+    },
+    sponsors: {
+      textAlign: "center",
+      margin: "0",
+    },
   };
 }
