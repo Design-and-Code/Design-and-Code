@@ -3,6 +3,7 @@ import AboutPage from "../pages/AboutPage";
 import HowToUsePage from "../pages/HowToUsePage";
 import ContactPage from "../pages/ContactPage"
 import TeamPage from "../pages/TeamPage"
+import EventsPage from "../pages/EventsPage"
 
 import {
   HomeRounded,
@@ -45,6 +46,13 @@ const routesData = [
     pageURL: "/team",
     showOnHeader: false,
     component: <TeamPage />,
+    icon: <HelpRounded/>,
+  },
+  {
+    pageName: "Events",
+    pageURL: "/events",
+    showOnHeader: false,
+    component: <EventsPage />,
     icon: <HelpRounded/>,
   },
 ];
