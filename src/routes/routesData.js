@@ -52,7 +52,7 @@ const routesData = [
   {
     pageName: "Events",
     pageURL: "/events",
-    showOnHeader: false,
+    showOnHeader: true,
     component: <EventsPage />,
     icon: <HelpRounded />,
   },
