@@ -6,7 +6,7 @@ import { Typography } from "@material-ui/core";
 
 import logo from "../../assets/image 25.png";
 import { ContainedButton, OutlinedButton } from "../../components/Buttons";
-import Card from "../../components/EventsCard"
+import Card from "../../components/EventsCard";
 
 import style from "./style";
 
@@ -41,7 +41,7 @@ function EventsPage() {
       <Typography variant="h5" className={classes.subtitle}>
         Upcoming Events
       </Typography>
-      <Card/>
+      <Card />
     </div>
   );
 }
