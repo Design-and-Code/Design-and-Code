@@ -104,7 +104,9 @@ function Footer() {
           <Hidden smDown>
             <Grid xs={2}>
               <Typography variant="subtitle1" className={classes.joinUsBtn}>
-                <ContainedButton size="large">JOIN US</ContainedButton>
+                <ContainedButton 
+                  href="https://discord.gg/druweDMn3s"  target="_blank" size="large"> JOIN US
+                </ContainedButton>
               </Typography>
             </Grid>
           </Hidden>
