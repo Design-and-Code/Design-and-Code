@@ -93,10 +93,18 @@ function Footer() {
         <Grid container className={classes.footerEnd}>
           <Grid md={4}>
             <div className={classes.socialLinks}>
-              <img src={linkedInIcon} alt="Linked in icon" />
-              <img src={instagramIcon} alt="Instagram icon" />
-              <img src={youtubeIcon} alt="YouTube icon" />
-              <img src={websiteIcon} alt="Website icon" />
+              <a href="https://linkedin.com/company/designandcode">
+                <img src={linkedInIcon} alt="Linked in icon" />
+              </a>
+              <a href="https://instagram.com/company/designandcode.community">
+                <img src={instagramIcon} alt="Instagram icon" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCd4E0oe8MtnZu_48WvYeLMw">
+                <img src={youtubeIcon} alt="YouTube icon" />
+              </a>
+              <a href="https://designandcode.us">
+                <img src={websiteIcon} alt="Website icon" />
+              </a>
             </div>
           </Grid>
           <Grid md={4} xs={12}>
@@ -107,7 +115,12 @@ function Footer() {
           <Hidden smDown>
             <Grid md={4} xs={2}>
               <Typography variant="subtitle1" className={classes.joinUsBtn}>
-                <ContainedButton size="large">JOIN US</ContainedButton>
+                <ContainedButton
+                  href="https://discord.gg/druweDMn3s"
+                  size="large"
+                >
+                  JOIN US
+                </ContainedButton>
               </Typography>
             </Grid>
           </Hidden>
