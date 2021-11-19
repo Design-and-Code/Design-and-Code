@@ -9,6 +9,58 @@ code {
     monospace;
 }
 
+.bannerOuter{
+  transition: 0.5s;
+}
+
+.eventsCard:hover > .bannerOuter{
+  transform:scale(1.02);
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  height: 98px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all .3s linear;
+  transform: skewX(20deg) translateX(0);
+}
+.container-rsvp{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.bannerOuterPast{
+  transition: 0.5s;
+  position: relative;
+}
+.bannerOuterPast:hover{
+  filter: brightness(50%);
+}
+.bannerOuterPast:hover::after{
+  display: block;
+  filter: brightness(100%);
+}
+.bannerOuterPast::after{
+  position: absolute;
+  height: 100%;
+  color: white;
+  font-size: 5rem;
+  content: '\23F5';
+  left: 30%;
+  top: 10%;
+  z-index: 10;
+  display: none;
+}
+
+.container-rsvp:hover .shine {
+  transform: skewX(20deg) translateX(-1000%);
+}
+
 * {
   font-family: Poppins;
 }
