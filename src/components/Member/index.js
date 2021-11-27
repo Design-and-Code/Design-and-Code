@@ -9,7 +9,17 @@ import style from "./style";
 import Links from "../Links/index";
 const useStyles = makeStyles(style);
 
-function Member({ image, Name, Responsibility, AboutMe, linkedinUrl }) {
+function Member({
+  image,
+  Name,
+  Responsibility,
+  AboutMe,
+  linkedinUrl,
+  instagramUrl,
+  twitterUrl,
+  githubUrl,
+  websiteUrl,
+}) {
   console.log(image);
   const classes = useStyles();
   const [IsDesktop, setIsDesktop] = useState(window.innerWidth > 900);
@@ -30,18 +40,25 @@ function Member({ image, Name, Responsibility, AboutMe, linkedinUrl }) {
           <Typography variant="h5" className={classes.title}>
             {Name}
           </Typography>
-          <Typography variant="h6" className={classes.role}>
+          <Typography variant="subtitle1" className={classes.role}>
             {Responsibility}
           </Typography>
           <Typography variant="subtitle2" className={classes.description}>
             {AboutMe}
           </Typography>
           <div style={{ display: "flex" }}>
+            {/* <Links
+              linkedIn={linkedinUrl}
+              instagram={instagramUrl}
+              youtube={youtube}
+              website={website}
+            /> */}
             <Links
               linkedIn={linkedinUrl}
-              // instagram={instagram}
-              // youtube={youtube}
-              // website={website}
+              instagram={instagramUrl}
+              twitter={twitterUrl}
+              github={githubUrl}
+              website={websiteUrl}
             />
           </div>
         </div>

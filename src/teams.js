@@ -1,4 +1,4 @@
-var teamInfo = [
+export const teamInfo = [
   {
     Name: "Harshjot Singh",
     Responsibility: "Events Organiser",
@@ -6,6 +6,10 @@ var teamInfo = [
     AboutMe:
       "I am an enthusiast innovator with a belief to explore my potential and acquire skills.",
     linkedinUrl: "https://www.linkedin.com/in/harshjot-singh/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Harshjot Singh.png",
   },
   {
@@ -15,6 +19,10 @@ var teamInfo = [
     AboutMe:
       "I am a college sophomore at Boston Univesrity, aspired to become a PM or SWE",
     linkedinUrl: "https://www.linkedin.com/in/macyso/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Macy So.JPG",
   },
   {
@@ -24,6 +32,10 @@ var teamInfo = [
     AboutMe:
       "I am a Graphic Designer and a pseudo Web developer, based in Goa.",
     linkedinUrl: "https://www.linkedin.com/in/fuzail-khan-4794a11a4",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Fuzail Khan.jpg",
   },
   {
@@ -33,6 +45,10 @@ var teamInfo = [
     AboutMe:
       "Backend developer who uses Spring Boot alongside React and React Native on the frontend.",
     linkedinUrl: "https://www.linkedin.com/in/prathamkrishna/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/pratham krishna.jpg",
   },
   {
@@ -41,6 +57,10 @@ var teamInfo = [
     DiscordUsername: "@shivanshi",
     AboutMe: "I am a front-end developer and Designer based in Delhi",
     linkedinUrl: "https://www.linkedin.com/in/shivanshi-saxena12/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Shivanshi Saxena.jpg",
   },
   {
@@ -49,6 +69,10 @@ var teamInfo = [
     DiscordUsername: "@Falguni",
     AboutMe: "I’m currently learning stuff to be a Full-Stack Web Developer!",
     linkedinUrl: "https://www.linkedin.com/in/falgunisarkar",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Falguni Sarkar.jpeg",
   },
   {
@@ -58,6 +82,10 @@ var teamInfo = [
     AboutMe:
       "A graphic designer interested in tech; now an AWS Cloud Practioner, too.",
     linkedinUrl: "https://www.linkedin.com/in/sarah-crossan-861389a0/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Sarah Crossan.jpg",
   },
   {
@@ -67,6 +95,10 @@ var teamInfo = [
     AboutMe:
       "I'm a freshman at VIT Chennai and a Machine Learning enthusiast, currently exploring tech",
     linkedinUrl: "https://www.linkedin.com/in/lenink/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Lenin Kennedy.jpeg",
   },
   {
@@ -75,6 +107,10 @@ var teamInfo = [
     DiscordUsername: "@Chetna",
     AboutMe: "Front-end Web Developer || Creative Designer ( UI and Graphic )",
     linkedinUrl: " https://www.linkedin.com/in/chetnagrover",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Chetna Grover.png",
   },
   {
@@ -83,6 +119,10 @@ var teamInfo = [
     DiscordUsername: "@Nandani",
     AboutMe: "Sophomore | Front-end Web Developer | Community enthusiastic",
     linkedinUrl: "https://www.linkedin.com/in/nandani-paliwal-979a2120b",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Nandani Paliwal.jpeg",
   },
   {
@@ -92,6 +132,10 @@ var teamInfo = [
     AboutMe:
       "I am a UI/UX Designer and a Front-end Web Developer who loves hosting and organizing events, hailing from Bhubaneswar.",
     linkedinUrl: "https://www.linkedin.com/in/ankita-sahu-540920201/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Ankita Sahu.jpg",
   },
   {
@@ -101,8 +145,26 @@ var teamInfo = [
     AboutMe:
       "I am a Technical writer and an aspiring Web Developer who loves community",
     linkedinUrl: "https://www.linkedin.com/in/muthu-annamalai",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
     image: "/TeamImages/Muthu Annamalai Venkatachalam.jpeg",
   },
 ];
 
-export default teamInfo;
+export const developersInfo = [
+  {
+    Name: "Harshjot Singh",
+    Responsibility: "Events Organiser",
+    DiscordUsername: " @Harshjot",
+    AboutMe:
+      "I am an enthusiast innovator with a belief to explore my potential and acquire skills.",
+    linkedinUrl: "https://www.linkedin.com/in/harshjot-singh/",
+    instagramUrl: undefined,
+    twitterUrl: undefined,
+    githubUrl: undefined,
+    websiteUrl: undefined,
+    image: "/TeamImages/Harshjot Singh.png",
+  },
+];

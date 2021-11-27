@@ -7,7 +7,7 @@ import { OutlinedButton } from "../../components/Buttons";
 
 //Importing Components
 import { Grid, Typography } from "@material-ui/core";
-import teamInfo from "../../teams";
+import { teamInfo, developersInfo } from "../../teams";
 
 import style from "./style";
 import Member from "../../components/Member";
@@ -40,7 +40,11 @@ function AboutPage() {
           <div className={classes.member}>
             <div className={classes.infoHolder}>
               <div className={classes.imageWrapper}>
-                <img className={classes.image} src={image} alt="Member" />
+                <img
+                  className={classes.image}
+                  src="/TeamImages/Devraj Chatribin.jpeg"
+                  alt="Member"
+                />
               </div>
               <div className={classes.infoBox}>
                 <Typography variant="h5" className={classes.title__color}>
@@ -68,10 +72,11 @@ function AboutPage() {
                 </Typography>
                 <div>
                   <Links
-                    linkedIn={""}
-                    instagram={""}
-                    youtube={""}
-                    website={""}
+                    linkedIn={"https://www.linkedin.com/in/devraj-chatribin/"}
+                    instagram={"https://www.instagram.com/designfordev/"}
+                    twitter={"https://twitter.com/devrajchatribin"}
+                    github={"https://github.com/DevrajDC"}
+                    website={"https://devrajchatribin.co/"}
                   />
                 </div>
               </div>
@@ -88,6 +93,26 @@ function AboutPage() {
         spacing={4}
       >
         {teamInfo.map((item, index) => {
+          return <Member {...item} />;
+        })}
+      </Grid>
+
+      {/* Developer Section */}
+
+      <Typography variant="h3" gutterBottom className={classes.title}>
+        Developers
+      </Typography>
+      <Typography variant="h6" gutterBottom className={classes.description}>
+        Meet the spirited team that worked behind the scenes to establish this
+        platform.
+      </Typography>
+
+      <Grid
+        container
+        className={`${classes.section} ${classes.featuresSection}`}
+        spacing={4}
+      >
+        {developersInfo.map((item, index) => {
           return <Member {...item} />;
         })}
       </Grid>
