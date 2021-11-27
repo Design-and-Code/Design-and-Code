@@ -6,10 +6,10 @@ import { Grid, Typography } from "@material-ui/core";
 
 //Importing Components
 import { ContainedButton, OutlinedButton } from "../../components/Buttons";
-import freeResources from "../../assets/illustrations/freeResources.svg";
-import mentoring from "../../assets/illustrations/mentoring.svg";
-import opportunities from "../../assets/illustrations/opportunities.svg";
-import portfolioAndReviews from "../../assets/illustrations/portfolioAndReviews.svg";
+import freeResources from "../../assets/illustrations/freeResources.png";
+import mentoring from "../../assets/illustrations/mentoring.png";
+import opportunities from "../../assets/illustrations/opportunities.png";
+import portfolioAndReviews from "../../assets/illustrations/portfolioAndReviews.png";
 import categoriesIllustration from "../../assets/illustrations/categoriesIllustration.svg";
 import Feature from "../../components/Feature";
 
@@ -39,10 +39,10 @@ function HomePage() {
               target="_blank"
               size="large"
             >
-              JOIN US
+              JOIN DISCORD
             </ContainedButton>
             <OutlinedButton href="/about" size="large">
-              ABOUT US
+              PARTNERSHIP
             </OutlinedButton>
           </div>
         </div>
@@ -59,10 +59,10 @@ function HomePage() {
           <Typography variant="h3" gutterBottom className={classes.subtitle}>
             What's Inside Design And Code?
           </Typography>
-          <Typography variant="subtitle1" className={classes.description}>
+          {/* <Typography variant="subtitle1" className={classes.description}>
             Design & Code is on a mission to conect and support Designers and
             Developers from around the world.
-          </Typography>
+          </Typography> */}
           <Grid container xs={12} sm={6}>
             <Feature
               image={mentoring}
@@ -157,17 +157,75 @@ function HomePage() {
         container
         className={`${classes.section} ${classes.journeySection}`}
       >
-        <Typography variant="h3" gutterBottom className={classes.subtitle}>
-          Ready to start your journey?
-        </Typography>
-
-        <ContainedButton
-          size="large"
-          href="https://discord.gg/druweDMn3s"
-          target="_blank"
-        >
-          JOIN DISCORD
-        </ContainedButton>
+        <Grid container className={`${classes.journeyTextSection}`}>
+          <Typography variant="h3" gutterBottom className={classes.subtitle}>
+            Ready to start your journey?
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            gutterBottom
+            className={`${classes.secondaryDesc} ${classes.textCenter}`}
+          >
+            Come <span className={`${classes.greenText}`}>Connect</span> and
+            Start <span className={`${classes.greenText}`}>Collaborate</span>{" "}
+            with your fellow designers and developers around the world.
+          </Typography>
+          <ContainedButton
+            size="large"
+            href="https://discord.gg/druweDMn3s"
+            target="_blank"
+          >
+            JOIN DISCORD
+          </ContainedButton>
+        </Grid>
+        <Grid container className={`${classes.journeyImageSection}`}>
+          <Grid container className={classes.imgContainer}>
+            <div className={classes.imgCenter}>
+              <img
+                alt=" "
+                src="/TeamImages/Devraj Chatribin.jpeg"
+                className={classes.imgSmall}
+              />
+            </div>
+            <div className={classes.imgLeft}>
+              <img
+                alt=" "
+                src="/TeamImages/Shriram Parab.jpeg"
+                className={`${classes.imgMedium} ${classes.middleImage}`}
+              />
+            </div>
+            <div className={classes.imgRight}>
+              <img
+                alt=" "
+                src="/TeamImages/Nandani Paliwal.jpg"
+                className={classes.imgBig}
+              />
+            </div>
+          </Grid>
+          <Grid container className={classes.imgContainer}>
+            <div className={classes.imgCenter}>
+              <img
+                alt=" "
+                src="/TeamImages/Falguni Sarkar.jpeg"
+                className={classes.imgBig}
+              />
+            </div>
+            <div className={classes.imgRight}>
+              <img
+                alt=" "
+                src="/TeamImages/Macy So.JPG"
+                className={`${classes.imgSmall} ${classes.middleImage}`}
+              />
+            </div>
+            <div className={classes.imgLeft}>
+              <img
+                alt=" "
+                src="/TeamImages/pratham krishna.jpg"
+                className={classes.imgMedium}
+              />
+            </div>
+          </Grid>
+        </Grid>
       </Grid>
     </div>
   );

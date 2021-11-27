@@ -1,10 +1,9 @@
 export default function styles(theme) {
   return {
     eventsCard: {
-      
       backgroundColor: theme.palette.primary.background2,
       borderRadius: 10,
-      marginBottom: "4rem",
+      marginBottom: "1rem",
       overflow:'hidden'
     },
     eventName: {
@@ -24,7 +23,6 @@ export default function styles(theme) {
       borderTopLeftRadius: 10,
       borderTopRightRadius: 10,
       height:'fit-content',
-      width:'fit-content',
       overflow:'hidden'
     },
     banner: {

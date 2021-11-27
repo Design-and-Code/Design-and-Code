@@ -14,5 +14,8 @@ export default function styles(theme) {
         transition:'0.5s',
         overflow:'hidden'
     },
+    eventName:{
+      color:"white"
+    }
   };
 }
