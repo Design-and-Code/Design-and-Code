@@ -62,7 +62,7 @@ export default function style(theme) {
     },
     socialLinks: {
       "& img": {
-        height: 60,
+        height: 50,
         marginRight: 10,
       },
     },

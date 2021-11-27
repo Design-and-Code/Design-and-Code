@@ -13,14 +13,17 @@ function ContainedButton(props) {
   const { size } = props;
 
   return (
+    <div className="container-btns">
     <Button
       {...props}
-      style={{ padding: size === "large" ? "12px 50px" : "8px 22px" }}
+      style={{ padding: size === "large" ? "12px 50px" : "8px 22px",margin:'0rem' }}
       className={`${classes.containedBtn} ${props.className}`}
       variant="contained"
     >
       {props.children}
     </Button>
+    <div class="shine"></div>
+    </div>
   );
 }
 
