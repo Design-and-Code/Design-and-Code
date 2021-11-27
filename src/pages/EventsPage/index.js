@@ -1,28 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 
 //Importing Material UI stuff
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 
-import logo from "../../assets/image 25.png";
-import { ContainedButton, OutlinedButton } from "../../components/Buttons";
+import logo from "../../assets/Group 181.png";
+import { ContainedButton } from "../../components/Buttons";
 import Card from "../../components/EventsCard";
 
 import style from "./style";
 import { Pagination } from "@material-ui/lab";
 import EventsPast from "../../components/EventsPast";
 
+import events from "../../events.json"
+
 const useStyles = makeStyles(style);
 
 function EventsPage() {
+  const [Events, setEvents] = useState(events)
+
   const classes = useStyles();
   return (
     <div className={classes.eventsPage}>
       {/* Header section */}
       <div className={classes.section}>
         <img src={logo} alt="Logo" className={classes.image} />
-        <div>
+        <div className="event-header">
           <Typography variant="h2" gutterBottom className={classes.title}>
             Our Events
           </Typography>
@@ -48,9 +52,13 @@ function EventsPage() {
         container
         spacing={5}
       >  
-        <Card />
-        <Card />
-        <Card />
+        {
+          Events.upcoming.map((event)=>{
+            return(
+              <Card img={event.thumbnail} name={event.name} date={event.date} time={event.time} link={event.rsvpLink}/>
+            )
+          })
+        }
       </Grid>
 
       {/* Past Events */}
@@ -62,15 +70,17 @@ function EventsPage() {
         spacing={5}
         gutterBottom
       >  
-        <EventsPast />
-        <EventsPast />
-        <EventsPast />
-        <EventsPast />
-        <EventsPast />
-        <EventsPast />
+ 
+        {
+          Events.past.map((event)=>{
+            return(
+              <EventsPast img={event.thumbnail} name={event.name} link={event.link}/>
+            )
+          })
+        }
       </Grid>
 
-      <Pagination count={10} style={{display:'flex',justifyContent:'center'}} variant="outlined" shape="rounded" />
+      {/*<Pagination count={10} style={{display:'flex',justifyContent:'center'}} variant="outlined" shape="rounded" {}/>*/}
 
       {/* Ready to start Journey section */}
       
@@ -81,16 +91,9 @@ function EventsPage() {
         className={`${classes.section} ${classes.journeySection}`}
       >
         <Typography variant="h3" gutterBottom className={classes.subtitle}>
-          Ready to start your journey?
+          Ready to start your journey? TO BE REPLACED
         </Typography>
 
-        <ContainedButton
-          size="large"
-          href="https://discord.gg/druweDMn3s"
-          target="_blank"
-        >
-          JOIN DISCORD
-        </ContainedButton>
       </Grid>
     </div>
   );

@@ -42,6 +42,10 @@ export default function styles(theme) {
     },
     button:{
         marginTop: "1.5rem",
+        [theme.breakpoints.down("sm")]: {
+          margin:'auto'
+          
+        },
     },
     foundDesc: {
       marginTop: theme.spacing(2),

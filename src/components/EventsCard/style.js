@@ -24,7 +24,6 @@ export default function styles(theme) {
       borderTopLeftRadius: 10,
       borderTopRightRadius: 10,
       height:'fit-content',
-      width:'fit-content',
       overflow:'hidden'
     },
     banner: {

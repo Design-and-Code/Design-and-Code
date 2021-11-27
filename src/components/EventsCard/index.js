@@ -12,16 +12,16 @@ import EventCapsules from "../EventCapsules";
 
 const useStyles = makeStyles(style);
 
-const Card = () => {
+const Card = (props) => {
   const classes = useStyles();
   return (
     <Grid item xs={12} sm={6} md={4} >
     <Box className={`${classes.eventsCard} eventsCard`}>
       <Box className={`${classes.bannerOuter} bannerOuter`}>
-        <img src={Banner} alt="Image" className={classes.banner} />
+        <img src={props.img} alt="Image" className={classes.banner} />
       </Box>
       <Box className={classes.eventContent}>
-        <Typography className={classes.eventName} variant="h5">Canva Workshop</Typography>
+        <Typography className={classes.eventName} variant="h5">{props.name}</Typography>
         <Box className={classes.eventBox}>
 
           <EventCapsules 
@@ -30,7 +30,7 @@ const Card = () => {
               <path d="M4.66667 7.25H3.11111V8.75H4.66667V7.25ZM7.77778 7.25H6.22222V8.75H7.77778V7.25ZM10.8889 7.25H9.33333V8.75H10.8889V7.25ZM12.4444 2H11.6667V0.5H10.1111V2H3.88889V0.5H2.33333V2H1.55556C0.692222 2 0.00777777 2.675 0.00777777 3.5L0 14C0 14.825 0.692222 15.5 1.55556 15.5H12.4444C13.3 15.5 14 14.825 14 14V3.5C14 2.675 13.3 2 12.4444 2ZM12.4444 14H1.55556V5.75H12.4444V14Z" fill="white"/>
               </svg>
             }
-            text={"30 MAY"}
+            text={props.date}
           />
 
           <EventCapsules 
@@ -40,7 +40,7 @@ const Card = () => {
               <path d="M9 5V9.5L12 11" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             }
-            text={"8:00pm - 10:00pm IST"}
+            text={props.time}
           />
 
           <EventCapsules 
@@ -55,16 +55,17 @@ const Card = () => {
 
 
         </Box>
-        <div className="container-rsvp">
-          <ContainedButton
-            href="https://discord.gg/druweDMn3s"
-            target="_blank"
-            className={classes.rvspButton}
-          >
-              RSVP
-          </ContainedButton>
-          <div class="shine"></div>
-        </div>
+           
+              <div className="rsvp-outer">
+              <ContainedButton
+                href={props.link}
+                target="_blank"
+                className={classes.rvspButton}
+              >
+                  RSVP
+              </ContainedButton>
+              </div>
+            
       </Box>
     </Box>
     </Grid>

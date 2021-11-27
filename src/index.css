@@ -27,38 +27,47 @@ code {
   transition: all .3s linear;
   transform: skewX(20deg) translateX(0);
 }
-.container-rsvp{
+
+
+
+.container-btns{
   position: relative;
-  width: 100%;
+  width: fit-content;
+  height: fit-content;
   overflow: hidden;
   border-radius: 20px;
+  
 }
 
 .bannerOuterPast{
   transition: 0.5s;
   position: relative;
 }
-.bannerOuterPast:hover{
+.bannerOuterPast:hover > .bannerPastImage{
   filter: brightness(50%);
 }
-.bannerOuterPast:hover::after{
-  display: block;
-  filter: brightness(100%);
-}
-.bannerOuterPast::after{
+.bannerOuterPast > .play{
+  visibility: hidden;
   position: absolute;
-  height: 100%;
-  color: white;
-  font-size: 5rem;
-  content: '\23F5';
-  left: 30%;
-  top: 10%;
+  left:25%;
+  top:32%;
   z-index: 10;
-  display: none;
+}
+.bannerOuterPast:hover > .play{
+  visibility: visible;
 }
 
-.container-rsvp:hover .shine {
+.container-btns:hover .shine {
   transform: skewX(20deg) translateX(-1000%);
+}
+
+.rsvp-outer > .container-btns {
+  width: 100% ;
+}
+@media only screen and (min-width: 992px) {
+  .event-header > .container-btns{
+    margin: auto;
+  }
 }
 
 * {
