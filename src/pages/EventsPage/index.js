@@ -51,6 +51,7 @@ function EventsPage() {
       <Grid
         container
         spacing={5}
+        style={{marginBottom:'1rem'}}
       >  
         {
           Events.upcoming.map((event)=>{
@@ -67,7 +68,7 @@ function EventsPage() {
       </Typography>
       <Grid
         container
-        spacing={5}
+        spacing={3}
         gutterBottom
       >  
  

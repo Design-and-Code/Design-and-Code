@@ -9,7 +9,7 @@ export default function styles(theme) {
             width:"fit-content",
             borderRadius:'50px',
             padding:'0.5rem 1rem',
-            fontWeight:'600',
+            fontWeight:'400',
             marginRight:'1rem',
             marginTop:'1rem',
             fontSize:'0.8rem',

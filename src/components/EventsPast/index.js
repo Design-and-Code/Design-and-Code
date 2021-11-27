@@ -17,13 +17,14 @@ const EventsPast = (props) => {
   const classes = useStyles();
   return (
     <Grid item xs={12} sm={6} md={4} >
+    <a href={props.link}>
     <Box className={`${classes.eventsCard} eventsCard`}>
       <Box className={`${classes.bannerOuter} bannerOuterPast`}>
         <img src={props.img} alt="Image" className={`${classes.banner} bannerPastImage`} />
         <Typography className={classes.eventName} variant="h6">{props.name}</Typography>
     
         <div className={`${classes.play} play`} >
-          <a href={props.link}>
+          
             <EventCapsules 
                 svg={
                   <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,11 +34,12 @@ const EventsPast = (props) => {
                 }
                 text={"View on Youtube"}
               />
-          </a>
+          
         </div>
        
       </Box>
     </Box>
+    </a>
     </Grid>
   );
 };
