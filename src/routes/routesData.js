@@ -36,6 +36,13 @@ const routesData = [
   },
 
   {
+    pageName: "Events",
+    pageURL: "/events",
+    showOnHeader: true,
+    component: <EventsPage />,
+    icon: <HelpRounded />,
+  },
+  {
     pageName: "Team",
     pageURL: "/team",
     showOnHeader: true,
@@ -47,13 +54,6 @@ const routesData = [
     pageURL: "/contact",
     showOnHeader: true,
     component: <ContactPage />,
-    icon: <HelpRounded />,
-  },
-  {
-    pageName: "Events",
-    pageURL: "/events",
-    showOnHeader: true,
-    component: <EventsPage />,
     icon: <HelpRounded />,
   },
 ];
