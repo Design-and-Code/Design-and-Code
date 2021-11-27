@@ -24,7 +24,7 @@ export default function style(theme) {
       height: "150px",
       width: "150px",
       borderRadius: "50%",
-      border: `5px solid ${theme.palette.secondary.darkGrey}`,
+      // border: `5px solid ${theme.palette.secondary.darkGrey}`,
       overflow: "hidden",
       margin: "auto",
       position: "absolute",
