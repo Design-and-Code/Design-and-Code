@@ -14,6 +14,7 @@ import { Pagination } from "@material-ui/lab";
 import EventsPast from "../../components/EventsPast";
 
 import events from "../../events.json"
+import ReadyToStart from "../../components/ReadyToStart";
 
 const useStyles = makeStyles(style);
 
@@ -96,6 +97,7 @@ function EventsPage() {
         </Typography>
 
       </Grid>
+      <ReadyToStart/>
     </div>
   );
 }

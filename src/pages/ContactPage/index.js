@@ -8,12 +8,13 @@ import { ContainedButton, OutlinedButton } from "../../components/Buttons";
 import { Grid, TextField, Typography, Card } from "@material-ui/core";
 
 import style from "./style";
-import SimpleAccordion from "../../components/Accordions";
+import ReadyToStart from "../../components/ReadyToStart";
+
+
 
 const useStyles = makeStyles(style);
 function ContactPage() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
 
   return (
     <div className={classes.contactPage}>
@@ -114,76 +115,7 @@ function ContactPage() {
         </div>
       </Grid>
 
-      {/* FAQ Section */}
-      <Grid container className={`${classes.section}`}>
-        <Grid container>
-          <Typography variant="h2" gutterBottom className={classes.title}>
-            FAQ's
-          </Typography>
-          <Grid container xs={12} sm={6} className={classes.faq_grid}>
-            <div className={classes.faq_grid1}>
-              <SimpleAccordion
-                index={0}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"How do i join as mentor?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={1}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"What benefits will i get after joining the community?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={2}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"What benefits will i get after joining the community?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-            </div>
-          </Grid>
-          <Grid container xs={12} sm={6} className={classes.faq_grid}>
-            <div className={classes.faq_grid1}>
-              <SimpleAccordion
-                index={3}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"Do i need to change my name?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={4}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"How to contact any moderators regarding an issue?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={5}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"How to contact any moderators regarding an issue?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-            </div>
-          </Grid>
-        </Grid>
-      </Grid>
+      <ReadyToStart/>
     </div>
   );
 }
