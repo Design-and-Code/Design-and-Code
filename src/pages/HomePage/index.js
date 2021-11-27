@@ -39,10 +39,10 @@ function HomePage() {
               target="_blank"
               size="large"
             >
-              JOIN US
+              JOIN DISCORD
             </ContainedButton>
             <OutlinedButton href="/about" size="large">
-              ABOUT US
+              PARTNERSHIP
             </OutlinedButton>
           </div>
         </div>

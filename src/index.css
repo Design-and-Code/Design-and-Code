@@ -64,9 +64,13 @@ code {
 .rsvp-outer > .container-btns {
   width: 100% ;
 }
-@media only screen and (min-width: 992px) {
+.event-header > .container-btns{
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 992px) {
   .event-header > .container-btns{
     margin: auto;
+    margin-top: 1rem;
   }
 }
 

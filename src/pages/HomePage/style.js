@@ -56,6 +56,7 @@ export default function styles(theme) {
       [theme.breakpoints.down("sm")]: {
          gap: 18,
       },
+      flexWrap:"wrap"
     },
     categoriesSection: {
       // [theme.breakpoints.down("sm")]: {
