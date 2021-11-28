@@ -19,6 +19,7 @@ import Guideline from "../../components/Guideline";
 import Bot from "../../components/Bot";
 import VerticalTabs from "../../components/VerticalTabs";
 import FullWidthTabs from "../../components/FullWidthTabs";
+import ReadyToStart from "../../components/ReadyToStart";
 
 const useStyles = makeStyles(style);
 function HowToUsePage() {
@@ -76,7 +77,7 @@ function HowToUsePage() {
         <Bot number={6} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />
         <Bot number={7} description="Group Coaching Calls & Co-working sessions Group Coaching Calls & Co-working sessions" />  
       </Grid>
-      
+      <ReadyToStart/>
     </div>
   );
 }

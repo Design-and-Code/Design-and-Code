@@ -14,6 +14,7 @@ import Member from "../../components/Member";
 import aboutIllustration from "../../assets/illustrations/aboutIllustration.svg";
 import image from "../../assets/placeholders/partner.png";
 import Partner from "../../components/Partner";
+import ReadyToStart from "../../components/ReadyToStart";
 
 const useStyles = makeStyles(style);
 function AboutPage() {
@@ -152,6 +153,7 @@ function AboutPage() {
           JOIN DISCORD
         </ContainedButton>
       </Grid>
+      <ReadyToStart/>
     </div>
   );
 }
