@@ -73,6 +73,9 @@ export default function styles(theme) {
     sponsors: {
       textAlign: "center",
       margin: "0",
+      justifyContent: 'center',
+      alignItems: 'stretch',
+      gap: '30px'
     },
   };
 }

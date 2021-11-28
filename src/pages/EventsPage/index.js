@@ -70,7 +70,7 @@ function EventsPage() {
       <Grid
         container
         spacing={3}
-        gutterBottom
+        className={classes.pastEventBox}
       >  
  
         {
