@@ -13,6 +13,7 @@ import style from "./style";
 import Member from "../../components/Member";
 import image from "../../assets/placeholders/Rectangle 1035.png";
 import Links from "../../components/Links";
+import ReadyToStart from "../../components/ReadyToStart";
 const useStyles = makeStyles(style);
 function AboutPage() {
   const classes = useStyles(),
@@ -116,6 +117,7 @@ function AboutPage() {
           return <Member {...item} />;
         })}
       </Grid>
+      <ReadyToStart/>
     </div>
   );
 }
