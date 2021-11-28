@@ -136,23 +136,6 @@ function AboutPage() {
       </Grid>
 
       {/* Ready to start Journey section */}
-      <Grid
-        container
-        className={`${classes.section} ${classes.journeySection}`}
-      >
-        <Typography variant="h3" gutterBottom className={classes.subtitle}>
-          Ready to start your journey?
-        </Typography>
-
-        <ContainedButton
-          size="large"
-          href="https://discord.gg/druweDMn3s"
-          target="_blank"
-          className={classes.btn}
-        >
-          JOIN DISCORD
-        </ContainedButton>
-      </Grid>
       <ReadyToStart/>
     </div>
   );
