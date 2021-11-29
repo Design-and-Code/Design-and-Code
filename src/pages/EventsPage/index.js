@@ -70,7 +70,7 @@ function EventsPage() {
       <Grid
         container
         spacing={3}
-        gutterBottom
+        className={classes.pastEventBox}
       >  
  
         {
@@ -83,20 +83,6 @@ function EventsPage() {
       </Grid>
 
       {/*<Pagination count={10} style={{display:'flex',justifyContent:'center'}} variant="outlined" shape="rounded" {}/>*/}
-
-      {/* Ready to start Journey section */}
-      
-      
-
-      <Grid
-        container
-        className={`${classes.section} ${classes.journeySection}`}
-      >
-        <Typography variant="h3" gutterBottom className={classes.subtitle}>
-          Ready to start your journey? TO BE REPLACED
-        </Typography>
-
-      </Grid>
       <ReadyToStart/>
     </div>
   );

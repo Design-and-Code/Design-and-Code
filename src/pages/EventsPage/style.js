@@ -106,5 +106,8 @@ export default function styles(theme) {
     linkToAbout: {
       margin: "auto",
     },
+    pastEventBox: {
+      marginBottom: '2rem',
+    },  
   };
 }
