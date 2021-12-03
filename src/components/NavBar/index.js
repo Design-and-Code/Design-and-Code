@@ -61,14 +61,14 @@ function NavBar(props) {
         style={
           trigger
             ? {
-                background:
-                  createMuiTheme(darkTheme).palette.primary.backgroundBlurColor,
-                backdropFilter: "blur(20px)",
-              }
+              background:
+                createMuiTheme(darkTheme).palette.primary.backgroundBlurColor,
+              backdropFilter: "blur(20px)",
+            }
             : {
-                background: `transparent`,
-                backdropFilter: "none",
-              }
+              background: `transparent`,
+              backdropFilter: "none",
+            }
         }
       >
         <Container className={classes.navBarBackground} maxWidth="lg">
@@ -110,8 +110,7 @@ function NavBar(props) {
                 <Hidden smDown>
                   <ContainedButton
                     href="https://discord.gg/druweDMn3s"
-                    target="_blank"
-                  >
+                    target="_blank">
                     Join Us
                   </ContainedButton>
                 </Hidden>
