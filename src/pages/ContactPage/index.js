@@ -35,8 +35,9 @@ function ContactPage() {
               className={classes.contactForm}
               noValidate
               autoComplete="off"
-              action="https://send.pageclip.co/YdGxpygGrp1382nKuMECQ3jnOBidvZmG/designandcode"
+              action="https://formsubmit.co/designandcode.community@gmail.com"
               method="Post"
+              required
             >
               <TextField
                 classes={{ root: classes.textFieldOutline }}
@@ -44,6 +45,7 @@ function ContactPage() {
                 variant="outlined"
                 label="Name"
                 name="name"
+                required
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
@@ -51,6 +53,7 @@ function ContactPage() {
                 variant="outlined"
                 label="Email"
                 name="email"
+                required
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
@@ -58,6 +61,7 @@ function ContactPage() {
                 variant="outlined"
                 label="Subject"
                 name="subject"
+                required
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
@@ -67,7 +71,13 @@ function ContactPage() {
                 multiline
                 rows={4}
                 name="message"
+                required
               />
+              <input type="hidden" name="_cc" value="devrajchatribin9978@gmail.com" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_subject" value="Contact Form | Design and Code" />
+              <input type="hidden" name="_next" value="https://designandcode.netlify.app/contact" />
               <ContainedButton
                 type="Submit"
                 size="large"
