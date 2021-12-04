@@ -130,7 +130,7 @@ function HomePage() {
       {/* Videos Section */}
       <Grid container className={`${classes.section} ${classes.videoSection}`}>
         <Grid container xs={12}>
-          <iframe
+          {/* <iframe
             width="560"
             height="680"
             className={classes.video}
@@ -139,22 +139,19 @@ function HomePage() {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
+          <iframe className={`${classes.discord}`} title="discord" src="https://e.widgetbot.io/channels/813660012001624124/813663619195207721" height="600"
+            width="100%" frameborder="0" border="0" cellspacing="0"></iframe>
           <Typography
             variant="subtitle1"
             className={`${classes.videoDesc} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
           >
-            Responsive Colors Landing Page, a project that we've been working on
-            so that people can easily get inspiration about colors for their
-            website. Very Easy to make. I would soon be making tutorials about
-            Python and Java. If You have any problem in coding, be it web
-            designing or algorithms, mention down in the comments down below.
-            Filmed with Microsoft PowerPoint 2013 in built screen recorder at
-            720p HD.
+            Design and Code is a global community where anyone can learn and network with fellow developers and designers! Our main motive is learning and growing together. We share awesome resources, job opportunities, referrals, events, freebies, and mentor students everything for free!! 🔥
+            We are sure you'll have a great learning experience along with us. Looking forward to see you there! 😀
           </Typography>
         </Grid>
       </Grid>
-      <FaqSection/>
+      <FaqSection />
       <ReadyToStart />
     </div>
   );

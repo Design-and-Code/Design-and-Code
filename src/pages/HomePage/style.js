@@ -76,6 +76,13 @@ export default function styles(theme) {
     },
     videoDesc: {
       marginTop: 40,
+      textAlign: "center"
     },
+    discord: {
+      borderRadius: "8px",
+      [theme.breakpoints.down("sm")]: {
+        height: "650px"
+      },
+    }
   };
 }
