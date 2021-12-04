@@ -35,7 +35,7 @@ function ContactPage() {
               className={classes.contactForm}
               noValidate
               autoComplete="off"
-              action="https://send.pageclip.co/fDpA1SYkXt2e0wrGgAES98fgWowcXje1/Design-and-Code"
+              action="https://send.pageclip.co/YdGxpygGrp1382nKuMECQ3jnOBidvZmG/designandcode"
               method="Post"
             >
               <TextField
