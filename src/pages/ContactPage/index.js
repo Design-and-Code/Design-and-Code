@@ -10,8 +10,6 @@ import { Grid, TextField, Typography, Card } from "@material-ui/core";
 import style from "./style";
 import ReadyToStart from "../../components/ReadyToStart";
 
-
-
 const useStyles = makeStyles(style);
 function ContactPage() {
   const classes = useStyles();
@@ -33,24 +31,33 @@ function ContactPage() {
             and we'll get back to you
           </Typography>
           <Grid container className={classes.contactGrid}>
-            <form className={classes.contactForm} noValidate autoComplete="off">
+            <form
+              className={classes.contactForm}
+              noValidate
+              autoComplete="off"
+              action="https://send.pageclip.co/YdGxpygGrp1382nKuMECQ3jnOBidvZmG/designandcode"
+              method="Post"
+            >
               <TextField
                 classes={{ root: classes.textFieldOutline }}
                 id="outlined-basic"
                 variant="outlined"
                 label="Name"
+                name="name"
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
                 id="outlined-basic"
                 variant="outlined"
                 label="Email"
+                name="email"
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
                 id="outlined-basic"
                 variant="outlined"
                 label="Subject"
+                name="subject"
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
@@ -59,8 +66,13 @@ function ContactPage() {
                 label="Message"
                 multiline
                 rows={4}
+                name="message"
               />
-              <ContainedButton size="large" className={classes.btn}>
+              <ContainedButton
+                type="Submit"
+                size="large"
+                className={classes.btn}
+              >
                 SUBMIT
               </ContainedButton>
             </form>
@@ -115,7 +127,7 @@ function ContactPage() {
         </div>
       </Grid>
 
-      <ReadyToStart/>
+      <ReadyToStart />
     </div>
   );
 }
