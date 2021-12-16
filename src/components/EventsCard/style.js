@@ -1,22 +1,43 @@
 export default function styles(theme) {
   return {
     eventsCard: {
-      width: 392,
-      height: 480,
       backgroundColor: theme.palette.primary.background2,
       borderRadius: 10,
-      marginBottom: "4rem",
+      marginBottom: "1rem",
+      overflow:'hidden'
     },
     eventName: {
       color: theme.palette.text.primary,
-      padding: "1rem 0 0 1rem",
+    },
+    eventContent: {
+      padding: "1rem",
+      display:'flex',
+      flexDirection:'column'
+    },
+    rvspButton: {
+      flex:1,
+      fontSize:'1rem',
+      width:'100%'
+    },
+    bannerOuter:{
+      borderTopLeftRadius: 10,
+      borderTopRightRadius: 10,
+      height:'fit-content',
+      overflow:'hidden'
     },
     banner: {
-        borderTopLeftRadius: 10,
-        borderTopRightRadius: 10,
+        width:'100%',
+        objectFit:'contain',
+        transition:'0.5s',
+        
     },
     time: {
         fontSize: "0.8rem"
+    },
+    eventBox: {
+      marginBottom:'1rem',
+      display:'flex',
+      flexWrap:'wrap'
     }
   };
 }

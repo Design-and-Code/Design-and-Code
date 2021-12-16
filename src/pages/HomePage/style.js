@@ -11,7 +11,7 @@ export default function styles(theme) {
       width: "100%",
       textAlign: "center",
 
-      ...theme.palette.text.gradient
+      ...theme.palette.text.gradient,
     },
     subtitle: {
       display: "block",
@@ -54,8 +54,9 @@ export default function styles(theme) {
       gap: 40,
       marginTop: 54,
       [theme.breakpoints.down("sm")]: {
-         gap: 18,
+        gap: 18,
       },
+      flexWrap: "wrap",
     },
     categoriesSection: {
       // [theme.breakpoints.down("sm")]: {
@@ -75,6 +76,13 @@ export default function styles(theme) {
     },
     videoDesc: {
       marginTop: 40,
+      textAlign: "center"
     },
+    discord: {
+      borderRadius: "8px",
+      [theme.breakpoints.down("sm")]: {
+        height: "650px"
+      },
+    }
   };
 }

@@ -8,12 +8,11 @@ import { ContainedButton, OutlinedButton } from "../../components/Buttons";
 import { Grid, TextField, Typography, Card } from "@material-ui/core";
 
 import style from "./style";
-import SimpleAccordion from "../../components/Accordions";
+import ReadyToStart from "../../components/ReadyToStart";
 
 const useStyles = makeStyles(style);
 function ContactPage() {
   const classes = useStyles();
-  const [expanded, setExpanded] = React.useState(false);
 
   return (
     <div className={classes.contactPage}>
@@ -32,24 +31,37 @@ function ContactPage() {
             and we'll get back to you
           </Typography>
           <Grid container className={classes.contactGrid}>
-            <form className={classes.contactForm} noValidate autoComplete="off">
+            <form
+              className={classes.contactForm}
+              noValidate
+              autoComplete="off"
+              action="https://formsubmit.co/designandcode.community@gmail.com"
+              method="Post"
+              required
+            >
               <TextField
                 classes={{ root: classes.textFieldOutline }}
                 id="outlined-basic"
                 variant="outlined"
                 label="Name"
+                name="name"
+                required
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
                 id="outlined-basic"
                 variant="outlined"
                 label="Email"
+                name="email"
+                required
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
                 id="outlined-basic"
                 variant="outlined"
                 label="Subject"
+                name="subject"
+                required
               />
               <TextField
                 classes={{ root: classes.textFieldOutline }}
@@ -58,8 +70,19 @@ function ContactPage() {
                 label="Message"
                 multiline
                 rows={4}
+                name="message"
+                required
               />
-              <ContainedButton size="large" className={classes.btn}>
+              <input type="hidden" name="_cc" value="devrajchatribin9978@gmail.com" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_subject" value="Contact Form | Design and Code" />
+              <input type="hidden" name="_next" value="https://designandcode.netlify.app/contact" />
+              <ContainedButton
+                type="Submit"
+                size="large"
+                className={classes.btn}
+              >
                 SUBMIT
               </ContainedButton>
             </form>
@@ -114,76 +137,7 @@ function ContactPage() {
         </div>
       </Grid>
 
-      {/* FAQ Section */}
-      <Grid container className={`${classes.section}`}>
-        <Grid container>
-          <Typography variant="h2" gutterBottom className={classes.title}>
-            FAQ's
-          </Typography>
-          <Grid container xs={12} sm={6} className={classes.faq_grid}>
-            <div className={classes.faq_grid1}>
-              <SimpleAccordion
-                index={0}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"How do i join as mentor?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={1}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"What benefits will i get after joining the community?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={2}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"What benefits will i get after joining the community?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-            </div>
-          </Grid>
-          <Grid container xs={12} sm={6} className={classes.faq_grid}>
-            <div className={classes.faq_grid1}>
-              <SimpleAccordion
-                index={3}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"Do i need to change my name?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={4}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"How to contact any moderators regarding an issue?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-              <SimpleAccordion
-                index={5}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                title={"How to contact any moderators regarding an issue?"}
-                description={
-                  "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
-                }
-              />
-            </div>
-          </Grid>
-        </Grid>
-      </Grid>
+      <ReadyToStart />
     </div>
   );
 }

@@ -13,7 +13,10 @@ import style from "./style";
 import Member from "../../components/Member";
 import aboutIllustration from "../../assets/illustrations/aboutIllustration.svg";
 import image from "../../assets/placeholders/partner.png";
-import Partner from "../../components/Partner";
+import Partner from "../../components/PartnersAndSponsors";
+import ReadyToStart from "../../components/ReadyToStart";
+import partners from "../../components/PartnersAndSponsors/partners";
+import sponsors from "../../components/PartnersAndSponsors/sponsors";
 
 const useStyles = makeStyles(style);
 function AboutPage() {
@@ -72,86 +75,49 @@ function AboutPage() {
       {/* Partners and sponsors section*/}
       <Grid container className={`${classes.section}`}>
         <Typography variant="h2" gutterBottom className={classes.subtitle}>
-          Our Partner & Sponsors
+          Our Partners
         </Typography>
-        <Grid container spacing={2} className={classes.sponsors}>
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
-          <Partner
-            xs={6}
-            sm={4}
-            md={3}
-            image={image}
-            name={"Give my certificate"}
-          />
+        <Grid 
+          container 
+          spacing={2} 
+          className={classes.sponsors}
+        >
+          {partners.map(partner => (
+            <Partner
+              xs={6}
+              sm={4}
+              md={3}
+              key={partner.id}
+              image={partner.logo}
+              name={partner.name}
+            />
+          ))}
         </Grid>
       </Grid>
 
-      {/* Ready to start Journey section */}
-      <Grid
-        container
-        className={`${classes.section} ${classes.journeySection}`}
-      >
-        <Typography variant="h3" gutterBottom className={classes.subtitle}>
-          Ready to start your journey?
+      <Grid container className={`${classes.section}`}>
+        <Typography variant="h2" gutterBottom className={classes.subtitle}>
+          Our Sponsors
         </Typography>
-
-        <ContainedButton
-          size="large"
-          href="https://discord.gg/druweDMn3s"
-          target="_blank"
-          className={classes.btn}
+        <Grid 
+          container 
+          spacing={2} 
+          className={classes.sponsors}
         >
-          JOIN DISCORD
-        </ContainedButton>
+          {sponsors.map(sponsor => (
+            <Partner
+              xs={6}
+              sm={4}
+              md={3}
+              key={sponsor.id}
+              image={sponsor.logo}
+              name={sponsor.name}
+            />
+          ))}
+        </Grid>
       </Grid>
+      {/* Ready to start Journey section */}
+      <ReadyToStart/>
     </div>
   );
 }

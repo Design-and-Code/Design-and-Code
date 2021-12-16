@@ -10,6 +10,10 @@ export default function styles(theme) {
         textAlign: "center",
       },
     },
+    journeySection: {
+      textAlign:'center',
+      
+    },
     title: {
       display: "block",
       width: "100%",
@@ -22,8 +26,10 @@ export default function styles(theme) {
     subtitle: {
       display: "block",
       width: "100%",
+      fontWeight:'600',
       ...theme.palette.text.gradient,
-      marginBottom: "2rem"
+      marginBottom: "2rem",
+      
     },
     description: {
       display: "block",
@@ -36,6 +42,10 @@ export default function styles(theme) {
     },
     button:{
         marginTop: "1.5rem",
+        [theme.breakpoints.down("sm")]: {
+          margin:'auto'
+          
+        },
     },
     foundDesc: {
       marginTop: theme.spacing(2),
@@ -96,5 +106,8 @@ export default function styles(theme) {
     linkToAbout: {
       margin: "auto",
     },
+    pastEventBox: {
+      marginBottom: '2rem',
+    },  
   };
 }
