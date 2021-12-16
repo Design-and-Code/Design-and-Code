@@ -94,16 +94,16 @@ function Footer() {
           <Grid md={4}>
             <div className={classes.socialLinks}>
               <a href="https://linkedin.com/company/designandcode">
-                <img src={./public/linkedInIcon} alt="Linked in icon" />
+                <img src={../src/linkedInIcon} alt="Linked in icon" />
               </a>
               <a href="https://instagram.com/company/designandcode.community">
-                <img src={./public/instagramIcon} alt="Instagram icon" />
+                <img src={../src/instagramIcon} alt="Instagram icon" />
               </a>
               <a href="https://www.youtube.com/channel/UCd4E0oe8MtnZu_48WvYeLMw">
-                <img src={./public/youtubeIcon} alt="YouTube icon" />
+                <img src={../src/youtubeIcon} alt="YouTube icon" />
               </a>
               <a href="https://designandcode.us">
-                <img src={./public/websiteIcon} alt="Website icon" />
+                <img src={../src/websiteIcon} alt="Website icon" />
               </a>
             </div>
           </Grid>
