@@ -64,12 +64,13 @@ function AboutPage() {
                   variant="subtitle2"
                   className={`${classes.foundDesc} ${classes.description__color}`}
                 >
-                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                  amet sint. Velit officia consequat duis enim velit mollit.
-                  Exercitation veniam consequat sunt nostrud amet. Amet minim
-                  mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-                  Velit officia consequat duis enim velit mollit. Exercitation
-                  veniam consequat sunt nostrud amet.
+                  I take immense pleasure to welcome you to Design and Code. We
+                  offer an inclusive and holistic approach to learning
+                  technology and related fields. Over the time, I have seen the
+                  team grow through the various experiences of learning and
+                  networking provided here. We hope to expand this community so
+                  that we can impact as many people as possible in the coming
+                  future.
                 </Typography>
                 <div>
                   <Links
@@ -117,7 +118,7 @@ function AboutPage() {
           return <Member {...item} />;
         })}
       </Grid>
-      <ReadyToStart/>
+      <ReadyToStart />
     </div>
   );
 }
