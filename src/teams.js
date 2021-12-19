@@ -276,7 +276,7 @@ export const developersInfo = [
     Name: "Swaroop Rajwal",
     Responsibility: "Frontend Developer",
     AboutMe:
-      "Frontend Web Developer",
+      "I am a computer science and fitness enthusiast.",
     emailId: "swaroop.rajwal18@gmail.com",
     linkedinUrl: "https://www.linkedin.com/in/swaroop-rajwal-a606761b5/",
     instagramUrl: "https://www.instagram.com/swaroop_rajwal/",

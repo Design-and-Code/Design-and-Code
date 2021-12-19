@@ -17,10 +17,12 @@ import {
 
 //Importing assets
 import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.svg";
-import linkedInIcon from "../../assets/social-icons/LinkedInIcon.svg";
-import instagramIcon from "../../assets/social-icons/InstagramIcon.svg";
-import youtubeIcon from "../../assets/social-icons/YouTubeIcon.svg";
-import websiteIcon from "../../assets/social-icons/WebsiteIcon.svg";
+import emailIcon from "../../assets/social-icons/BgEmailIcon.svg";
+import twitterIcon from "../../assets/social-icons/BgTwitterIcon.svg";
+import linkedinIcon from "../../assets/social-icons/BgLinkedinIcon.svg";
+import instagramIcon from "../../assets/social-icons/BgInstagramIcon.svg";
+import githubIcon from "../../assets/social-icons/BgGithubIcon.svg";
+import youtubeIcon from "../../assets/social-icons/BgYouTubeIcon.svg";
 
 const useStyles = makeStyles(style);
 function Footer() {
@@ -93,10 +95,44 @@ function Footer() {
         <Grid container className={classes.footerEnd}>
           <Grid md={4}>
             <div className={classes.socialLinks}>
-              <img src={linkedInIcon} alt="Linked in icon" />
-              <img src={instagramIcon} alt="Instagram icon" />
-              <img src={youtubeIcon} alt="YouTube icon" />
-              <img src={websiteIcon} alt="Website icon" />
+              <a href="mailto:designandcode.community@gmail.com">
+                <img src={emailIcon} alt="Email icon" />
+              </a>
+              <a
+                href="https://twitter.com/DesignandCode3"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={twitterIcon} alt="Twitter icon" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/designandcode/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={linkedinIcon} alt="Linkedin icon" />
+              </a>
+              <a
+                href="https://www.instagram.com/designandcode.community/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={instagramIcon} alt="Instagram icon" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCd4E0oe8MtnZu_48WvYeLMw?sub_confirmation=1"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={youtubeIcon} alt="YouTube icon" />
+              </a>
+              <a
+                href="https://github.com/Design-and-Code"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={githubIcon} alt="GitHub icon" />
+              </a>
             </div>
           </Grid>
           <Grid md={4} xs={12}>
