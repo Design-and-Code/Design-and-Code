@@ -19,6 +19,7 @@ function Member({
   twitterUrl,
   githubUrl,
   websiteUrl,
+  customStyle,
 }) {
   console.log(image);
   const classes = useStyles();
@@ -31,7 +32,7 @@ function Member({
     return () => window.removeEventListener("resize", updateMedia);
   });
   return (
-    <Grid item className={classes.member} xs={12} sm={6} md={4}>
+    <Grid item style={customStyle} className={classes.member} xs={12} sm={6} md={4}>
       <div className={classes.infoHolder}>
         <div className={classes.imageWrapper}>
           <img className={classes.image} src={image} alt="Member" />

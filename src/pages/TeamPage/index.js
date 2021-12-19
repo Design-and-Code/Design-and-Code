@@ -5,6 +5,10 @@ import { useHistory } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import { OutlinedButton } from "../../components/Buttons";
 
+// Importing Carousel components
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 //Importing Components
 import { Grid, Typography } from "@material-ui/core";
 import { teamInfo, developersInfo } from "../../teams";
@@ -14,7 +18,28 @@ import Member from "../../components/Member";
 import image from "../../assets/placeholders/Rectangle 1035.png";
 import Links from "../../components/Links";
 import ReadyToStart from "../../components/ReadyToStart";
+
 const useStyles = makeStyles(style);
+
+const carouselStyling = {
+  superLargeDesktop: {
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 970 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 970, min: 600 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 600, min: 0 },
+    items: 1,
+  },
+};
+
 function AboutPage() {
   const classes = useStyles(),
     history = useHistory();
@@ -86,9 +111,7 @@ function AboutPage() {
           </div>
         </div>
       </Grid>
-
       {/* Team Section */}
-
       <Grid
         container
         className={`${classes.section} ${classes.featuresSection}`}
@@ -98,26 +121,29 @@ function AboutPage() {
           return <Member {...item} />;
         })}
       </Grid>
-
       {/* Developer Section */}
-
-      <Typography variant="h3" gutterBottom className={classes.title}>
-        Developers
-      </Typography>
-      <Typography variant="h6" gutterBottom className={classes.description}>
-        Meet the spirited team that worked behind the scenes to establish this
-        platform.
+      <Typography variant="h3" gutterBottom className={classes.title} style={{ marginBottom: "70px" }}>
+        Website Team
       </Typography>
 
-      <Grid
-        container
-        className={`${classes.section} ${classes.featuresSection}`}
-        spacing={4}
-      >
-        {developersInfo.map((item, index) => {
-          return <Member {...item} />;
-        })}
-      </Grid>
+      <div style={{ marginBottom: "120px" }}>
+        <Carousel
+          responsive={carouselStyling}
+        >
+          {developersInfo.map((item, index) => {
+            return (
+              <Member
+                {...item}
+                customStyle={{
+                  minWidth: "95%",
+                  minHeight: "100%",
+                }}
+              />
+            );
+          })}
+        </Carousel>
+      </div>
+
       <ReadyToStart />
     </div>
   );

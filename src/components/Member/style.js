@@ -7,6 +7,8 @@ export default function style(theme) {
       position: "relative",
       marginTop: 75,
       flexGrow: 100,
+      display: "flex",
+      flexDirection: "column"
     },
     role: {
       ...theme.palette.text.gradient,
@@ -19,6 +21,7 @@ export default function style(theme) {
       width: "100%",
       objectFit: "cover",
       objectPosition: "center",
+      pointerEvents: "none"
     },
     imageWrapper: {
       height: "150px",
@@ -44,6 +47,7 @@ export default function style(theme) {
       flexDirection: "column",
       alignItems: "stretch",
       justifyContent: "center",
+      userSelect: "none"
     },
     infoBox: {
       width: "100%",
@@ -51,6 +55,7 @@ export default function style(theme) {
       padding: `${theme.spacing(2)}px ${theme.spacing(3)}px`,
       display: "flex",
       flexDirection: "column",
+      flexGrow: 100
     },
   };
 }
