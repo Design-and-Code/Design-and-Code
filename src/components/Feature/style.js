@@ -23,7 +23,9 @@ export default function style(theme) {
       width: 150,
       borderRadius: 9999,
       background:
-        "linear-gradient(180deg, rgba(35, 39, 42, 0.05) 0%, #1C1E1F 100%), #2C2F33",
+        "linear-gradient(165.45deg, #2A2D31 7.13%, #2A2D31 7.13%, #282B2F 55.5%, #1F2224 91.72%)",
+      boxShadow:
+        "inset 0px -10px 20px 2px rgba(0, 0, 0, 0.3), inset 0px 10px 20px 2px rgba(255, 255, 255, 0.1)",
       [theme.breakpoints.down("sm")]: {
         height: 100,
         width: 100,
@@ -31,7 +33,8 @@ export default function style(theme) {
     },
     image: {
       width: "100%",
-      padding: "20%"
+      padding: "20%",
+      pointerEvents: "none",
     },
     title: {
       color: theme.palette.text.primary,

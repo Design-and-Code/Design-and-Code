@@ -8,14 +8,25 @@ export default function style(theme) {
       marginBottom: 20,
     },
     branding: {
-      display: "grid",
-      gridTemplateColumns: "auto 1fr",
+      display: "flex",
+      gap: 20,
+    },
+    brandingInfo : {
+      display:"flex",
+      flexDirection: "column"
+    },
+    brandingLogo: {
+      filter: "drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.25))",
     },
     brandingTitle: {
       ...theme.palette.text.gradient,
+      whiteSpace: "nowrap",
+      textTransform: "uppercase",
+      fontWeight: 600,
     },
     brandingDesc: {
       color: theme.palette.text.secondary,
+      whiteSpace: "nowrap",
     },
     getInTouchTitle: {
       color: theme.palette.text.primary,
@@ -49,10 +60,13 @@ export default function style(theme) {
     },
     footerSectionGrid: {
       textAlign: "right",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "flex-end",
     },
     footerSectionContainer: {
       verticalAlign: "center",
-      width: "100%",
+      width: "auto",
       justifyContent: "right",
       paddingTop: "2.5%",
     },
