@@ -22,6 +22,7 @@ export default function styles(theme) {
       display: "block",
       maxWidth: "40pc",
       textAlign: "center",
+      marginBottom: "4rem",
       color: theme.palette.text.secondary,
     },
     foundDesc: {
@@ -41,7 +42,6 @@ export default function styles(theme) {
       display: "flex",
       alignItems: "center",
       background: theme.palette.primary.backgroundBlurColor,
-      marginTop: "4rem",
       borderRadius: "8px",
       padding: `${theme.spacing(3)}px ${theme.spacing(8)}px`,
       [theme.breakpoints.down("sm")]: {
@@ -62,10 +62,9 @@ export default function styles(theme) {
       fontWeight: "600",
     },
     image: {
-      width: "100%",
-      height: "100%",
-      border: "3px solid grey",
-      objectFit: "contain",
+      width: 250,
+      height: 250,
+      objectFit: "conver",
       borderRadius: "50%",
       [theme.breakpoints.down("sm")]: {
         height: 150,
