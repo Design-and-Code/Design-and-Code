@@ -34,11 +34,13 @@ function Footer() {
     <div className={classes.footerBackground}>
       <Container maxWidth="lg">
         <Grid container className={classes.footerContent}>
-          <Grid item md={4} xs={12}>
+          <Grid item>
             <div className={classes.branding}>
-              <div className={classes.brandingLogo}>
-                <img src={brandingLogo} alt="branding-logo" />
-              </div>
+              <img
+                src={brandingLogo}
+                className={classes.brandingLogo}
+                alt="branding-logo"
+              />
               <div className={classes.brandingInfo}>
                 <Typography variant="h4" className={classes.brandingTitle}>
                   Design And Code
@@ -52,31 +54,33 @@ function Footer() {
               </div>
             </div>
           </Grid>
-          <Grid item md={8} xs={12} className={classes.footerSectionGrid}>
+          <Grid item className={classes.footerSectionGrid}>
             <Grid container className={classes.footerSectionContainer}>
-              {routesData.map((data, index) => (
-                <div key={`link-index-${index}`}>
-                  {data.showOnHeader && (
-                    <Link to={data.pageURL}>
-                      <Typography
-                        variant="subtitle1"
-                        className={`${classes.footerSectionTitle} ${
-                          index !== routesData.length - 1 &&
-                          classes.footerSectionBorder
-                        }`}
-                      >
-                        {data.pageName}
-                      </Typography>
-                    </Link>
-                  )}
-                </div>
-              ))}
+              {routesData.map((data, index) => {
+                return (
+                  data.showOnHeader && (
+                    <div key={`link-index-${index}`}>
+                      <Link to={data.pageURL}>
+                        <Typography
+                          variant="subtitle1"
+                          className={`${classes.footerSectionTitle} ${
+                            index !== routesData.length - 1 &&
+                            classes.footerSectionBorder
+                          }`}
+                        >
+                          {data.pageName}
+                        </Typography>
+                      </Link>
+                    </div>
+                  )
+                );
+              })}
             </Grid>
           </Grid>
         </Grid>
         <Divider className={classes.divider} />
         <Grid container className={classes.footerEnd}>
-          <Grid md={4}>
+          <Grid md={6}>
             <div className={classes.socialLinks}>
               <a href="mailto:designandcode.community@gmail.com">
                 <img src={emailIcon} alt="Email icon" />
@@ -118,18 +122,18 @@ function Footer() {
               </a>
             </div>
           </Grid>
-          <Grid md={4} xs={12}>
-            <Typography variant="subtitle1" className={classes.footerLinks}>
-              @Copyright {new Date().getFullYear()}. All rights reserved.
-            </Typography>
-          </Grid>
           <Hidden smDown>
-            <Grid md={4} xs={2}>
+            <Grid md={6} xs={2}>
               <Typography variant="subtitle1" className={classes.joinUsBtn}>
                 <ContainedButton size="large">JOIN US</ContainedButton>
               </Typography>
             </Grid>
           </Hidden>
+        </Grid>
+        <Grid>
+          <Typography variant="subtitle1" className={classes.footerLinks}>
+            @Copyright {new Date().getFullYear()}. All rights reserved.
+          </Typography>
         </Grid>
       </Container>
     </div>
