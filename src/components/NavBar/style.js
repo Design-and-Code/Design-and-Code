@@ -2,7 +2,7 @@ export default function style(theme) {
   return {
     appBar: {
       boxShadow: "none",
-      transition: "0.7s"
+      transition: "0.3s",
     },
     navBar: {
       padding: "15px 0",
@@ -50,7 +50,7 @@ export default function style(theme) {
     listItem: {
       padding: "12px 16px",
       color: theme.palette.text.primary,
-      cursor: "default",
+      cursor: "pointer",
       "& *": {
         color: theme.palette.text.primary,
       },
@@ -60,7 +60,7 @@ export default function style(theme) {
     listItemHighlighted: {
       padding: "12px 16px",
       color: theme.palette.text.primary,
-      cursor: "default",
+      cursor: "pointer",
       "& *": {
         color: theme.palette.text.primary,
       },

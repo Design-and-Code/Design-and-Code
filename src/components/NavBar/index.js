@@ -83,7 +83,7 @@ function NavBar(props) {
               </Link>
             </Grid>
             <Grid container xs={9}>
-              <Hidden smDown>
+              <Hidden mdDown>
                 <div className={classes.navLinks}>
                   {routesData.map((data, index) => (
                     <div key={`link-index-${index}`}>
@@ -109,7 +109,7 @@ function NavBar(props) {
 
             <Grid container xs={2}>
               <div className={classes.joinDiscordBtn}>
-                <Hidden smDown>
+                <Hidden mdDown>
                   <ContainedButton
                     href="https://discord.gg/druweDMn3s"
                     target="_blank"
@@ -117,7 +117,7 @@ function NavBar(props) {
                     Join Us
                   </ContainedButton>
                 </Hidden>
-                <Hidden smUp>
+                <Hidden lgUp>
                   <IconButton
                     className={classes.menuBtn}
                     onClick={() => setDrawerOpen(!drawerOpen)}
@@ -158,7 +158,7 @@ function NavBar(props) {
             <>
               {data.showOnHeader && (
                 <>
-                  <Link to={data.pageURL}>
+                  <Link to={data.pageURL} onClick={() => setDrawerOpen(false)}>
                     <ListItem
                       button
                       focusVisible={false}
