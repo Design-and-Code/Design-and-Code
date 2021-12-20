@@ -15,8 +15,8 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemIcon,
-  ListItemText,
+  // ListItemIcon,
+  // ListItemText,
   Divider,
   useScrollTrigger,
   Typography,
@@ -33,11 +33,13 @@ import { ContainedButton } from "../Buttons";
 
 import { darkTheme, createMuiTheme } from "../../theme";
 
+import { CloseRounded } from "@material-ui/icons";
+
 const useStyles = makeStyles(style);
 function NavBar(props) {
   const classes = useStyles();
   const history = useHistory();
-  const { children, window } = props;
+  const { window } = props;
   const [pathname, setPathname] = useState(history.location.pathname),
     [drawerOpen, setDrawerOpen] = useState(false);
   const trigger = useScrollTrigger({
@@ -137,8 +139,16 @@ function NavBar(props) {
       >
         <List className={classes.mobileNav}>
           <ListItem>
+            <Typography
+              className={classes.closeIcon}
+              onClick={() => setDrawerOpen(false)}
+            >
+              <CloseRounded />
+            </Typography>
+          </ListItem>
+          <ListItem>
             <div className={classes.branding}>
-              <div className={classes.brandingLogo}>
+              <div className={classes.brandingLogoSidebar}>
                 <img src={brandingLogo} alt="branding-logo" />
               </div>
               <div className={classes.brandingInfo}>
@@ -187,6 +197,7 @@ function NavBar(props) {
               href="https://discord.gg/druweDMn3s"
               target="_blank"
               className={classes.mobileJoinDiscordBtn}
+              width="100%"
             >
               <Typography variant="h6">Join Discord</Typography>
             </ContainedButton>

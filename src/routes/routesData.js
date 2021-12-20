@@ -9,7 +9,6 @@ import {
   HomeRounded,
   InfoRounded,
   CodeRounded,
-  HelpRounded,
   EventRounded,
   GroupsRounded,
   ContactSupportRounded

@@ -10,7 +10,7 @@ import { ContainedButton } from "../../components/Buttons";
 import Card from "../../components/EventsCard";
 
 import style from "./style";
-import { Pagination } from "@material-ui/lab";
+// import { Pagination } from "@material-ui/lab";
 import EventsPast from "../../components/EventsPast";
 
 import events from "../../events.json"

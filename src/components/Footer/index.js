@@ -1,7 +1,7 @@
 import React from "react";
 
 import style from "./style";
-import { Link, useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import routesData from "../../routes/routesData";
 
@@ -125,7 +125,13 @@ function Footer() {
           <Hidden smDown>
             <Grid md={6} xs={2}>
               <Typography variant="subtitle1" className={classes.joinUsBtn}>
-                <ContainedButton size="large">JOIN US</ContainedButton>
+                <ContainedButton
+                  size="large"
+                  href="https://discord.gg/druweDMn3s"
+                  target="_blank"
+                >
+                  JOIN US
+                </ContainedButton>
               </Typography>
             </Grid>
           </Hidden>
