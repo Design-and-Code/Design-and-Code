@@ -61,24 +61,26 @@ function NavBar(props) {
         style={
           trigger
             ? {
-              background:
-                createMuiTheme(darkTheme).palette.primary.backgroundBlurColor,
-              backdropFilter: "blur(20px)",
-            }
+                background:
+                  createMuiTheme(darkTheme).palette.primary.backgroundBlurColor,
+                backdropFilter: "blur(20px)",
+              }
             : {
-              background: `transparent`,
-              backdropFilter: "none",
-            }
+                background: `transparent`,
+                backdropFilter: "none",
+              }
         }
       >
         <Container className={classes.navBarBackground} maxWidth="lg">
           <Grid container className={classes.navBar}>
             <Grid container xs={1}>
-              <img
-                className={classes.brandingLogo}
-                src={brandingLogo}
-                alt="branding-logo"
-              />
+              <Link to="home">
+                <img
+                  className={classes.brandingLogo}
+                  src={brandingLogo}
+                  alt="branding-logo"
+                />
+              </Link>
             </Grid>
             <Grid container xs={9}>
               <Hidden smDown>
@@ -110,7 +112,8 @@ function NavBar(props) {
                 <Hidden smDown>
                   <ContainedButton
                     href="https://discord.gg/druweDMn3s"
-                    target="_blank">
+                    target="_blank"
+                  >
                     Join Us
                   </ContainedButton>
                 </Hidden>
