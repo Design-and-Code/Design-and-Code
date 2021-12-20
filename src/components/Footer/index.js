@@ -1,6 +1,9 @@
 import React from "react";
 
 import style from "./style";
+import { Link, useHistory } from "react-router-dom";
+
+import routesData from "../../routes/routesData";
 
 //Importing components
 import { ContainedButton } from "../Buttons";
@@ -51,46 +54,23 @@ function Footer() {
           </Grid>
           <Grid item md={8} xs={12} className={classes.footerSectionGrid}>
             <Grid container className={classes.footerSectionContainer}>
-              <a href="/home">
-                <Typography
-                  variant="subtitle1"
-                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-                >
-                  Home
-                </Typography>
-              </a>
-              <a href="/about">
-                <Typography
-                  variant="subtitle1"
-                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-                >
-                  About
-                </Typography>
-              </a>
-              <a href="/events">
-                <Typography
-                  variant="subtitle1"
-                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-                >
-                  Events
-                </Typography>
-              </a>
-              <a href="/team">
-                <Typography
-                  variant="subtitle1"
-                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-                >
-                  Team
-                </Typography>
-              </a>
-              <a href="/contact">
-                <Typography
-                  variant="subtitle1"
-                  className={classes.footerSectionTitle}
-                >
-                  Contact
-                </Typography>
-              </a>
+              {routesData.map((data, index) => (
+                <div key={`link-index-${index}`}>
+                  {data.showOnHeader && (
+                    <Link to={data.pageURL}>
+                      <Typography
+                        variant="subtitle1"
+                        className={`${classes.footerSectionTitle} ${
+                          index !== routesData.length - 1 &&
+                          classes.footerSectionBorder
+                        }`}
+                      >
+                        {data.pageName}
+                      </Typography>
+                    </Link>
+                  )}
+                </div>
+              ))}
             </Grid>
           </Grid>
         </Grid>
