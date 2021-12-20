@@ -38,11 +38,15 @@ export default function style(theme) {
     },
     footerSectionTitle: {
       padding: "0 10px",
-      color: theme.palette.text.primary,
+      color: theme.palette.text.secondary,
       maxHeight: "fit-content",
+      lineHeight: "100%",
+      "&:hover": {
+        color: theme.palette.text.primary,
+      }
     },
     footerSectionBorder: {
-      borderRight: "1px solid white",
+      borderRight: `2px solid ${theme.palette.text.secondary}`,
     },
     footerLinks: {
       lineHeight: "60px",

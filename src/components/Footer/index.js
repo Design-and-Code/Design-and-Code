@@ -51,43 +51,46 @@ function Footer() {
           </Grid>
           <Grid item md={8} xs={12} className={classes.footerSectionGrid}>
             <Grid container className={classes.footerSectionContainer}>
-              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
-              <Typography
-                variant=""
-                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-              >
-                Home
-              </Typography>
-              {/* </Grid> */}
-              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
-              <Typography
-                variant=""
-                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-              >
-                About
-              </Typography>
-              {/* </Grid> */}
-              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
-              <Typography
-                variant=""
-                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-              >
-                Events
-              </Typography>
-              {/* </Grid> */}
-              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
-              <Typography
-                variant=""
-                className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
-              >
-                Team
-              </Typography>
-              {/* </Grid> */}
-              {/* <Grid item md={2} className={classes.footerSectionItem}> */}
-              <Typography variant="" className={classes.footerSectionTitle}>
-                Contact
-              </Typography>
-              {/* </Grid> */}
+              <a href="/home">
+                <Typography
+                  variant="subtitle1"
+                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
+                >
+                  Home
+                </Typography>
+              </a>
+              <a href="/about">
+                <Typography
+                  variant="subtitle1"
+                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
+                >
+                  About
+                </Typography>
+              </a>
+              <a href="/events">
+                <Typography
+                  variant="subtitle1"
+                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
+                >
+                  Events
+                </Typography>
+              </a>
+              <a href="/team">
+                <Typography
+                  variant="subtitle1"
+                  className={`${classes.footerSectionTitle} ${classes.footerSectionBorder}`}
+                >
+                  Team
+                </Typography>
+              </a>
+              <a href="/contact">
+                <Typography
+                  variant="subtitle1"
+                  className={classes.footerSectionTitle}
+                >
+                  Contact
+                </Typography>
+              </a>
             </Grid>
           </Grid>
         </Grid>
