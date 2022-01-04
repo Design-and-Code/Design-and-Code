@@ -75,7 +75,10 @@ export default function styles(theme) {
       margin: "0",
       justifyContent: 'center',
       alignItems: 'stretch',
-      gap: '30px'
+      gap: '30px',
+      [theme.breakpoints.down("xs")]: {
+        gap: '15px',
+      },
     },
   };
 }

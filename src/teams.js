@@ -204,6 +204,19 @@ export const teamInfo = [
     websiteUrl: "https://www.nimish-jain.com/",
     image: "https://i.imgur.com/GQ1P6Y8.png",
   },
+  {
+    Name: "Greeshma Medam",
+    Responsibility: "Discord Moderator",
+    AboutMe:
+      "I am an enthusiastic student with a keen interest in Web development and communities",
+    emailId: "greeshma290303@gmail.com",
+    linkedinUrl: "https://www.linkedin.com/in/m-greeshma/",
+    instagramUrl: "https://www.instagram.com/medam_greeshma/",
+    twitterUrl: "https://twitter.com/GreeshmaMedam",
+    githubUrl: "https://github.com/Greeshma2903",
+    websiteUrl: undefined,
+    image: "https://i.imgur.com/MfjMbhx.png",
+  },
   // {
   //   Name: "Trusha Neogi",
   //   Responsibility: "Graphic Designer",
