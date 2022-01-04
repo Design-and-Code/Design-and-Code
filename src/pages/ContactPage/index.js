@@ -25,7 +25,12 @@ function ContactPage() {
           <Typography variant="h6" gutterBottom className={classes.description}>
             If you have any questions, we would love to hear from you. Feel free
             to write us at{" "}
-            <a href="#" className={classes.link}>
+            <a
+              href="mailto:designandcode.community@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className={classes.link}
+            >
               designandcode.community@gmail.com
             </a>{" "}
             and we'll get back to you
@@ -73,11 +78,23 @@ function ContactPage() {
                 name="message"
                 required
               />
-              <input type="hidden" name="_cc" value="devrajchatribin9978@gmail.com" />
+              <input
+                type="hidden"
+                name="_cc"
+                value="devrajchatribin9978@gmail.com"
+              />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_subject" value="Contact Form | Design and Code" />
-              <input type="hidden" name="_next" value="https://designandcode.netlify.app/contact" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="Contact Form | Design and Code"
+              />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://designandcode.netlify.app/contact"
+              />
               <ContainedButton
                 type="Submit"
                 size="large"
