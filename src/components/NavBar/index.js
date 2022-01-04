@@ -113,7 +113,7 @@ function NavBar(props) {
               <div className={classes.joinDiscordBtn}>
                 <Hidden mdDown>
                   <ContainedButton
-                    href="https://discord.gg/druweDMn3s"
+                    href="https://discord.gg/gM3bG4rAU5"
                     target="_blank"
                   >
                     Join Us
@@ -194,7 +194,7 @@ function NavBar(props) {
           ))}
           <ListItem>
             <ContainedButton
-              href="https://discord.gg/druweDMn3s"
+              href="https://discord.gg/gM3bG4rAU5"
               target="_blank"
               className={classes.mobileJoinDiscordBtn}
               width="100%"

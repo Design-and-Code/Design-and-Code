@@ -37,7 +37,7 @@ function HomePage() {
           </Typography>
           <div className={classes.heroBtns}>
             <ContainedButton
-              href="https://discord.gg/druweDMn3s"
+              href="https://discord.gg/gM3bG4rAU5"
               target="_blank"
               size="large"
             >

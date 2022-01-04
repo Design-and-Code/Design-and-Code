@@ -29,7 +29,7 @@ const ReadyToStart = () => {
           </Typography>
           <ContainedButton
             size="large"
-            href="https://discord.gg/druweDMn3s"
+            href="https://discord.gg/gM3bG4rAU5"
             target="_blank"
           >
             JOIN DISCORD

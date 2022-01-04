@@ -127,7 +127,7 @@ function Footer() {
               <Typography variant="subtitle1" className={classes.joinUsBtn}>
                 <ContainedButton
                   size="large"
-                  href="https://discord.gg/druweDMn3s"
+                  href="https://discord.gg/gM3bG4rAU5"
                   target="_blank"
                 >
                   JOIN US
