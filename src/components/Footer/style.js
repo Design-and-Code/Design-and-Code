@@ -6,10 +6,21 @@ export default function style(theme) {
     },
     footerContent: {
       marginBottom: 20,
+      gap: 20,
+      justifyContent: "space-between",
+      "@media screen and (max-width: 800px)": {
+        flexDirection: "column",
+        alignItems: "center",
+      }
     },
     branding: {
       display: "flex",
       gap: 20,
+      "@media screen and (max-width: 400px)": {
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+      }
     },
     brandingInfo : {
       display:"flex",
@@ -47,6 +58,9 @@ export default function style(theme) {
     },
     footerSectionBorder: {
       borderRight: `2px solid ${theme.palette.text.secondary}`,
+      "@media screen and (max-width: 400px)": {
+        border: "none",
+      }
     },
     footerLinks: {
       lineHeight: "60px",
@@ -69,26 +83,44 @@ export default function style(theme) {
       justifyContent: "flex-end",
     },
     footerSectionContainer: {
-      verticalAlign: "center",
-      width: "auto",
-      justifyContent: "right",
-      paddingTop: "2.5%",
+      "@media screen and (max-width: 400px)": {
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr",
+        textAlign: "center",
+        "& div": {
+          padding: 10,
+        }
+      }
     },
     footerSectionItem: {
       textAlign: "right",
       width: "50%",
     },
     socialLinks: {
+      display: "flex",
+      flexWrap: "wrap",
+      alignItems: "center",
+      justifyContent: "flex-start",
+      lineHeight: "100%",
+      gap: 10,
       "& img": {
         height: 50,
-        marginRight: 10,
       },
+      "@media screen and (max-width: 400px)": {
+        display: "grid",
+        gridTemplateColumns: "1fr 1fr 1fr",
+        justifyContent: "center",
+      }
     },
     divider: {
       backgroundColor: theme.palette.primary.gradient2,
     },
     footerEnd: {
       padding: "30px 0 0 0",
+      alignItems: "center",
+      "@media screen and (max-width: 950px)": {
+        flexDirection: "column",
+      }
     },
     joinUsBtn: {
       height: "fit-content",

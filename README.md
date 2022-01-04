@@ -6,7 +6,7 @@
 <a href="mailto:designandcode.community@gmail.com" style="text-decoration:none">
   <img height="30" src = "https://img.shields.io/badge/gmail-c14438?&style=for-the-badge&logo=gmail&logoColor=white">
 </a>
-  <a href="https://discord.gg/druweDMn3s" style="text-decoration:none">
+  <a href="https://discord.gg/gM3bG4rAU5" style="text-decoration:none">
   <img height="30" src="https://img.shields.io/badge/discord-darkblue.svg?&style=for-the-badge&logo=discord&logoColor=white" />
 </a>
 <a href="http://designandcode.us/" style="text-decoration:none">

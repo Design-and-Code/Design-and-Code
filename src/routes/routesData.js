@@ -9,7 +9,9 @@ import {
   HomeRounded,
   InfoRounded,
   CodeRounded,
-  HelpRounded,
+  EventRounded,
+  GroupsRounded,
+  ContactSupportRounded
 } from "@material-ui/icons";
 
 const routesData = [
@@ -40,21 +42,21 @@ const routesData = [
     pageURL: "/events",
     showOnHeader: true,
     component: <EventsPage />,
-    icon: <HelpRounded />,
+    icon: <EventRounded />,
   },
   {
     pageName: "Team",
     pageURL: "/team",
     showOnHeader: true,
     component: <TeamPage />,
-    icon: <HelpRounded />,
+    icon: <GroupsRounded />,
   },
   {
     pageName: "Contact",
     pageURL: "/contact",
     showOnHeader: true,
     component: <ContactPage />,
-    icon: <HelpRounded />,
+    icon: <ContactSupportRounded />,
   },
 ];
 

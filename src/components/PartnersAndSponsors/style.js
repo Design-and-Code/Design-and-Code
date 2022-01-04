@@ -3,10 +3,10 @@ export default function style(theme) {
     imageWrapper: {
       textAlign: "center",
       background: 'linear-gradient(0deg, rgba(32, 38, 48, 0.5), rgba(32, 38, 48, 0.5))',
-      padding: '20px',
-      minWidth: '300px',
+      padding: '10px',
+      // minWidth: '300px',
       [theme.breakpoints.down("sm")]: {
-        minWidth: '250px'
+        padding: '5px',
       },
       borderRadius: '12px',
     },

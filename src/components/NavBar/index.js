@@ -15,8 +15,8 @@ import {
   Drawer,
   List,
   ListItem,
-  ListItemIcon,
-  ListItemText,
+  // ListItemIcon,
+  // ListItemText,
   Divider,
   useScrollTrigger,
   Typography,
@@ -33,11 +33,13 @@ import { ContainedButton } from "../Buttons";
 
 import { darkTheme, createMuiTheme } from "../../theme";
 
+import { CloseRounded } from "@material-ui/icons";
+
 const useStyles = makeStyles(style);
 function NavBar(props) {
   const classes = useStyles();
   const history = useHistory();
-  const { children, window } = props;
+  const { window } = props;
   const [pathname, setPathname] = useState(history.location.pathname),
     [drawerOpen, setDrawerOpen] = useState(false);
   const trigger = useScrollTrigger({
@@ -83,7 +85,7 @@ function NavBar(props) {
               </Link>
             </Grid>
             <Grid container xs={9}>
-              <Hidden smDown>
+              <Hidden mdDown>
                 <div className={classes.navLinks}>
                   {routesData.map((data, index) => (
                     <div key={`link-index-${index}`}>
@@ -109,15 +111,15 @@ function NavBar(props) {
 
             <Grid container xs={2}>
               <div className={classes.joinDiscordBtn}>
-                <Hidden smDown>
+                <Hidden mdDown>
                   <ContainedButton
-                    href="https://discord.gg/druweDMn3s"
+                    href="https://discord.gg/gM3bG4rAU5"
                     target="_blank"
                   >
                     Join Us
                   </ContainedButton>
                 </Hidden>
-                <Hidden smUp>
+                <Hidden lgUp>
                   <IconButton
                     className={classes.menuBtn}
                     onClick={() => setDrawerOpen(!drawerOpen)}
@@ -137,8 +139,16 @@ function NavBar(props) {
       >
         <List className={classes.mobileNav}>
           <ListItem>
+            <Typography
+              className={classes.closeIcon}
+              onClick={() => setDrawerOpen(false)}
+            >
+              <CloseRounded />
+            </Typography>
+          </ListItem>
+          <ListItem>
             <div className={classes.branding}>
-              <div className={classes.brandingLogo}>
+              <div className={classes.brandingLogoSidebar}>
                 <img src={brandingLogo} alt="branding-logo" />
               </div>
               <div className={classes.brandingInfo}>
@@ -158,7 +168,7 @@ function NavBar(props) {
             <>
               {data.showOnHeader && (
                 <>
-                  <Link to={data.pageURL}>
+                  <Link to={data.pageURL} onClick={() => setDrawerOpen(false)}>
                     <ListItem
                       button
                       focusVisible={false}
@@ -184,9 +194,10 @@ function NavBar(props) {
           ))}
           <ListItem>
             <ContainedButton
-              href="https://discord.gg/druweDMn3s"
+              href="https://discord.gg/gM3bG4rAU5"
               target="_blank"
               className={classes.mobileJoinDiscordBtn}
+              width="100%"
             >
               <Typography variant="h6">Join Discord</Typography>
             </ContainedButton>

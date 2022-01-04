@@ -23,9 +23,10 @@ function Partner({ image, name }) {
       container
       justify="center"
       className={classes.imageWrapper}
-      xs={6}
-      sm={4}
+      lg={3}
       md={3}
+      sm={4}
+      xs={5}
     >
       <img className={classes.image} src={image} alt="Partner" />
     </Grid>
