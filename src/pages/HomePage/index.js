@@ -11,8 +11,8 @@ import mentoring from "../../assets/illustrations/mentoring.png";
 import opportunities from "../../assets/illustrations/opportunities.png";
 import portfolioAndReviews from "../../assets/illustrations/portfolioAndReviews.png";
 import categoriesIllustration from "../../assets/illustrations/categoriesIllustration.svg";
-import textChannelsIllustration from "../../assets/illustrations/textChannelsIllustration.svg";
-import voiceChannelsIllustration from "../../assets/illustrations/voiceChannelsIllustration.svg";
+import textChannelsIllustration from "../../assets/illustrations/textChannelsIllustration.png";
+import voiceChannelsIllustration from "../../assets/illustrations/voiceChannelsIllustration.png";
 import Feature from "../../components/Feature";
 
 import style from "./style";
