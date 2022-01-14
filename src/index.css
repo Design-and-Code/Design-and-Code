@@ -28,6 +28,16 @@ code {
   transform: skewX(20deg) translateX(0);
 }
 
+.shine2 {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  height: 98px;
+  width: 50px;
+  background: rgba(63, 155, 254, 0.4);
+  transition: all .3s linear;
+  transform: skewX(20deg) translateX(0);
+}
 
 
 .container-btns{
@@ -58,6 +68,10 @@ code {
 }
 
 .container-btns:hover .shine {
+  transform: skewX(20deg) translateX(-1000%);
+}
+
+.container-btns:hover .shine2 {
   transform: skewX(20deg) translateX(-1000%);
 }
 

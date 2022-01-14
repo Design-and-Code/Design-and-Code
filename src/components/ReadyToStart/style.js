@@ -14,6 +14,7 @@ export default function style(theme) {
     secondaryDesc: {
       color: theme.palette.text.secondary,
       width: "100%",
+      marginBottom: "15px"
     },
     journeySection: {
       backgroundColor: "hsla(218, 20%, 16%, 0.5)",
