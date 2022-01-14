@@ -11,6 +11,8 @@ import mentoring from "../../assets/illustrations/mentoring.png";
 import opportunities from "../../assets/illustrations/opportunities.png";
 import portfolioAndReviews from "../../assets/illustrations/portfolioAndReviews.png";
 import categoriesIllustration from "../../assets/illustrations/categoriesIllustration.svg";
+import textChannelsIllustration from "../../assets/illustrations/textChannelsIllustration.svg";
+import voiceChannelsIllustration from "../../assets/illustrations/voiceChannelsIllustration.svg";
 import Feature from "../../components/Feature";
 
 import style from "./style";
@@ -106,7 +108,7 @@ function HomePage() {
             variant="h3"
             className={`${classes.subtitle} ${classes.textAlignLeft}`}
           >
-            Categories
+            Text Channels
           </Typography>
           <Typography
             variant="subtitle1"
@@ -121,14 +123,41 @@ function HomePage() {
         </Grid>
         <Grid container xs={12} sm={6}>
           <img
-            src={categoriesIllustration}
+            src={textChannelsIllustration}
             className={classes.categoriesIllustration}
             alt="Categories Illustration"
           />
         </Grid>
       </Grid>
+      <Grid container className={classes.section}>
+        <Grid container xs={12} sm={6}>
+          <img
+            src={voiceChannelsIllustration}
+            className={classes.categoriesIllustration}
+            alt="Categories Illustration"
+          />
+        </Grid>
+        <Grid xs={12} sm={6} className={classes.categoriesSection}>
+          <Typography
+            variant="h3"
+            className={`${classes.subtitle} ${classes.textAlignLeft}`}
+          >
+            Voice Channels
+          </Typography>
+          <Typography
+            variant="subtitle1"
+            className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
+          >
+            We have two main Categories: Designing and Development. Make sure
+            you put a particular message in the respective Category (Read
+            respective channel description to know more). Such as all Design
+            oriented messages should be put under the appropriate channel in the
+            Designing Category. Similarly, for Development related messages.
+          </Typography>
+        </Grid>
+      </Grid>
       {/* Videos Section */}
-      <Grid container className={`${classes.section} ${classes.videoSection}`}>
+      {/* <Grid container className={`${classes.section} ${classes.videoSection}`}>
         <Grid container xs={12}>
           {/* <iframe
             width="560"
@@ -139,18 +168,30 @@ function HomePage() {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe> */}
-          <iframe className={`${classes.discord}`} title="discord" src="https://e.widgetbot.io/channels/813660012001624124/813663619195207721" height="600"
-            width="100%" frameborder="0" border="0" cellspacing="0"></iframe>
+          ></iframe> 
+          <iframe
+            className={`${classes.discord}`}
+            title="discord"
+            src="https://e.widgetbot.io/channels/813660012001624124/813663619195207721"
+            height="600"
+            width="100%"
+            frameborder="0"
+            border="0"
+            cellspacing="0"
+          ></iframe>
           <Typography
             variant="subtitle1"
             className={`${classes.videoDesc} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
           >
-            Design and Code is a global community where anyone can learn and network with fellow developers and designers! Our main motive is learning and growing together. We share awesome resources, job opportunities, referrals, events, freebies, and mentor students everything for free!! 🔥
-            We are sure you'll have a great learning experience along with us. Looking forward to see you there! 😀
+            Design and Code is a global community where anyone can learn and
+            network with fellow developers and designers! Our main motive is
+            learning and growing together. We share awesome resources, job
+            opportunities, referrals, events, freebies, and mentor students
+            everything for free!! 🔥 We are sure you'll have a great learning
+            experience along with us. Looking forward to see you there! 😀
           </Typography>
         </Grid>
-      </Grid>
+      </Grid> */}
       <FaqSection />
       <ReadyToStart />
     </div>

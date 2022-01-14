@@ -60,7 +60,7 @@ function AboutPage() {
             Our Team
           </Typography>
           <Typography variant="h6" gutterBottom className={classes.description}>
-            Meet the spirited team that worked behind the scenes to establish
+            Meet the spirited team that work behind the scenes to establish
             this platform.
           </Typography>
           <div className={classes.member}>

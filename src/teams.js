@@ -1,7 +1,7 @@
 export const teamInfo = [
   {
     Name: "Greeshma Medam",
-    Responsibility: "Discord Moderator",
+    Responsibility: "Core Team",
     AboutMe:
       "I am an enthusiastic student with a keen interest in Web development and communities.",
     emailId: "greeshma290303@gmail.com",
@@ -14,7 +14,7 @@ export const teamInfo = [
   },
   {
     Name: "Nimish Jain",
-    Responsibility: "Discord Moderator",
+    Responsibility: "Core Team",
     AboutMe:
       "I am a full-stack developer trying to learn anything that comes my way.",
     emailId: "nimishjain100701@gmail.com",

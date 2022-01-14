@@ -23,9 +23,8 @@ const ReadyToStart = () => {
             gutterBottom
             className={`${classes.secondaryDesc} ${classes.textCenter}`}
           >
-            Come <span className={`${classes.greenText}`}>Connect</span> and
-            Start <span className={`${classes.greenText}`}>Collaborate</span>{" "}
-            with your fellow designers and developers around the world.
+            Come connect, collaborate and accelerate your growth with folks from
+            around the world!
           </Typography>
           <ContainedButton
             size="large"
