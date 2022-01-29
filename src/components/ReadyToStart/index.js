@@ -26,6 +26,7 @@ const ReadyToStart = () => {
             Come connect, collaborate and accelerate your growth with folks from
             around the world!
           </Typography>
+          <div data-aos="fade-up" data-aos-delay="200">
           <ContainedButton
             size="large"
             href="https://discord.gg/gM3bG4rAU5"
@@ -33,6 +34,7 @@ const ReadyToStart = () => {
           >
             JOIN DISCORD
           </ContainedButton>
+          </div>
         </Grid>
         <Grid container className={`${classes.journeyImageSection}`}>
           <Grid container className={classes.imgContainer}>

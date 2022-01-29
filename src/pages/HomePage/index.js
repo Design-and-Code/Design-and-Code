@@ -19,6 +19,11 @@ import style from "./style";
 import ReadyToStart from "../../components/ReadyToStart";
 import FaqSection from "../../components/FAQ";
 
+//Importing AOS
+import * as AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 const useStyles = makeStyles(style);
 function HomePage() {
   const classes = useStyles();
@@ -60,7 +65,7 @@ function HomePage() {
           container
           className={classes.whatsInsideDesignAndCodeSectionContent}
         >
-          <Typography variant="h3" gutterBottom className={classes.subtitle}>
+          <Typography variant="h3" gutterBottom className={classes.subtitle} data-aos="fade-up">
             What's Inside Design And Code?
           </Typography>
           {/* <Typography variant="subtitle1" className={classes.description}>
@@ -68,7 +73,8 @@ function HomePage() {
             Developers from around the world.
           </Typography> */}
           <Grid container xs={12} sm={6}>
-            <Feature
+            <div data-aos="fade-right">
+            <Feature 
               image={mentoring}
               title={"Mentoring Students"}
               description={
@@ -82,8 +88,10 @@ function HomePage() {
                 "Get Free resources related to Designing and Development from the community."
               }
             />
+            </div>
           </Grid>
           <Grid container xs={12} sm={6}>
+          <div data-aos="fade-left" data-aos-delay="500">
             <Feature
               image={opportunities}
               title={"Opportunities"}
@@ -98,12 +106,14 @@ function HomePage() {
                 "Get your portfolio and projects reviewed by Industry experts and mentors."
               }
             />
+          </div>
           </Grid>
         </Grid>
       </Grid>
       {/* Categories Section */}
       <Grid container className={classes.section}>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
+        <div data-aos="fade-right">
           <Typography
             variant="h3"
             className={`${classes.subtitle} ${classes.textAlignLeft}`}
@@ -120,24 +130,30 @@ function HomePage() {
             oriented messages should be put under the appropriate channel in the
             Designing Category. Similarly, for Development related messages.
           </Typography>
+          </div>
         </Grid>
         <Grid container xs={12} sm={6}>
+        <div data-aos="fade-left" data-aos-delay="500">
           <img
             src={textChannelsIllustration}
             className={classes.categoriesIllustration}
             alt="Categories Illustration"
           />
+        </div>
         </Grid>
       </Grid>
       <Grid container className={classes.section}>
         <Grid container xs={12} sm={6}>
+        <div data-aos="fade-right">
           <img
             src={voiceChannelsIllustration}
             className={classes.categoriesIllustration}
             alt="Categories Illustration"
           />
+        </div>
         </Grid>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
+        <div data-aos="fade-left" data-aos-delay="500">
           <Typography
             variant="h3"
             className={`${classes.subtitle} ${classes.textAlignLeft}`}
@@ -154,6 +170,7 @@ function HomePage() {
             oriented messages should be put under the appropriate channel in the
             Designing Category. Similarly, for Development related messages.
           </Typography>
+        </div>
         </Grid>
       </Grid>
       {/* Videos Section */}

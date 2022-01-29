@@ -9,6 +9,7 @@ export default function styles(theme) {
       },
       body: {
         backgroundColor: theme.palette.primary.main,
+        overflowX: "hidden",
       },
       //   "*::-webkit-scrollbar": {
       //     appearance: "none",
