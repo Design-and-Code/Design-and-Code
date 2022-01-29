@@ -73,7 +73,6 @@ function HomePage() {
             Developers from around the world.
           </Typography> */}
           <Grid container xs={12} sm={6}>
-            <div data-aos="fade-right">
             <Feature 
               image={mentoring}
               title={"Mentoring Students"}
@@ -88,10 +87,8 @@ function HomePage() {
                 "Get Free resources related to Designing and Development from the community."
               }
             />
-            </div>
           </Grid>
           <Grid container xs={12} sm={6}>
-          <div data-aos="fade-left" data-aos-delay="500">
             <Feature
               image={opportunities}
               title={"Opportunities"}
@@ -106,20 +103,21 @@ function HomePage() {
                 "Get your portfolio and projects reviewed by Industry experts and mentors."
               }
             />
-          </div>
           </Grid>
         </Grid>
       </Grid>
       {/* Categories Section */}
       <Grid container className={classes.section}>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
-        <div data-aos="fade-right">
+        <div data-aos="fade-up">
           <Typography
             variant="h3"
             className={`${classes.subtitle} ${classes.textAlignLeft}`}
           >
             Text Channels
           </Typography>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200">
           <Typography
             variant="subtitle1"
             className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
@@ -133,7 +131,7 @@ function HomePage() {
           </div>
         </Grid>
         <Grid container xs={12} sm={6}>
-        <div data-aos="fade-left" data-aos-delay="500">
+        <div data-aos="fade-up" data-aos-delay="200">
           <img
             src={textChannelsIllustration}
             className={classes.categoriesIllustration}
@@ -144,7 +142,7 @@ function HomePage() {
       </Grid>
       <Grid container className={classes.section}>
         <Grid container xs={12} sm={6}>
-        <div data-aos="fade-right">
+        <div data-aos="fade-up" data-aos-delay="200">
           <img
             src={voiceChannelsIllustration}
             className={classes.categoriesIllustration}
@@ -153,13 +151,15 @@ function HomePage() {
         </div>
         </Grid>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
-        <div data-aos="fade-left" data-aos-delay="500">
+        <div data-aos="fade-up">
           <Typography
             variant="h3"
             className={`${classes.subtitle} ${classes.textAlignLeft}`}
           >
             Voice Channels
           </Typography>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200">
           <Typography
             variant="subtitle1"
             className={`${classes.description} ${classes.secondaryDesc} ${classes.textAlignLeft}`}
@@ -170,7 +170,8 @@ function HomePage() {
             oriented messages should be put under the appropriate channel in the
             Designing Category. Similarly, for Development related messages.
           </Typography>
-        </div>
+          </div>
+        
         </Grid>
       </Grid>
       {/* Videos Section */}

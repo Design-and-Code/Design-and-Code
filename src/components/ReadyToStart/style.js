@@ -93,7 +93,6 @@ export default function style(theme) {
     imgCenter: {
       display: "flex",
       justifyContent: "center",
-      transition: "ease-in 1s infinite both"
     },
   };
 }

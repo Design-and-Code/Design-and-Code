@@ -15,9 +15,12 @@ const ReadyToStart = () => {
         className={`${classes.section} ${classes.journeySection}`}
       >
         <Grid container className={`${classes.journeyTextSection}`}>
+          <div data-aos="fade-up">
           <Typography variant="h3" gutterBottom className={classes.subtitle}>
             Ready to start your journey?
           </Typography>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="400">
           <Typography
             variant="subtitle1"
             gutterBottom
@@ -26,7 +29,8 @@ const ReadyToStart = () => {
             Come connect, collaborate and accelerate your growth with folks from
             around the world!
           </Typography>
-          <div data-aos="fade-up" data-aos-delay="200">
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500">
           <ContainedButton
             size="large"
             href="https://discord.gg/gM3bG4rAU5"
