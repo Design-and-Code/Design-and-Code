@@ -10,6 +10,7 @@ export default function styles(theme) {
       display: "block",
       width: "100%",
       textAlign: "center",
+      
 
       ...theme.palette.text.gradient,
     },
@@ -20,7 +21,7 @@ export default function styles(theme) {
       ...theme.palette.text.gradient,
     },
     description: {
-      margin: "auto",
+      margin: "1rem auto",
       display: "block",
       width: "80%",
       textAlign: "center",

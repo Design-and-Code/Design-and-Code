@@ -10,7 +10,7 @@ import style from './style'
 
 const useStyles = makeStyles(style)
 
-export default function SimpleAccordion({index, expanded, setExpanded, title, description}) {
+export default function SimpleAccordion({ index, expanded, setExpanded, title, description }) {
   const classes = useStyles();
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -19,27 +19,29 @@ export default function SimpleAccordion({index, expanded, setExpanded, title, de
 
   return (
     <div className={classes.root}>
-      
-      <Accordion classes={{
-        root: classes.root
-      }} expanded={expanded === index} onChange={handleChange(index)}>
-        <AccordionSummary
-          expandIcon={expanded === index ? <RemoveIcon />  : <AddIcon />}
-          classes={{
-            root: classes.heading,
-            expandIcon: classes.icon
-          }}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>{title}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-        <Typography className={classes.description}>
-            {description}
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
+      <div data-aos="fade-up" data-aos-delay="500">
+
+        <Accordion classes={{
+          root: classes.root
+        }} expanded={expanded === index} onChange={handleChange(index)}>
+          <AccordionSummary
+            expandIcon={expanded === index ? <RemoveIcon /> : <AddIcon />}
+            classes={{
+              root: classes.heading,
+              expandIcon: classes.icon
+            }}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography className={classes.heading}>{title}</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography className={classes.description}>
+              {description}
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+      </div>
     </div>
   );
 }

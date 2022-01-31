@@ -7,14 +7,15 @@ const useStyles = makeStyles(style);
 const FaqSection = () => {
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-  return(
+  return (
     <>
       {/* FAQ Section */}
+      <div data-aos="fade-up" data-aos-delay="200">
       <Grid container className={`${classes.section}`}>
         <Grid container>
-          <Typography variant="h2" gutterBottom className={classes.title}>
-            FAQ's
-          </Typography>
+            <Typography variant="h2" gutterBottom className={classes.title}>
+              FAQ's
+            </Typography>
           <Grid container xs={12} sm={6} className={classes.faq_grid}>
             <div className={classes.faq_grid1}>
               <SimpleAccordion
@@ -79,6 +80,7 @@ const FaqSection = () => {
           </Grid>
         </Grid>
       </Grid>
+      </div>
     </>
   )
 }
