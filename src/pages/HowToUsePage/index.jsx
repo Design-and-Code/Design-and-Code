@@ -6,14 +6,14 @@ import { Grid, Typography } from "@material-ui/core";
 
 //Importing Components
 import { ContainedButton, OutlinedButton } from "../../components/Buttons";
-import freeResources from "../../assets/illustrations/freeResources.svg";
-import mentoring from "../../assets/illustrations/mentoring.svg";
-import opportunities from "../../assets/illustrations/opportunities.svg";
-import portfolioAndReviews from "../../assets/illustrations/portfolioAndReviews.svg";
-import categoriesIllustration from "../../assets/illustrations/categoriesIllustration.svg";
+import freeResources from "/assets/illustrations/freeResources.svg";
+import mentoring from "/assets/illustrations/mentoring.svg";
+import opportunities from "/assets/illustrations/opportunities.svg";
+import portfolioAndReviews from "/assets/illustrations/portfolioAndReviews.svg";
+import categoriesIllustration from "/assets/illustrations/categoriesIllustration.svg";
 import Feature from "../../components/Feature";
 
-import HeroImage from '../../assets/placeholders/Frame 21.png'
+import HeroImage from '/assets/placeholders/Frame 21.png'
 import style from "./style";
 import Guideline from "../../components/Guideline";
 import Bot from "../../components/Bot";

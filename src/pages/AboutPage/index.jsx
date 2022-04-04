@@ -7,12 +7,12 @@ import { ContainedButton, OutlinedButton } from "../../components/Buttons";
 
 //Importing Components
 import { Grid, Typography, Divider } from "@material-ui/core";
-import heroIllustration from "../../assets/placeholders/Group 55.png";
+import heroIllustration from "/assets/placeholders/Group 55.png";
 
 import style from "./style";
 import Member from "../../components/Member";
-import aboutIllustration from "../../assets/illustrations/aboutIllustration.svg";
-import image from "../../assets/placeholders/partner.png";
+import aboutIllustration from "/assets/illustrations/aboutIllustration.svg";
+import image from "/assets/placeholders/partner.png";
 import Partner from "../../components/PartnersAndSponsors";
 import ReadyToStart from "../../components/ReadyToStart";
 import partners from "../../components/PartnersAndSponsors/partners";

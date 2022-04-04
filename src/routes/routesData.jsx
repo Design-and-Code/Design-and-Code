@@ -4,6 +4,7 @@ import HowToUsePage from "../pages/HowToUsePage";
 import ContactPage from "../pages/ContactPage";
 import TeamPage from "../pages/TeamPage";
 import EventsPage from "../pages/EventsPage";
+import React from 'react';
 
 import {
   HomeRounded,

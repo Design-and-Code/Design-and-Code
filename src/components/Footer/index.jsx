@@ -19,13 +19,13 @@ import {
 } from "@material-ui/core";
 
 //Importing assets
-import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.svg";
-import emailIcon from "../../assets/social-icons/BgEmailIcon.svg";
-import twitterIcon from "../../assets/social-icons/BgTwitterIcon.svg";
-import linkedinIcon from "../../assets/social-icons/BgLinkedinIcon.svg";
-import instagramIcon from "../../assets/social-icons/BgInstagramIcon.svg";
-import githubIcon from "../../assets/social-icons/BgGithubIcon.svg";
-import youtubeIcon from "../../assets/social-icons/BgYouTubeIcon.svg";
+import brandingLogo from "/assets/branding-logos/branding-transparent-logo.svg";
+import emailIcon from "/assets/social-icons/BgEmailIcon.svg";
+import twitterIcon from "/assets/social-icons/BgTwitterIcon.svg";
+import linkedinIcon from "/assets/social-icons/BgLinkedinIcon.svg";
+import instagramIcon from "/assets/social-icons/BgInstagramIcon.svg";
+import githubIcon from "/assets/social-icons/BgGithubIcon.svg";
+import youtubeIcon from "/assets/social-icons/BgYouTubeIcon.svg";
 
 const useStyles = makeStyles(style);
 function Footer() {

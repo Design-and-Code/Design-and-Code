@@ -15,7 +15,7 @@ import { teamInfo, developersInfo } from "../../teams";
 
 import style from "./style";
 import Member from "../../components/Member";
-import image from "../../assets/placeholders/Rectangle 1035.png";
+import image from "/assets/placeholders/Rectangle 1035.png";
 import Links from "../../components/Links";
 import ReadyToStart from "../../components/ReadyToStart";
 

@@ -26,7 +26,7 @@ import {
 import routesData from "../../routes/routesData";
 
 //Importing assets
-import brandingLogo from "../../assets/branding-logos/branding-transparent-logo.svg";
+import brandingLogo from "/assets/branding-logos/branding-transparent-logo.svg";
 
 //Importing Components
 import { ContainedButton } from "../Buttons";
@@ -165,10 +165,15 @@ function NavBar(props) {
             </div>
           </ListItem>
           {routesData.map((data, index) => (
-            <>
+            <React.Fragment
+              key={data.pageName}
+            >
               {data.showOnHeader && (
                 <>
-                  <Link to={data.pageURL} onClick={() => setDrawerOpen(false)}>
+                  <Link
+                    key={data.pageName}
+                    to={data.pageURL} 
+                    onClick={() => setDrawerOpen(false)}>
                     <ListItem
                       button
                       focusVisible={false}
@@ -177,7 +182,6 @@ function NavBar(props) {
                           ? classes.listItem
                           : classes.listItemHighlighted
                       }
-                      key={data.pageName}
                     >
                       <Typography className={classes.listItemIcon}>
                         {data.icon}
@@ -190,7 +194,7 @@ function NavBar(props) {
                   <Divider className={classes.divider} />
                 </>
               )}
-            </>
+            </React.Fragment>
           ))}
           <ListItem>
             <ContainedButton

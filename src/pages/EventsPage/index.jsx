@@ -5,7 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Typography } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 
-import logo from "../../assets/Group 181.png";
+import logo from "/assets/Group 181.png";
 import { ContainedButton } from "../../components/Buttons";
 import Card from "../../components/EventsCard";
 
