@@ -75,7 +75,8 @@ function NavBar(props) {
       >
         <Container className={classes.navBarBackground} maxWidth="lg">
           <Grid container className={classes.navBar}>
-            <Grid item xs={1}>
+            <Grid container xs={1}>
+
               <Link to="home">
                 <img
                   className={classes.brandingLogo}
@@ -84,7 +85,8 @@ function NavBar(props) {
                 />
               </Link>
             </Grid>
-            <Grid item xs={9}>
+
+            <Grid container xs={9}>
               <Hidden mdDown>
                 <div className={classes.navLinks}>
                   {routesData.map((data, index) => (
@@ -109,27 +111,25 @@ function NavBar(props) {
               </Hidden>
             </Grid>
 
-            <Grid item xs={2} >
-              <Grid container>
-                <div className={classes.joinDiscordBtn}>
-                  <Hidden mdDown>
-                    <ContainedButton
-                      href="https://discord.gg/gM3bG4rAU5"
-                      target="_blank"
-                    >
-                      Join Us
-                    </ContainedButton>
-                  </Hidden>
-                  <Hidden lgUp>
-                    <IconButton
-                      className={classes.menuBtn}
-                      onClick={() => setDrawerOpen(!drawerOpen)}
-                    >
-                      <MenuRounded />
-                    </IconButton>
-                  </Hidden>
-                </div>
-              </Grid>
+            <Grid container xs={2}>
+              <div className={classes.joinDiscordBtn}>
+                <Hidden mdDown>
+                  <ContainedButton
+                    href="https://discord.gg/gM3bG4rAU5"
+                    target="_blank"
+                  >
+                    Join Us
+                  </ContainedButton>
+                </Hidden>
+                <Hidden lgUp>
+                  <IconButton
+                    className={classes.menuBtn}
+                    onClick={() => setDrawerOpen(!drawerOpen)}
+                  >
+                    <MenuRounded />
+                  </IconButton>
+                </Hidden>
+              </div>
             </Grid>
           </Grid>
         </Container>

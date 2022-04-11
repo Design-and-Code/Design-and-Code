@@ -1,4 +1,4 @@
-import heroIllustration from "../../assets/illustrations/hero-section.svg";
+import heroIllustration from "/assets/illustrations/hero-section.svg";
 export default function styles(theme) {
   return {
     section: {

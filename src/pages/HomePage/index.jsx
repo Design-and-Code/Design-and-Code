@@ -72,41 +72,37 @@ function HomePage() {
             Design & Code is on a mission to conect and support Designers and
             Developers from around the world.
           </Typography> */}
-          <Grid item xs={12} sm={6}>
-            <Grid container>
-              <Feature 
-                image={mentoring}
-                title={"Mentoring Students"}
-                description={
-                  "Get connected with a mentor that will help you pave your career path"
-                }
-              />
-              <Feature
-                image={freeResources}
-                title={"Free Resources"}
-                description={
-                  "Get Free resources related to Designing and Development from the community."
-                }
-              />
-            </Grid>
+          <Grid container xs={12} sm={6}>
+            <Feature 
+              image={mentoring}
+              title={"Mentoring Students"}
+              description={
+                "Get connected with a mentor that will help you pave your career path"
+              }
+            />
+            <Feature
+              image={freeResources}
+              title={"Free Resources"}
+              description={
+                "Get Free resources related to Designing and Development from the community."
+              }
+            />
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <Grid container>
-              <Feature
-                image={opportunities}
-                title={"Opportunities"}
-                description={
-                  "Get Internships and Job opportunities and gain experience while you learn."
-                }
-              />
-              <Feature
-                image={portfolioAndReviews}
-                title={"Portfolio & Reviews"}
-                description={
-                  "Get your portfolio and projects reviewed by Industry experts and mentors."
-                }
-              />
-            </Grid>
+          <Grid container xs={12} sm={6}>
+            <Feature
+              image={opportunities}
+              title={"Opportunities"}
+              description={
+                "Get Internships and Job opportunities and gain experience while you learn."
+              }
+            />
+            <Feature
+              image={portfolioAndReviews}
+              title={"Portfolio & Reviews"}
+              description={
+                "Get your portfolio and projects reviewed by Industry experts and mentors."
+              }
+            />
           </Grid>
         </Grid>
       </Grid>
@@ -134,21 +130,18 @@ function HomePage() {
           </Typography>
           </div>
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <Grid container>
-            <div data-aos="fade-up" data-aos-delay="200">
-              <img
-                src={textChannelsIllustration}
-                className={classes.categoriesIllustration}
-                alt="Categories Illustration"
-              />
-            </div>
-          </Grid>
+        <Grid container xs={12} sm={6}>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <img
+            src={textChannelsIllustration}
+            className={classes.categoriesIllustration}
+            alt="Categories Illustration"
+          />
+        </div>
         </Grid>
       </Grid>
       <Grid container className={classes.section}>
         <Grid container xs={12} sm={6}>
-              <Grid>
         <div data-aos="fade-up" data-aos-delay="200">
           <img
             src={voiceChannelsIllustration}
@@ -156,7 +149,6 @@ function HomePage() {
             alt="Categories Illustration"
           />
         </div>
-              </Grid>
         </Grid>
         <Grid xs={12} sm={6} className={classes.categoriesSection}>
         <div data-aos="fade-up">
