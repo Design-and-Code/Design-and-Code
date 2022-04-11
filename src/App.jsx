@@ -9,7 +9,7 @@ import { darkTheme, createMuiTheme } from "./theme";
 //Importing Components
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import arrowup from "./assets/social-icons/chevron-up.svg";
+import arrowup from "/assets/social-icons/chevron-up.svg";
 import BackgroundBlur from "./components/BackgroundBlur";
 
 //Importing Routes

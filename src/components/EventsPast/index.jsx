@@ -4,8 +4,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography,Box,Grid } from "@material-ui/core";
 
-import Banner from "../../assets/Canva Event Thumbnail (3) 1.png";
-import Play from "../../assets/play.png";
+import Banner from "/assets/Canva Event Thumbnail (3) 1.png";
+import Play from "/assets/play.png";
 import EventCapsules from "../EventCapsules";
 
 import style from "./style";

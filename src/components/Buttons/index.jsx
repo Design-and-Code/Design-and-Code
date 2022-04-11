@@ -25,7 +25,7 @@ function ContainedButton(props) {
       >
         {props.children}
       </Button>
-      <div class="shine"></div>
+      <div className="shine"></div>
     </div>
   );
 }
@@ -47,7 +47,7 @@ function OutlinedButton(props) {
       >
         {props.children}
       </Button>
-      <div class="shine2"></div>
+      <div className="shine2"></div>
     </div>
   );
 }

@@ -5,11 +5,11 @@ import { makeStyles } from "@material-ui/core/styles";
 //Importing Components
 
 import style from "./style";
-import linkedInLogo from "../../assets/social-icons/LinkedInIcon.svg";
-import instagramLogo from "../../assets/social-icons/InstagramIcon.svg";
-import twitterLogo from "../../assets/social-icons/TwitterIcon.svg";
-import websiteLogo from "../../assets/social-icons/WebsiteIcon.svg";
-import githubLogo from "../../assets/social-icons/GitHubIcon.svg";
+import linkedInLogo from "/assets/social-icons/LinkedInIcon.svg";
+import instagramLogo from "/assets/social-icons/InstagramIcon.svg";
+import twitterLogo from "/assets/social-icons/TwitterIcon.svg";
+import websiteLogo from "/assets/social-icons/WebsiteIcon.svg";
+import githubLogo from "/assets/social-icons/GitHubIcon.svg";
 
 const useStyles = makeStyles(style);
 
