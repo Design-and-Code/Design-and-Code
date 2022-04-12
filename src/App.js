@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 // Importing Material UI Stuff
 import { CircularProgress, Container } from "@material-ui/core";
@@ -14,8 +14,6 @@ import BackgroundBlur from "./components/BackgroundBlur";
 
 //Importing Routes
 import Routes from "./routes";
-
-import style from "./style";
 
 function CustomScrollProgress() {
   const [scrollProgress, setScrollProgress] = useState(0);
@@ -73,11 +71,8 @@ function CustomScrollProgress() {
   )
 }
 
-const useStyles = makeStyles(style);
 
 function Content() {
-  const classes = useStyles();
-  const [theme, setTheme] = useState(createMuiTheme(darkTheme));
 
   return (
     <Router>
@@ -92,7 +87,7 @@ function Content() {
 }
 
 function App() {
-  const [theme, setTheme] = useState(createMuiTheme(darkTheme));
+  const theme = createMuiTheme(darkTheme);
 
   return (
     <ThemeProvider theme={theme}>

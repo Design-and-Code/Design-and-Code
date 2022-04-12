@@ -4,7 +4,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Box,Grid } from "@material-ui/core";
 
-import Banner from "../../assets/Canva Event Thumbnail (3) 1.png";
 import { ContainedButton } from "../../components/Buttons";
 
 import style from "./style";
@@ -18,7 +17,7 @@ const Card = (props) => {
     <Grid item xs={12} sm={6} md={4} >
     <Box className={`${classes.eventsCard} eventsCard`}>
       <Box className={`${classes.bannerOuter} bannerOuter`}>
-        <img src={props.img} alt="Image" className={classes.banner} />
+        <img src={props.img} alt=" " className={classes.banner} />
       </Box>
       <Box className={classes.eventContent}>
         <Typography className={classes.eventName} variant="h5">{props.name}</Typography>

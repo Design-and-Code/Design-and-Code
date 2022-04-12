@@ -53,7 +53,7 @@ function NavBar(props) {
     history.listen(() => {
       setPathname(history.location.pathname);
     });
-  }, []);
+  }, [history]);
 
   return (
     <>

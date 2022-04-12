@@ -1,5 +1,3 @@
-import { Repeat } from "@material-ui/icons";
-
 export default function styles(theme) {
   return {
     section: {
