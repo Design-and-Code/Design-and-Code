@@ -23,14 +23,14 @@ function Member({
 }) {
   console.log(image);
   const classes = useStyles();
-  const [IsDesktop, setIsDesktop] = useState(window.innerWidth > 900);
-  const updateMedia = () => {
-    setIsDesktop(window.innerWidth > 900);
-  };
-  useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
-  });
+  // const [IsDesktop, setIsDesktop] = useState(window.innerWidth > 900);
+  // const updateMedia = () => {
+  //   setIsDesktop(window.innerWidth > 900);
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("resize", updateMedia);
+  //   return () => window.removeEventListener("resize", updateMedia);
+  // });
   return (
     <Grid item style={customStyle} className={classes.member} xs={12} sm={6} md={4}>
       <div className={classes.infoHolder}>

@@ -4,8 +4,6 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography,Box,Grid } from "@material-ui/core";
 
-import Banner from "../../assets/Canva Event Thumbnail (3) 1.png";
-import Play from "../../assets/play.png";
 import EventCapsules from "../EventCapsules";
 
 import style from "./style";
@@ -20,7 +18,7 @@ const EventsPast = (props) => {
     <a href={props.link}>
     <Box className={`${classes.eventsCard} eventsCard`}>
       <Box className={`${classes.bannerOuter} bannerOuterPast`}>
-        <img src={props.img} alt="Image" className={`${classes.banner} bannerPastImage`} />
+        <img src={props.img} alt=" " className={`${classes.banner} bannerPastImage`} />
         <Typography className={classes.eventName} variant="h6">{props.name}</Typography>
     
         <div className={`${classes.play} play`} >
