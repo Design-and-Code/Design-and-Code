@@ -25,6 +25,7 @@
     "react-swipeable-views": "^0.13.9"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/node": "18.6.2",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",

@@ -1,6 +1,6 @@
 import { Button, styled } from '@mui/material';
 
-export const OutlineButton = styled(Button)(({ theme }) => ({
+export const OutlinedButton = styled(Button)(({ theme }) => ({
   borderRadius: 80,
   height: 'fit-content',
   textTransform: 'unset',
@@ -21,7 +21,8 @@ export const ContainedButton = styled(Button)(({ theme }) => ({
   borderRadius: 80,
   height: 'fit-content',
   textTransform: 'unset',
+  padding: '0.6rem 3rem',
   [theme.breakpoints.down('sm')]: {
-    padding: '0.6rem 40px',
+    padding: '0.6rem 2rem',
   },
 }));

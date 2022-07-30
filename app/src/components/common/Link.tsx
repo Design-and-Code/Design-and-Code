@@ -65,7 +65,9 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
     replace,
     role, // Link don't have roles.
     scroll,
+    target = '_blank',
     shallow,
+    referrerPolicy = 'no-referrer',
     ...other
   } = props;
 
@@ -83,13 +85,32 @@ const Link = forwardRef<HTMLAnchorElement, LinkProps>(function Link(
 
   if (isExternal) {
     if (noLinkStyle) {
-      return <Anchor className={className} href={href} ref={ref} {...other} />;
+      return (
+        <Anchor
+          className={className}
+          href={href}
+          ref={ref}
+          target={target}
+          referrerPolicy={referrerPolicy}
+          {...other}
+        />
+      );
     }
 
-    return <MuiLink className={className} href={href} ref={ref} {...other} />;
+    return (
+      <MuiLink
+        className={className}
+        href={href}
+        ref={ref}
+        target={target}
+        referrerPolicy={referrerPolicy}
+        {...other}
+      />
+    );
   }
 
   const linkAs = linkAsProp || as;
+  
   const nextjsProps = {
     to: href,
     linkAs,

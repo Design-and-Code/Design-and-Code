@@ -8,9 +8,11 @@ import {
   IconButton,
   ListItem,
   ListItemButton,
+  SvgIconTypeMap,
   Typography,
   useScrollTrigger,
 } from '@mui/material';
+import { OverridableComponent } from '@mui/material/OverridableComponent';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { Dispatch, FC, SetStateAction, useMemo, useState } from 'react';
@@ -22,7 +24,13 @@ import Link from '../common/Link';
 import { MobileNavWrapper, NavbarWrapper } from './styles';
 
 interface NavbarProps {
-  items: { url: string; label: string }[];
+  items: {
+    url: string;
+    label: string;
+    icon: OverridableComponent<SvgIconTypeMap<{}, 'svg'>> & {
+      muiName: string;
+    };
+  }[];
 }
 
 const bgColor = darkTheme.palette.primary.backgroundBlurColor;
@@ -41,13 +49,13 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
   const navbarStyles = useMemo(
     () =>
       Object.assign(
-        trigger && {
-          background: bgColor,
-          backdropFilter: 'blur(20px)',
-        },
         {
           background: `transparent`,
           backdropFilter: 'none',
+        },
+        trigger && {
+          background: bgColor,
+          backdropFilter: 'blur(20px)',
         }
       ),
     [trigger]
@@ -77,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                       <Typography
                         component="span"
                         className={clsx(
-                          item.url === router.pathname && 'active nav-link',
+                          item.url === router.pathname && 'active',
                           'nav-link'
                         )}
                         variant="subtitle1"
@@ -95,8 +103,6 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
               <Hidden mdDown>
                 <ContainedButton
                   href="https://discord.gg/gM3bG4rAU5"
-                  // @ts-ignore
-                  target="_blank"
                   sx={{ paddingX: '1.5rem', paddingY: '0.6rem' }}
                   LinkComponent={Link}
                 >
@@ -179,11 +185,9 @@ const MobileDrawer: FC<MobileDrawerProps> = ({ isOpen, setIsOpen }) => {
         ))}
         <ListItem>
           <ContainedButton
-            // @ts-ignore
-            target={'_blank'}
             fullWidth
             href="https://discord.gg/gM3bG4rAU5"
-            width={'100%'}
+            LinkComponent={Link}
           >
             <Typography variant="h6">Join Discord</Typography>
           </ContainedButton>

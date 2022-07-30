@@ -8,6 +8,7 @@ specifiers:
   '@mui/icons-material': ^5.8.4
   '@mui/material': ^5.9.2
   '@mui/styles': ^5.9.2
+  '@types/aos': ^3.0.4
   '@types/node': 18.6.2
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
@@ -39,6 +40,7 @@ dependencies:
   react-swipeable-views: 0.13.9_react@18.2.0
 
 devDependencies:
+  '@types/aos': 3.0.4
   '@types/node': 18.6.2
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
@@ -641,6 +643,10 @@ packages:
     dependencies:
       tslib: 2.4.0
     dev: false
+
+  /@types/aos/3.0.4:
+    resolution: {integrity: sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA==}
+    dev: true
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
