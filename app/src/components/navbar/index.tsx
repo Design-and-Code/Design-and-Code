@@ -1,17 +1,20 @@
 import { CloseRounded, MenuRounded } from '@mui/icons-material';
 import {
   Container,
+  Divider,
   Drawer,
   Grid,
   Hidden,
   IconButton,
   ListItem,
+  ListItemButton,
   Typography,
   useScrollTrigger,
 } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import React, { Dispatch, FC, SetStateAction, useMemo, useState } from 'react';
+import { NAV_LINKS } from '~/lib/constants';
 import { darkTheme } from '~/lib/theme';
 import { clsx, isSSR } from '~/lib/utils';
 import { ContainedButton } from '../Button';
@@ -126,6 +129,7 @@ type MobileDrawerProps = {
 };
 
 const MobileDrawer: FC<MobileDrawerProps> = ({ isOpen, setIsOpen }) => {
+  const { pathname } = useRouter()
   return (
     <Drawer anchor={'right'} open={isOpen} onClose={() => setIsOpen(false)}>
       <MobileNavWrapper>
@@ -138,25 +142,60 @@ const MobileDrawer: FC<MobileDrawerProps> = ({ isOpen, setIsOpen }) => {
           </Typography>
         </ListItem>
         <ListItem>
-          <div className={'logo-sidebar'}>
-            <Image
-              width={300}
-              height={300}
-              src={'/static/branding-logos/branding-transparent-logo.svg'}
-              alt="branding-logo"
-            />
+          <div>
+            <div className={'logo-sidebar'}>
+              <Image
+                width={75}
+                height={75}
+                src={'/static/branding-logos/branding-transparent-logo.svg'}
+                alt="branding-logo"
+              />
+            </div>
+            <div>
+              <Typography variant="h4" className={'branding-title'}> Design And Code
+              </Typography>
+              <Typography variant="subtitle2">
+                Connect, Collaborate, Comprehend
+              </Typography>
+            </div>
           </div>
-          <Typography variant="h4" className={'branding-title'}>
-            Design And Code
-          </Typography>
-          <Typography variant="subtitle2">
-            Connect, Collaborate, Comprehend
-          </Typography>
         </ListItem>
+        {NAV_LINKS.map((data, i) => (
+          <React.Fragment
+            key={i}
+          >
+            <Link 
+              href={data.url}
+              onClick={() => setIsOpen(false)}
+              // className={'list-item-highlighted'}
+            >
+              <ListItemButton
+                // className={data.url !== pathname 
+                //   ? 'list-item'
+                //   : 'list-item-highlighted'
+                // }
+                className={'list-item'}
+              >
+                <Typography className={'list-icon'}>
+                  <data.icon/>
+                </Typography>
+                <Typography variant='subtitle1'>
+                  {data.label}
+                </Typography>
+              </ListItemButton>
+            </Link>
+            <Divider className={'divider'}/>
+          </React.Fragment>
+        ))}
         <ListItem>
-          <Link target={'_blank'} href="https://discord.gg/gM3bG4rAU5">
+          <ContainedButton 
+            // @ts-ignore
+            target={'_blank'} 
+            href="https://discord.gg/gM3bG4rAU5"
+            width={'100%'}
+          >
             <Typography variant="h6">Join Discord</Typography>
-          </Link>
+          </ContainedButton>
         </ListItem>
       </MobileNavWrapper>
     </Drawer>

@@ -26,8 +26,8 @@ const darkTheme: CustomTheme = {
       gradient: {
         color: '#FFFFFF',
         background: 'linear-gradient(to right, #39AFFD, #477FFF)',
-        '-webkit-background-clip': 'text',
-        '-webkit-text-fill-color': 'transparent',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
       },
     },
     contrastThreshold: 3,

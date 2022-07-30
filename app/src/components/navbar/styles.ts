@@ -50,4 +50,36 @@ export const MobileNavWrapper = styled(List)((elem) => ({
     color: theme.palette.text.primary,
     ...theme.palette.text.gradient,
   },
+  [`.branding`]: {
+    display: "grid",
+    gridTemplateColumns: "auto 1fr",
+  },
+  [`list-item`]: {
+    padding: "12px 16px",
+    color: theme.palette.text.primary,
+    cursor: "pointer",
+    "& *": {
+      color: theme.palette.text.primary,
+    },
+    background: "transparent",
+    borderLeft: `2px solid transparent`,
+  }, 
+  [`list-item-highlighted`]: {
+    padding: "12px 16px",
+    color: theme.palette.text.primary,
+    cursor: "pointer",
+    "& *": {
+      // color: theme.palette.text.primary,
+      color: 'FFF'
+    },
+    background: `${theme.palette.secondary.darkGrey} !important`,
+    borderLeft: `2px solid ${theme.palette.primary.gradient1}`,
+  },
+  [`list-icon`]: {
+    display: "flex",
+    marginRight: 10,
+  },
+  [`divider`]: {
+    height: 10,
+  }
 }));
