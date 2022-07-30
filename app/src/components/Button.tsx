@@ -11,8 +11,8 @@ export const OutlineButton = styled(Button)(({ theme }) => ({
   [theme.breakpoints.down('sm')]: {
     padding: '0.6rem 40px !important',
   },
-  '-webkit-background-clip': 'text',
-  '-webkit-text-fill-color': 'transparent',
+  WebkitBackgroundClip: 'text',
+  WebkitTextFillColor: 'transparent',
 }));
 
 export const ContainedButton = styled(Button)(({ theme }) => ({
