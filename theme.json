@@ -1,0 +1,108 @@
+{
+  "palette": {
+    "primary": {
+      "main": "#121415",
+      "blurColor": "rgb(64 113 222 / 67%)",
+      "backgroundBlurColor": "rgba(32, 38, 48, 0.5)",
+      "background2": "#202630",
+      "gradient1": "#39AFFD",
+      "gradient2": "#477FFF",
+      "mainGradient": "linear-gradient(to right, #39AFFD, #477FFF)"
+    },
+    "secondary": {
+      "main": "#0e10117a",
+      "darkGrey": "#4040407a"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#99AAB5",
+      "gradient": ""
+    },
+    "contrastThreshold": 3,
+    "tonalOffset": 0.2
+  },
+  "typography": {
+    "fontFamily": [""],
+    "h1": {
+      "overflow": "visible",
+      "fontSize": "6rem",
+      "fontWeight": 600,
+      "lineHeight": 1.167,
+      "letterSpacing": "-0.01562em"
+    },
+    "h2": {
+      "fontSize": "3.75rem",
+      "fontWeight": 500,
+      "lineHeight": 1.2,
+      "letterSpacing": "-0.00833em"
+    },
+    "h3": {
+      "fontSize": "3rem",
+      "fontWeight": 500,
+      "lineHeight": 1.167,
+      "letterSpacing": "0em"
+    },
+    "h4": {
+      "fontSize": "1.75rem",
+      "fontWeight": 500,
+      "lineHeight": 1.235,
+      "letterSpacing": "0.00735em"
+    },
+    "h5": {
+      "fontSize": "1.5rem",
+      "fontWeight": 500,
+      "lineHeight": 1.334,
+      "letterSpacing": "0em"
+    },
+    "h6": {
+      "fontSize": "1.18rem",
+      "fontWeight": 500,
+      "lineHeight": 1.6,
+      "letterSpacing": "0.0075em"
+    },
+    "subtitle1": {
+      "fontSize": "1rem",
+      "fontWeight": 400,
+      "lineHeight": 1.75,
+      "letterSpacing": "0.00938em"
+    },
+    "subtitle2": {
+      "fontSize": "0.875rem",
+      "fontWeight": 500,
+      "lineHeight": 1.57,
+      "letterSpacing": "0.00714em"
+    },
+    "body1": {
+      "fontSize": "1rem",
+      "fontWeight": 400,
+      "lineHeight": 1.5,
+      "letterSpacing": "0.00938em"
+    },
+    "body2": {
+      "fontSize": "0.875rem",
+      "fontWeight": 400,
+      "lineHeight": 1.43,
+      "letterSpacing": "0.01071em"
+    },
+    "button": {
+      "fontSize": "0.875rem",
+      "fontWeight": 500,
+      "lineHeight": 1.75,
+      "letterSpacing": "0.02857em",
+      "textTransform": "unset !important"
+    },
+    "caption": {
+      "fontSize": "0.75rem",
+      "fontWeight": "400",
+      "lineHeight": "1.66",
+      "letterSpacing": "0.03333em"
+    },
+    "overline": {
+      "fontSize": "0.75rem",
+      "fontWeight": 400,
+      "lineHeight": 2.66,
+      "letterSpacing": "0.08333em",
+      "textTransform": "uppercase"
+    }
+  }
+}
