@@ -1,5 +1,6 @@
 import { CssBaseline, GlobalStyles } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
+import Head from 'next/head';
 import React, { FC, Fragment, PropsWithChildren } from 'react';
 import Navbar from '~/components/navbar';
 import { NAV_LINKS } from '~/lib/constants';

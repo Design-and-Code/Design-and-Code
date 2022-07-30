@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app';
 import { createEmotionCache } from '~/lib/theme';
+import NextProgress from 'next-progress';
 
 import { CacheProvider, EmotionCache } from '@emotion/react';
 
@@ -18,6 +19,7 @@ function App(props: MyAppProps) {
   return (
     <CacheProvider value={emotionCache}>
       <AppLayout>
+        <NextProgress delay={200} options={{ showSpinner: false }} color="#3BA9FD" />
         <Component {...pageProps} />
       </AppLayout>
     </CacheProvider>

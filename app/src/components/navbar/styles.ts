@@ -21,7 +21,18 @@ export const NavbarWrapper = styled(AppBar)((elem) => ({
     [`.nav-link`]: {
       textDecoration: 'none',
       color: theme.palette.text.primary,
+      transition: 'color 150ms ease',
       fontWeight: 500,
+      [`&:hover`]: {
+        color: theme.palette.text.secondary,
+      },
+      [`&:active`]: {
+        color: theme.palette.text.secondary,
+      },
+    },
+    [`.active`]: {
+      ...theme.palette.text.gradient,
+      textDecoration: 'none',
     },
   },
   [`.menu-btn`]: {
@@ -51,35 +62,31 @@ export const MobileNavWrapper = styled(List)((elem) => ({
     ...theme.palette.text.gradient,
   },
   [`.branding`]: {
-    display: "grid",
-    gridTemplateColumns: "auto 1fr",
+    display: 'grid',
+    gridTemplateColumns: 'auto 1fr',
   },
-  [`list-item`]: {
-    padding: "12px 16px",
-    color: theme.palette.text.primary,
-    cursor: "pointer",
-    "& *": {
-      color: theme.palette.text.primary,
+  [`.list-item`]: {
+    padding: '12px 16px',
+    a: {
+      textDecoration: 'none',
     },
-    background: "transparent",
+    color: theme.palette.text.primary,
+    cursor: 'pointer',
+    background: 'transparent',
     borderLeft: `2px solid transparent`,
-  }, 
-  [`list-item-highlighted`]: {
-    padding: "12px 16px",
+  },
+  [`.list-item-highlighted`]: {
+    padding: '12px 16px',
     color: theme.palette.text.primary,
-    cursor: "pointer",
-    "& *": {
-      // color: theme.palette.text.primary,
-      color: 'FFF'
-    },
-    background: `${theme.palette.secondary.darkGrey} !important`,
+    cursor: 'pointer',
+    background: `${theme.palette.secondary.darkGrey}`,
     borderLeft: `2px solid ${theme.palette.primary.gradient1}`,
   },
-  [`list-icon`]: {
-    display: "flex",
+  [`.list-icon`]: {
+    display: 'flex',
     marginRight: 10,
   },
-  [`divider`]: {
+  [`.divider`]: {
     height: 10,
-  }
+  },
 }));

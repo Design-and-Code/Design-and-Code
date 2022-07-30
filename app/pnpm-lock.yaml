@@ -15,6 +15,7 @@ specifiers:
   eslint: 8.20.0
   eslint-config-next: 12.2.3
   next: 12.2.3
+  next-progress: ^2.2.0
   react: 18.2.0
   react-dom: 18.2.0
   react-multi-carousel: ^2.8.2
@@ -31,6 +32,7 @@ dependencies:
   '@mui/styles': 5.9.2_3hx2ussxxho4jajbwrd6gq34qe
   aos: 2.3.4
   next: 12.2.3_biqbaboplfbrettd7655fr4n2y
+  next-progress: 2.2.0_next@12.2.3+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-multi-carousel: 2.8.2
@@ -1994,6 +1996,17 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
+  /next-progress/2.2.0_next@12.2.3+react@18.2.0:
+    resolution: {integrity: sha512-g6VBoaj2SfUhKiBSJW/7ju06Ks3r3mUK79HdrLJ7fmvnjeyHPViAKLQDsMN1QIoBcTqN1hR7A8sISiMfm01qmQ==}
+    peerDependencies:
+      next: '>=6.0.0'
+      react: '>=16.0.0'
+    dependencies:
+      next: 12.2.3_biqbaboplfbrettd7655fr4n2y
+      nprogress: 0.2.0
+      react: 18.2.0
+    dev: false
+
   /next/12.2.3_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-TA0tmSA6Dk6S6kfvCNbF7CWYW8468gZUxr/3/30z4KvAQbXnl2ASYZElVe7q/hBW/1F1ee0tSBlHa4/sn+ZIBw==}
     engines: {node: '>=12.22.0'}
@@ -2037,6 +2050,10 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - babel-plugin-macros
+    dev: false
+
+  /nprogress/0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
     dev: false
 
   /object-assign/4.1.1:

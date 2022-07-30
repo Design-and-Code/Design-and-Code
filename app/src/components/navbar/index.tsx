@@ -17,13 +17,12 @@ import React, { Dispatch, FC, SetStateAction, useMemo, useState } from 'react';
 import { NAV_LINKS } from '~/lib/constants';
 import { darkTheme } from '~/lib/theme';
 import { clsx, isSSR } from '~/lib/utils';
-import { ContainedButton } from '../Button';
-import Link from '../Link';
+import { ContainedButton } from '../common/Button';
+import Link from '../common/Link';
 import { MobileNavWrapper, NavbarWrapper } from './styles';
 
 interface NavbarProps {
-  // TODO: Fix type
-  items: any[];
+  items: { url: string; label: string }[];
 }
 
 const bgColor = darkTheme.palette.primary.backgroundBlurColor;
@@ -78,9 +77,8 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
                       <Typography
                         component="span"
                         className={clsx(
-                          item.url !== router.pathname
-                            ? 'active nav-link'
-                            : 'nav-link'
+                          item.url === router.pathname && 'active nav-link',
+                          'nav-link'
                         )}
                         variant="subtitle1"
                       >
@@ -92,7 +90,6 @@ const Navbar: React.FC<NavbarProps> = ({ items }) => {
               </div>
             </Hidden>
           </Grid>
-
           <Grid container item xs={2}>
             <Grid item sx={{ margin: 'auto 0 auto auto' }}>
               <Hidden mdDown>
@@ -129,7 +126,8 @@ type MobileDrawerProps = {
 };
 
 const MobileDrawer: FC<MobileDrawerProps> = ({ isOpen, setIsOpen }) => {
-  const { pathname } = useRouter()
+  const { pathname } = useRouter();
+
   return (
     <Drawer anchor={'right'} open={isOpen} onClose={() => setIsOpen(false)}>
       <MobileNavWrapper>
@@ -141,7 +139,7 @@ const MobileDrawer: FC<MobileDrawerProps> = ({ isOpen, setIsOpen }) => {
             <CloseRounded />
           </Typography>
         </ListItem>
-        <ListItem>
+        <ListItem sx={{ marginBottom: '2rem' }}>
           <div>
             <div className={'logo-sidebar'}>
               <Image
@@ -152,7 +150,8 @@ const MobileDrawer: FC<MobileDrawerProps> = ({ isOpen, setIsOpen }) => {
               />
             </div>
             <div>
-              <Typography variant="h4" className={'branding-title'}> Design And Code
+              <Typography variant="h4" className={'branding-title'}>
+                Design And Code
               </Typography>
               <Typography variant="subtitle2">
                 Connect, Collaborate, Comprehend
@@ -161,36 +160,28 @@ const MobileDrawer: FC<MobileDrawerProps> = ({ isOpen, setIsOpen }) => {
           </div>
         </ListItem>
         {NAV_LINKS.map((data, i) => (
-          <React.Fragment
-            key={i}
-          >
-            <Link 
-              href={data.url}
-              onClick={() => setIsOpen(false)}
-              // className={'list-item-highlighted'}
-            >
+          <React.Fragment key={i}>
+            <Link href={data.url} onClick={() => setIsOpen(false)}>
               <ListItemButton
-                // className={data.url !== pathname 
-                //   ? 'list-item'
-                //   : 'list-item-highlighted'
-                // }
-                className={'list-item'}
+                className={clsx(
+                  data.url === pathname && 'list-item-highlighted',
+                  'list-item'
+                )}
               >
                 <Typography className={'list-icon'}>
-                  <data.icon/>
+                  <data.icon />
                 </Typography>
-                <Typography variant='subtitle1'>
-                  {data.label}
-                </Typography>
+                <Typography variant="subtitle1">{data.label}</Typography>
               </ListItemButton>
             </Link>
-            <Divider className={'divider'}/>
+            <Divider className={'divider'} />
           </React.Fragment>
         ))}
         <ListItem>
-          <ContainedButton 
+          <ContainedButton
             // @ts-ignore
-            target={'_blank'} 
+            target={'_blank'}
+            fullWidth
             href="https://discord.gg/gM3bG4rAU5"
             width={'100%'}
           >
