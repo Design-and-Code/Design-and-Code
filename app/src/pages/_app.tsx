@@ -8,6 +8,7 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 
 import { useIsomorphicEffect } from '~/hooks/use-isomorphic-effect';
 import AppLayout from '../components/layouts/AppLayout';
+import { Container } from '@mui/material';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -31,7 +32,9 @@ function App(props: MyAppProps) {
           options={{ showSpinner: false }}
           color="#3BA9FD"
         />
-        <Component {...pageProps} />
+        <Container maxWidth={'lg'}>
+          <Component {...pageProps} />
+        </Container>
       </AppLayout>
     </CacheProvider>
   );
