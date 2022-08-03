@@ -3,9 +3,18 @@ import { createTheme } from '@mui/material/styles';
 import { CustomTheme } from './types';
 import { isSSR } from './utils';
 
-const theme = createTheme();
+export const theme = createTheme();
 
 const darkTheme: CustomTheme = {
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 700,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    }
+  },
   palette: {
     primary: {
       main: '#121415',

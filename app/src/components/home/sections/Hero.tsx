@@ -4,7 +4,7 @@ import React from 'react';
 import heroBackground from '~/assets/hero-section.svg';
 import { ContainedButton, OutlinedButton } from '../../common/Button';
 import Link from '../../common/Link';
-import { HeroSectionWrapper } from './styles';
+import { HeroSectionWrapper } from '../styles';
 
 interface HeroSectionProps {}
 

@@ -1,3 +1,4 @@
+import { Breakpoint, BreakpointOverrides, BreakpointsOptions } from '@mui/material';
 import { TypographyOptions } from '@mui/material/styles/createTypography';
 import { CSSProperties } from '@mui/styles';
 
@@ -73,11 +74,19 @@ export interface Caption {
 export interface CustomTheme {
   typography: TypographyOptions;
   palette: Palette;
+  breakpoints: BreakpointsOptions;
 }
 
 declare module '@mui/material/styles' {
   interface Theme {
     typography: Typography;
     palette: Palette;
+    breakPoint: {
+      xs: true; // removes the `xs` breakpoint
+      sm: true;
+      md: true;
+      lg: true;
+      xl: true;
+    }
   }
 }

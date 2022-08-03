@@ -3,6 +3,9 @@ import Head from 'next/head';
 import { Fragment } from 'react';
 import FeaturesSection from '~/components/home/sections/Features';
 import HeroSection from '~/components/home/sections/Hero';
+import TextChannels from '~/components/home/sections/TextChannels';
+import VoiceChannels from '~/components/home/sections/VoiceChannels';
+// import { TextChannelsWrapper } from '~/components/home/styles';
 
 const HomePage: NextPage = () => {
   return (
@@ -12,6 +15,8 @@ const HomePage: NextPage = () => {
       </Head>
       <HeroSection />
       <FeaturesSection />
+      <TextChannels />
+      <VoiceChannels />
     </div>
   );
 };

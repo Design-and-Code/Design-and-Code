@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import React from 'react';
-import { FeatureWrapper, SectionWrapper } from './styles';
+import { FeatureWrapper, SectionWrapper } from '../styles';
 import { FEATURES } from '../../../lib/constants';
 
 interface FeaturesSectionProps {}

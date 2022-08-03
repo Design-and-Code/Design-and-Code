@@ -78,8 +78,8 @@ export const FeatureWrapper = styled('div')(({ theme }) => ({
     justifyContent: "center",
     alignItems: "center",
     margin: "auto",
-    height: 150,
-    width: 150,
+    height: 100,
+    width: 100,
     borderRadius: 9999,
     background:
       "linear-gradient(165.45deg, #2A2D31 7.13%, #2A2D31 7.13%, #282B2F 55.5%, #1F2224 91.72%)",
@@ -105,4 +105,26 @@ export const FeatureWrapper = styled('div')(({ theme }) => ({
     margin: 0,
     textAlign: 'left',
   },
+}))
+
+export const ChannelsWrapper = styled(SectionWrapper)(({ theme }) => ({
+  '.title': {
+    display: 'block',
+    width: '100%',
+    textAlign: 'left',
+    ...theme.palette.text.gradient,
+    marginBottom: "10px",
+  },
+  '.description': {
+    margin: 0,
+    padding: 0,
+    width: "100%",
+    display: 'block',
+    textAlign: 'left',
+    color: theme.palette.text.secondary,
+  },
+  '.channelIllustration': {
+    marginLeft: "auto",
+    width: "100%",
+  }
 }))
