@@ -128,3 +128,7 @@ export const ChannelsWrapper = styled(SectionWrapper)(({ theme }) => ({
     width: "100%",
   }
 }))
+
+export const FAQWrapper = styled(SectionWrapper)(({ theme }) => ({
+
+}))

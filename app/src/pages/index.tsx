@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Fragment } from 'react';
+import FAQ from '~/components/home/sections/FAQ';
 import FeaturesSection from '~/components/home/sections/Features';
 import HeroSection from '~/components/home/sections/Hero';
 import TextChannels from '~/components/home/sections/TextChannels';
@@ -17,6 +18,7 @@ const HomePage: NextPage = () => {
       <FeaturesSection />
       <TextChannels />
       <VoiceChannels />
+      {/* <FAQ/> */}
     </div>
   );
 };

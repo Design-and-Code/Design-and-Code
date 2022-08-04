@@ -57,3 +57,55 @@ export const FEATURES = [{
   title: 'Portfolio & Reviews',
   description: 'Get your portfolio and projects reviewed by Industry experts and mentors.'
 }]
+
+export const PARTNERS = [{
+  id: 'discord1',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord2',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord3',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord4',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord5',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord6',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},]
+
+export const SPONSORS = [{
+  id: 'discord1',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord2',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord3',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord4',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord5',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},{
+  id: 'discord6',
+  name: 'discord',
+  logo: '/static/partners/discord.png'
+},]
