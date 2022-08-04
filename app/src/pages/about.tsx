@@ -4,6 +4,7 @@ import CommunitySection from '~/components/about/sections/Community';
 import HeroSection from '~/components/about/sections/Hero';
 import PartnersSection from '~/components/about/sections/Partners';
 import SponsorsSection from '~/components/about/sections/Sponsors';
+import ReadyToStart from '~/components/common/ReadyToStart';
 
 const Page: NextPage = () => {
   return (
@@ -15,6 +16,7 @@ const Page: NextPage = () => {
       <CommunitySection/>
       <PartnersSection/>
       <SponsorsSection/>
+      <ReadyToStart/>
     </div>
   );
 };
