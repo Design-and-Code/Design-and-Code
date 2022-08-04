@@ -109,3 +109,29 @@ export const SPONSORS = [{
   name: 'discord',
   logo: '/static/partners/discord.png'
 },]
+
+export const FAQ_DATA = [[{
+  id: 0,
+  title: "How do i join as mentor?",
+  description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+}, {
+  id: 1,
+  title: "What benefits will i get after joining the community?",
+  description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+}, {
+  id: 2,
+  title: "What benefits will i get after joining the community?",
+  description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+}], [{
+  id: 3,
+  title: "Do i need to change my name?",
+  description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+}, {
+  id: 4,
+  title: "How to contact any moderators regarding an issue?",
+  description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+}, {
+  id: 5,
+  title: "How to contact any moderators regarding an issue?",
+  description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
+}]]

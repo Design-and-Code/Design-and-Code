@@ -1,4 +1,4 @@
-import { Grid, styled } from '@mui/material';
+import { Accordion, Grid, styled } from '@mui/material';
 
 export const SectionWrapper = styled(Grid)(({ theme }) => ({
   alignItems: 'center',
@@ -130,5 +130,28 @@ export const ChannelsWrapper = styled(SectionWrapper)(({ theme }) => ({
 }))
 
 export const FAQWrapper = styled(SectionWrapper)(({ theme }) => ({
+    marginTop: 40,
+
+}))
+
+export const AccordionWrapper = styled(Accordion)(({ theme }) => ({
+  width: '100%',
+  background:'transparent',
+  boxShadow:'none',
+  '.icon': {
+    color: theme.palette.primary.gradient1
+  },
+  '.heading': {
+    fontSize: '1.25rem',
+    background: 'transparent',
+    color: 'white',
+    fontWeight: 400,
+  },
+  '.description':{
+    background: theme.palette.primary.backgroundBlurColor,
+    padding:'1.5rem',
+    borderRadius:'10px',
+    color: theme.palette.text.secondary
+  },
 
 }))
