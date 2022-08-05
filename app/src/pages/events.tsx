@@ -1,5 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import HeaderSection from '~/components/events/sections/Header';
+import UpcomingEvents from '~/components/events/sections/UpcomingEvents';
 
 const Page: NextPage = () => {
   return (
@@ -7,7 +9,8 @@ const Page: NextPage = () => {
       <Head>
         <title>Events | Design and Code</title>
       </Head>
-      What uppp
+      <HeaderSection/>
+      <UpcomingEvents/>
     </div>
   );
 };

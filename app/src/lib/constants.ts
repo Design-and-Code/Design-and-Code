@@ -1,4 +1,4 @@
-import { 
+import {
   HomeRounded,
   InfoRounded,
   CodeRounded,
@@ -62,23 +62,23 @@ export const PARTNERS = [{
   id: 'discord1',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord2',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord3',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord4',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord5',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord6',
   name: 'discord',
   logo: '/static/partners/discord.png'
@@ -88,23 +88,23 @@ export const SPONSORS = [{
   id: 'discord1',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord2',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord3',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord4',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord5',
   name: 'discord',
   logo: '/static/partners/discord.png'
-},{
+}, {
   id: 'discord6',
   name: 'discord',
   logo: '/static/partners/discord.png'
@@ -135,3 +135,54 @@ export const FAQ_DATA = [[{
   title: "How to contact any moderators regarding an issue?",
   description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet."
 }]]
+
+export const EVENTS = {
+  upcoming: [
+    {
+      thumbnail: "https://i.ytimg.com/vi/gpvRajkOiwo/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAsAEe6pvkgx4qUUHsrHC4PjG93JQ",
+      name: "Resume Workshop.",
+      date: "30 MAY",
+      time: "8:00pm - 10:00pm IST",
+      rsvpLink: ""
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/GZMOV-V-Ohc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoFMq9sprxfZAjPfsLckSnqfffpg",
+      name: "Canva Workshop.",
+      date: "30 MAY",
+      time: "8:00pm - 10:00pm IST",
+      rsvpLink: ""
+    }
+  ],
+  past: [
+    {
+      thumbnail: "https://i.ytimg.com/vi/GZMOV-V-Ohc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoFMq9sprxfZAjPfsLckSnqfffpg",
+      name: "Canva Workshop.",
+      link: "https://www.youtube.com/watch?v=GZMOV-V-Ohc"
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/GZMOV-V-Ohc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoFMq9sprxfZAjPfsLckSnqfffpg",
+      name: "Canva Workshop.",
+      link: "https://www.youtube.com/watch?v=GZMOV-V-Ohc"
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/GZMOV-V-Ohc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoFMq9sprxfZAjPfsLckSnqfffpg",
+      name: "Canva Workshop.",
+      link: "https://www.youtube.com/watch?v=GZMOV-V-Ohc"
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/GZMOV-V-Ohc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoFMq9sprxfZAjPfsLckSnqfffpg",
+      name: "Canva Workshop.",
+      link: "https://www.youtube.com/watch?v=GZMOV-V-Ohc"
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/GZMOV-V-Ohc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoFMq9sprxfZAjPfsLckSnqfffpg",
+      name: "Canva Workshop.",
+      link: "https://www.youtube.com/watch?v=GZMOV-V-Ohc"
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/GZMOV-V-Ohc/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBoFMq9sprxfZAjPfsLckSnqfffpg",
+      name: "Canva Workshop.",
+      link: "https://www.youtube.com/watch?v=GZMOV-V-Ohc"
+    }
+  ]
+}
