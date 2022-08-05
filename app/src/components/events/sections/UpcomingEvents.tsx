@@ -15,9 +15,9 @@ const UpcomingEvents = () => {
         style={{marginBottom:'1rem'}}
       >
         {
-          EVENTS.upcoming.map((event)=>{
+          EVENTS.upcoming.map((event, i)=>{
             return(
-              <Grid item xs={12} sm={6} md={4} >
+              <Grid item xs={12} sm={6} md={4} key={i}>
                 <EventsCard
                   {...event}
                 />

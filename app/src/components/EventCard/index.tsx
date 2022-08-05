@@ -48,8 +48,8 @@ const EventsCard: React.FC<IEventsCardProps> = (props) => {
           <EventCapsules
             svg={
               <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 17C13.1421 17 16.5 13.6421 16.5 9.5C16.5 5.35786 13.1421 2 9 2C4.85786 2 1.5 5.35786 1.5 9.5C1.5 13.6421 4.85786 17 9 17Z" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M9 5V9.5L12 11" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9 17C13.1421 17 16.5 13.6421 16.5 9.5C16.5 5.35786 13.1421 2 9 2C4.85786 2 1.5 5.35786 1.5 9.5C1.5 13.6421 4.85786 17 9 17Z" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                <path d="M9 5V9.5L12 11" stroke="white" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             }
             text={props.time}

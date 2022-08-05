@@ -54,7 +54,7 @@ const FAQ = () => {
     <FAQWrapper data-aos="fade-up" data-aos-delay="200">
       <Grid container>
         <Typography variant="h2" gutterBottom className={'title'}>
-          FAQ's
+          FAQ&apos;s
         </Typography>
         <Grid container>
           {FAQ_DATA.map((item, index) => (
