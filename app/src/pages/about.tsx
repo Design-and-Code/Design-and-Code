@@ -1,13 +1,22 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import CommunitySection from '~/components/about/sections/Community';
+import HeroSection from '~/components/about/sections/Hero';
+import PartnersSection from '~/components/about/sections/Partners';
+import SponsorsSection from '~/components/about/sections/Sponsors';
+import ReadyToStart from '~/components/common/ReadyToStart';
 
 const Page: NextPage = () => {
   return (
-    <div>
+    <div style={{padding: '0 10px'}}>
       <Head>
         <title>About | Design and Code</title>
       </Head>
-      What uppp
+      <HeroSection/>
+      <CommunitySection/>
+      <PartnersSection/>
+      <SponsorsSection/>
+      <ReadyToStart/>
     </div>
   );
 };

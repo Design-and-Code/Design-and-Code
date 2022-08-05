@@ -1,18 +1,27 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { Fragment } from 'react';
-import FeaturesSection from '~/components/sections/Features';
-import HeroSection from '~/components/sections/Hero';
+import ReadyToStart from '~/components/common/ReadyToStart';
+import FAQ from '~/components/home/sections/FAQ';
+import FeaturesSection from '~/components/home/sections/Features';
+import HeroSection from '~/components/home/sections/Hero';
+import TextChannels from '~/components/home/sections/TextChannels';
+import VoiceChannels from '~/components/home/sections/VoiceChannels';
+// import { TextChannelsWrapper } from '~/components/home/styles';
 
 const HomePage: NextPage = () => {
   return (
-    <Fragment>
+    <div style={{padding: '0 10px'}}>
       <Head>
         <title>Home | Design and Code</title>
       </Head>
       <HeroSection />
       <FeaturesSection />
-    </Fragment>
+      <TextChannels />
+      <VoiceChannels />
+      <FAQ/>
+      <ReadyToStart/>
+    </div>
   );
 };
 

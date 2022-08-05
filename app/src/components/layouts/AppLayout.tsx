@@ -5,6 +5,8 @@ import React, { FC, Fragment, PropsWithChildren } from 'react';
 import Navbar from '~/components/navbar';
 import { NAV_LINKS } from '~/lib/constants';
 import { createTheme, darkTheme } from '~/lib/theme';
+import BackgroundBlur from '../BackgroundBlur';
+import Footer from '../footer';
 
 interface AppLayoutProps extends PropsWithChildren {}
 
@@ -38,6 +40,8 @@ const Content: FC<PropsWithChildren> = ({ children }) => {
     <Fragment>
       <Navbar items={NAV_LINKS} />
       {children}
+      <Footer/>
+      <BackgroundBlur/>
     </Fragment>
   );
 };

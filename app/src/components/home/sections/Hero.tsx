@@ -2,9 +2,9 @@ import { Box, Typography } from '@mui/material';
 import Image from 'next/future/image';
 import React from 'react';
 import heroBackground from '~/assets/hero-section.svg';
-import { ContainedButton, OutlinedButton } from '../common/Button';
-import Link from '../common/Link';
-import { HeroSectionWrapper } from './styles';
+import { ContainedButton, OutlinedButton } from '../../common/Button';
+import Link from '../../common/Link';
+import { HeroSectionWrapper } from '../styles';
 
 interface HeroSectionProps {}
 
@@ -29,11 +29,24 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             href="https://discord.gg/gM3bG4rAU5"
             LinkComponent={Link}
             size="large"
+            style={{
+              width: '230px'
+            }}
           >
-            JOIN DISCORD
+            <Typography variant='subtitle2'>
+              JOIN DISCORD
+            </Typography>
           </ContainedButton>
-          <OutlinedButton href="/about" size="large">
-            PARTNERSHIP
+          <OutlinedButton 
+            href="/about" 
+            size="large"
+            style={{
+              width: '230px'
+            }}
+          >
+            <Typography variant='subtitle2'>
+              PARTNERSHIP
+            </Typography>
           </OutlinedButton>
         </Box>
       </Box>

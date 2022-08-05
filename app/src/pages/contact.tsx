@@ -8,6 +8,7 @@ const Page: NextPage = () => {
         <title>Contact | Design and Code</title>
       </Head>
       What uppp
+      
     </div>
   );
 };

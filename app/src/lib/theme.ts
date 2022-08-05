@@ -3,9 +3,18 @@ import { createTheme } from '@mui/material/styles';
 import { CustomTheme } from './types';
 import { isSSR } from './utils';
 
-const theme = createTheme();
+export const theme = createTheme();
 
 const darkTheme: CustomTheme = {
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 700,
+      md: 900,
+      lg: 1200,
+      xl: 1536,
+    }
+  },
   palette: {
     primary: {
       main: '#121415',
@@ -41,7 +50,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 600,
       lineHeight: 1.167,
       letterSpacing: '-0.01562em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '4rem',
       },
     },
@@ -50,7 +59,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 500,
       lineHeight: 1.2,
       letterSpacing: '-0.00833em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '2.50rem',
       },
     },
@@ -59,7 +68,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 500,
       lineHeight: 1.167,
       letterSpacing: '0em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '2rem',
       },
     },
@@ -68,7 +77,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 500,
       lineHeight: 1.235,
       letterSpacing: '0.00735em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '1.5rem',
       },
     },
@@ -77,7 +86,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 500,
       lineHeight: 1.334,
       letterSpacing: '0em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '1.25rem',
       },
     },
@@ -86,7 +95,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 500,
       lineHeight: 1.6,
       letterSpacing: '0.0075em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '1rem',
       },
     },
@@ -95,7 +104,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 400,
       lineHeight: 1.75,
       letterSpacing: '0.00938em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '0.875rem',
       },
     },
@@ -104,7 +113,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 500,
       lineHeight: 1.57,
       letterSpacing: '0.00714em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '1rem',
       },
     },
@@ -113,7 +122,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 400,
       lineHeight: 1.5,
       letterSpacing: '0.00938em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '0.875rem',
       },
     },
@@ -122,7 +131,7 @@ const darkTheme: CustomTheme = {
       fontWeight: 400,
       lineHeight: 1.43,
       letterSpacing: '0.01071em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '0.5rem',
       },
     },
@@ -132,7 +141,7 @@ const darkTheme: CustomTheme = {
       lineHeight: 1.75,
       letterSpacing: '0.02857em',
       textTransform: 'unset',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '0.5rem',
       },
     },
@@ -141,7 +150,7 @@ const darkTheme: CustomTheme = {
       fontWeight: '400',
       lineHeight: '1.66',
       letterSpacing: '0.03333em',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '0.25rem',
       },
     },
@@ -151,7 +160,7 @@ const darkTheme: CustomTheme = {
       lineHeight: 2.66,
       letterSpacing: '0.08333em',
       textTransform: 'uppercase',
-      [theme.breakpoints.down('sm')]: {
+      [theme.breakpoints.down('md')]: {
         fontSize: '0.25rem',
       },
     },
