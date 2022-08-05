@@ -4,8 +4,8 @@ import EventCapsules from './EventCapsules';
 import { PastEventCardWrapper } from './styles';
 
 interface IPastEventCardProps {
-  thumbnail: string, 
-  name: string, 
+  thumbnail: string,
+  name: string,
   link: string,
 }
 
@@ -13,11 +13,10 @@ const PastEventCard: React.FC<IPastEventCardProps> = (props) => {
   return (
     <PastEventCardWrapper>
       <a href={props.link}>
-        <Box className={'eventsCard'}>
+        <Box className={'events-card eventsCard'}>
           <Box className={'bannerOuter bannerOuterPast'}>
             <img src={props.thumbnail} alt="Image" className={'banner bannerPastImage'} />
             <Typography className={'eventName'} variant="h6">{props.name}</Typography>
-
             <div className={'play'} >
               <EventCapsules
                 svg={
