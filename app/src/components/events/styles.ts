@@ -56,3 +56,15 @@ export const UpcomingEventsWrapper = styled('div')(({ theme }) => ({
     marginBottom: "2rem",
   },
 }))
+
+export const PastEventsWrapper = styled('div')(({ theme }) => ({
+  '.subtitle': {
+    display: "block",
+    width: "100%",
+    fontWeight:'600',
+    ...theme.palette.text.gradient,
+  },
+  '.pastEventBox': {
+    marginBottom: '2rem',
+  },  
+}))

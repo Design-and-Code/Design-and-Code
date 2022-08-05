@@ -1,7 +1,8 @@
 import { Box, Typography } from '@mui/material';
-import { EventsCapsuleWrapper, EventsCardWrapper } from './styles';
+import { EventsCardWrapper } from './styles';
 import React from 'react'
 import { ContainedButton } from '../common/Button';
+import EventCapsules from './EventCapsules';
 
 interface IEventsCardProps {
   thumbnail: string,
@@ -11,23 +12,8 @@ interface IEventsCardProps {
   rsvpLink: string,
 }
 
-interface IEventCapsulesProps {
-  svg: JSX.Element,
-  text: string,
-}
 
-const EventCapsules: React.FC<IEventCapsulesProps> = (props) => {
-  return (
-    <EventsCapsuleWrapper>
-      <div className={'svg'}>
-        {props.svg}
-      </div>
-      {props.text}
-    </EventsCapsuleWrapper>
-  )
-}
-
-const EventsCard: React.FC<IEventsCardProps> = (props) => {
+export const EventsCard: React.FC<IEventsCardProps> = (props) => {
   return (
     <EventsCardWrapper>
       <Box className={'bannerOuter'}>
@@ -80,4 +66,3 @@ const EventsCard: React.FC<IEventsCardProps> = (props) => {
   )
 }
 
-export default EventsCard;

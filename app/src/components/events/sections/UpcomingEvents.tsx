@@ -1,5 +1,5 @@
 import { Grid, Typography } from "@mui/material";
-import EventsCard from "~/components/EventCard";
+import { EventsCard } from "~/components/EventCard";
 import { EVENTS } from "~/lib/constants";
 import { UpcomingEventsWrapper } from "../styles";
 

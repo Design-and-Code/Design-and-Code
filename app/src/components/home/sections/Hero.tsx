@@ -30,7 +30,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             LinkComponent={Link}
             size="large"
             style={{
-              width: '200px'
+              width: '230px'
             }}
           >
             <Typography variant='subtitle2'>
@@ -41,7 +41,7 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
             href="/about" 
             size="large"
             style={{
-              width: '200px'
+              width: '230px'
             }}
           >
             <Typography variant='subtitle2'>

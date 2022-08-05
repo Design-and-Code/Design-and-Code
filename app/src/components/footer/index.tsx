@@ -13,7 +13,6 @@ const youtubeIcon = "/static/social-icons/BgYouTubeIcon.svg";
 import Link from "next/link";
 import { ContainedButton } from "../common/Button";
 
-
 const Footer = () => {
   return (
     <FooterWrapper>
@@ -106,7 +105,7 @@ const Footer = () => {
             </div>
           </Grid>
           <Hidden smDown>
-            <Grid md={6} xs={2}>
+            <Grid item md={6} xs={2}>
               <Typography variant="subtitle1" className={'joinUsBtn'}>
                 <ContainedButton
                   size="large"
@@ -125,7 +124,6 @@ const Footer = () => {
           </Typography>
         </Grid>
       </Container>
-
     </FooterWrapper>
   )
 }

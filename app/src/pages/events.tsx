@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import ReadyToStart from '~/components/common/ReadyToStart';
 import HeaderSection from '~/components/events/sections/Header';
+import PastEvents from '~/components/events/sections/PastEvents';
 import UpcomingEvents from '~/components/events/sections/UpcomingEvents';
 
 const Page: NextPage = () => {
@@ -11,6 +13,8 @@ const Page: NextPage = () => {
       </Head>
       <HeaderSection/>
       <UpcomingEvents/>
+      <PastEvents/>
+      <ReadyToStart/>
     </div>
   );
 };

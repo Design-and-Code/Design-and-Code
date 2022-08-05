@@ -56,3 +56,42 @@ export const EventsCapsuleWrapper = styled(Box)(({ theme }) => ({
   }
 
 }))
+
+export const PastEventCardWrapper = styled('div')(({ theme }) => ({
+  '.eventsCard': {
+    borderRadius: '10px',
+  },
+  '.bannerOuter':{
+    width:'100%',
+    borderRadius: '10px',
+  },
+  '.banner': {
+      width:'100%',
+      borderRadius: '10px',
+      objectFit:'contain',
+      transition:'0.5s',
+      overflow:'hidden'
+  },
+  '.eventName':{
+    color:"white"
+  },
+  '.play': {
+    visibility: 'hidden',
+    position: 'absolute',
+    left: '25%',
+    top: '32%',
+    zIndex: 10,
+  },
+  '.bannerOuterPast': {
+    transition: '5s',
+    position: 'relative',
+  },
+  '.bannerPastImage': {
+    width: '100%',
+    overflow: 'hidden',
+    objectFit: 'contain',
+    transition: '0.5s',
+    bordeRadius: '10px',
+  }
+
+}))
