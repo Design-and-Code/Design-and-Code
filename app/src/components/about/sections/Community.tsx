@@ -1,5 +1,4 @@
 import { Grid, Typography } from '@mui/material';
-import Image from 'next/image';
 import { CommunitySectionWrapper } from '../styles'
 
 const CommunitySection = () => {
@@ -25,7 +24,7 @@ const CommunitySection = () => {
         </Grid>
         <Grid container item xs={12} sm={6}>
           <div className={'communityGrid2'}>
-            <Image
+            <img
               src={'/static/illustrations/aboutIllustration.svg'}
               className={'cgimage'}
               alt="Hero"

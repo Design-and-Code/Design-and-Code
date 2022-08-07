@@ -12,7 +12,6 @@ const youtubeIcon = "/static/social-icons/BgYouTubeIcon.svg";
 
 import Link from "next/link";
 import { ContainedButton } from "../common/Button";
-import Image from "next/image";
 
 const Footer = () => {
   return (
@@ -21,7 +20,7 @@ const Footer = () => {
         <Grid container className={'footerContent'}>
           <Grid item>
             <div className={'branding'}>
-              <Image
+              <img
                 src={brandingLogo}
                 className={'brandingLogo'}
                 alt="branding-logo"
@@ -66,42 +65,42 @@ const Footer = () => {
           <Grid item md={6}>
             <div className={'socialLinks'}>
               <a href="mailto:designandcode.community@gmail.com">
-                <Image src={emailIcon} alt="Email icon" />
+                <img src={emailIcon} alt="Email icon" />
               </a>
               <a
                 href="https://twitter.com/DesignandCode3"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image src={twitterIcon} alt="Twitter icon" />
+                <img src={twitterIcon} alt="Twitter icon" />
               </a>
               <a
                 href="https://www.linkedin.com/company/designandcode/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image src={linkedinIcon} alt="Linkedin icon" />
+                <img src={linkedinIcon} alt="Linkedin icon" />
               </a>
               <a
                 href="https://www.instagram.com/designandcode.community/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image src={instagramIcon} alt="Instagram icon" />
+                <img src={instagramIcon} alt="Instagram icon" />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCd4E0oe8MtnZu_48WvYeLMw?sub_confirmation=1"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image src={youtubeIcon} alt="YouTube icon" />
+                <img src={youtubeIcon} alt="YouTube icon" />
               </a>
               <a
                 href="https://github.com/Design-and-Code"
                 target="_blank"
                 rel="noreferrer"
               >
-                <Image src={githubIcon} alt="GitHub icon" />
+                <img src={githubIcon} alt="GitHub icon" />
               </a>
             </div>
           </Grid>

@@ -1,5 +1,4 @@
 import { Grid, Typography } from "@mui/material";
-import Image from "next/image";
 import { ChannelsWrapper } from "../styles"
 
 const TextChannels = () => {
@@ -30,7 +29,7 @@ const TextChannels = () => {
       </Grid>
       <Grid item xs={12} sm={6} pt={4}>
         <div data-aos="fade-up" data-aos-delay="200">
-          <Image
+          <img 
             src="/static/illustrations/textChannelsIllustration.png" 
             alt=" " 
             className={'channelIllustration'}
