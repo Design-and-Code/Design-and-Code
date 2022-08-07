@@ -133,5 +133,4 @@ export const TeamSectionWrapper = styled(SectionWrapper)(({ theme }) => ({
       color: theme.palette.text.secondary,
       flexGrow: 100
     },
-
 }))

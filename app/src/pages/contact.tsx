@@ -1,5 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import ContactForm from '~/components/contact/sections/ContactForm';
+import ContactUs from '~/components/contact/sections/ContactUs';
+import Options from '~/components/contact/sections/Options';
+import { ContactGridWrapper, ContactSectionWrapper } from '~/components/contact/styles';
 
 const Page: NextPage = () => {
   return (
@@ -7,8 +11,13 @@ const Page: NextPage = () => {
       <Head>
         <title>Contact | Design and Code</title>
       </Head>
-      What uppp
-      
+      <ContactSectionWrapper>
+        <ContactUs/>
+        <ContactGridWrapper container>
+          <ContactForm/>
+          <Options/>
+        </ContactGridWrapper>
+      </ContactSectionWrapper>
     </div>
   );
 };
