@@ -22,7 +22,7 @@ const Contactus = () => {
                         >
                             designandcode.community@gmail.com
                         </a>{" "}
-                        and we'll get back to you
+                        and we{"'"}ll get back to you
                     </Typography>
                 </div>
             </Grid>

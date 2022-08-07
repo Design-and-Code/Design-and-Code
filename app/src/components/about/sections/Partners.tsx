@@ -1,4 +1,5 @@
 import { Grid, Typography } from "@mui/material";
+import Image from "next/image";
 import React from "react";
 import { PARTNERS } from "~/lib/constants";
 import { PartnersSectionsWrapper } from "../styles";
@@ -12,7 +13,7 @@ interface IPartnerProps {
 const Partner: React.FC<IPartnerProps> = (props) => {
   return (
     <>
-      <img className={'image'} src={props.logo} alt="Partner" />
+      <Image className={'image'} src={props.logo} alt="Partner" />
     </>
   )
 }

@@ -3,6 +3,7 @@ import { EventsCardWrapper } from './styles';
 import React from 'react'
 import { ContainedButton } from '../common/Button';
 import EventCapsules from './EventCapsules';
+import Image from 'next/image';
 
 interface IEventsCardProps {
   thumbnail: string,
@@ -17,7 +18,7 @@ export const EventsCard: React.FC<IEventsCardProps> = (props) => {
   return (
     <EventsCardWrapper>
       <Box className={'bannerOuter'}>
-        <img src={props.thumbnail} alt="Image" className={'banner'} />
+        <Image src={props.thumbnail} alt="Image" className={'banner'} />
       </Box>
       <Box className={'eventContent'}>
         <Typography className={'eventName'} variant="h5">{props.name}</Typography>

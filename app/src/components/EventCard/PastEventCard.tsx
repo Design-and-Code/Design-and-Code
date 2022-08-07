@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import Image from 'next/image';
 import React from 'react';
 import EventCapsules from './EventCapsules';
 import { PastEventCardWrapper } from './styles';
@@ -15,7 +16,7 @@ const PastEventCard: React.FC<IPastEventCardProps> = (props) => {
       <a href={props.link}>
         <Box className={'events-card eventsCard'}>
           <Box className={'bannerOuter bannerOuterPast'}>
-            <img src={props.thumbnail} alt="Image" className={'banner bannerPastImage'} />
+            <Image src={props.thumbnail} alt="Image" className={'banner bannerPastImage'} />
             <Typography className={'eventName'} variant="h6">{props.name}</Typography>
             <div className={'play'} >
               <EventCapsules

@@ -2,6 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import React from 'react';
 import { FeatureWrapper, SectionWrapper } from '../styles';
 import { FEATURES } from '../../../lib/constants';
+import Image from 'next/image';
 
 interface FeaturesSectionProps {}
 
@@ -15,7 +16,7 @@ const Feature: React.FC<FeatureProps> = (props) => {
   return (
     <FeatureWrapper data-aos="fade-up" data-aos-delay="200">
       <div className={'imageHolder'}  data-aos="fade-up" data-aos-delay="400">
-        <img className={'image'} src={props.image} alt="feature" />
+        <Image className={'image'} src={props.image} alt="feature" />
       </div>
       <div className={'infoHolder'}>
         <div data-aos="fade-up" data-aos-delay="300"> 

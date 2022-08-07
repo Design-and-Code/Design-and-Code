@@ -1,11 +1,12 @@
 import { Typography } from "@mui/material"
+import Image from "next/image"
 import { ContainedButton } from "~/components/common/Button"
 import { HeaderSectionWrapper } from "../styles"
 
 const HeaderSection = () => {
   return (
     <HeaderSectionWrapper>
-      <img src='/static/Group 181.png' alt="Logo" className={'image'} />
+      <Image src='/static/Group 181.png' alt="Logo" className={'image'} />
       <div className="event-header">
         <Typography variant="h2" gutterBottom className={'title'}>
           Our Events
