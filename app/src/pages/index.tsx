@@ -56,7 +56,7 @@ const HomePage: NextPage = () => {
 //         </Grid>
 //         <Grid container xs={12} sm={6}>
 //           <div data-aos="fade-up" data-aos-delay="200">
-//             <img
+//             <Image
 //               src={textChannelsIllustration}
 //               className={classes.categoriesIllustration}
 //               alt="Categories Illustration"
@@ -67,7 +67,7 @@ const HomePage: NextPage = () => {
 //       <Grid container className={classes.section}>
 //         <Grid container xs={12} sm={6}>
 //           <div data-aos="fade-up" data-aos-delay="200">
-//             <img
+//             <Image
 //               src={voiceChannelsIllustration}
 //               className={classes.categoriesIllustration}
 //               alt="Categories Illustration"
