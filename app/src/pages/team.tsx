@@ -1,5 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import HeroSection from '~/components/team/sections/Hero';
+import TeamSection from '~/components/team/sections/Team';
 
 const Page: NextPage = () => {
   return (
@@ -7,7 +9,8 @@ const Page: NextPage = () => {
       <Head>
         <title>Team | Design and Code</title>
       </Head>
-      What uppp
+      <HeroSection/>
+      <TeamSection/>
     </div>
   );
 };
