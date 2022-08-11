@@ -1,26 +1,21 @@
-const partners = [{
-    id: 'discord',
-    name: 'discord',
-    logo: '/partners/discord.png'
-  },{
-    id: 'discord2',
-    name: 'discord',
-    logo: '/partners/discord.png'
-  },{
-    id: 'discord3',
-    name: 'discord',
-    logo: '/partners/discord.png'
-  },{
-    id: 'discord4',
-    name: 'discord',
-    logo: '/partners/discord.png'
-  },{
-    id: 'discord5',
-    name: 'discord',
-    logo: '/partners/discord.png'
-  },{
-    id: 'discord6',
-    name: 'discord',
-    logo: '/partners/discord.png'
-  },]
+const partners = [
+  {
+    id: 'debuggers',
+    name: 'Debuggers',
+    href: 'https://discord.gg/KvndVFY4/',
+    logo: '/partners/debuggers.png',
+  },
+  {
+    id: 'fueler',
+    name: 'fueler',
+    href: 'https://fueler.io/',
+    logo: '/partners/fueler.png',
+  },
+  {
+    id: 'coding-minutes',
+    name: 'Coding minutes',
+    href: 'https://www.codingminutes.com/',
+    logo: '/partners/coding-minutes.png',
+  },
+];
 export default partners;

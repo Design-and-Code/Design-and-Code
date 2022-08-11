@@ -1,63 +1,61 @@
-import heroIllustration from "../../assets/illustrations/hero-section.svg";
+import heroIllustration from '../../assets/illustrations/hero-section.svg';
 export default function styles(theme) {
   return {
     section: {
-      alignItems: "center",
-      justifyContent: "center",
+      alignItems: 'center',
+      justifyContent: 'center',
       marginBottom: 120,
     },
     title: {
-      display: "block",
-      width: "100%",
-      textAlign: "center",
-      
-
+      display: 'block',
+      width: '100%',
+      textAlign: 'center',
       ...theme.palette.text.gradient,
     },
     subtitle: {
-      display: "block",
-      width: "100%",
-      textAlign: "center",
+      display: 'block',
+      width: '100%',
+      textAlign: 'center',
       ...theme.palette.text.gradient,
     },
     description: {
-      margin: "1rem auto",
-      display: "block",
-      width: "80%",
-      textAlign: "center",
+      margin: '1rem auto',
+      display: 'block',
+      width: '80%',
+      textAlign: 'center',
 
       color: theme.palette.text.primary,
     },
     secondaryDesc: {
       color: theme.palette.text.secondary,
-      width: "100%",
+      width: '100%',
     },
     textAlignLeft: {
       margin: 0,
       marginBottom: 24,
-      textAlign: "left",
+      textAlign: 'left',
       // [theme.breakpoints.down("sm")]: {
       //   textAlign: "center",
       // },
     },
     heroSection: {
-      height: "65vh",
+      height: '65vh',
       background: `url(${heroIllustration}) no-repeat center`,
-      backgroundSize: "contain",
+      backgroundSize: 'contain',
     },
     heroSectionContent: {
-      width: "100%",
+      width: '100%',
     },
     heroBtns: {
-      display: "flex",
-      width: "100%",
-      justifyContent: "center",
+      display: 'flex',
+      width: '100%',
+      justifyContent: 'center',
       gap: 40,
       marginTop: 54,
-      [theme.breakpoints.down("sm")]: {
+      [theme.breakpoints.down('sm')]: {
         gap: 18,
       },
-      flexWrap: "wrap",
+      flexWrap: 'wrap',
     },
     categoriesSection: {
       // [theme.breakpoints.down("sm")]: {
@@ -65,25 +63,35 @@ export default function styles(theme) {
       // },
     },
     categoriesIllustration: {
-      marginLeft: "auto",
-      width: "100%",
+      marginLeft: 'auto',
+      width: '100%',
     },
     video: {
-      width: "100%",
-      [theme.breakpoints.down("sm")]: {
+      width: '100%',
+      [theme.breakpoints.down('sm')]: {
         height: 300,
         // display: "flex",
       },
     },
     videoDesc: {
       marginTop: 40,
-      textAlign: "center"
+      textAlign: 'center',
     },
     discord: {
-      borderRadius: "8px",
-      [theme.breakpoints.down("sm")]: {
-        height: "650px"
+      borderRadius: '8px',
+      [theme.breakpoints.down('sm')]: {
+        height: '650px',
       },
-    }
+    },
+    sponsors: {
+      textAlign: 'center',
+      margin: '0',
+      justifyContent: 'center',
+      alignItems: 'stretch',
+      gap: '30px',
+      [theme.breakpoints.down('xs')]: {
+        gap: '15px',
+      },
+    },
   };
 }

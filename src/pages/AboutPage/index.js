@@ -1,22 +1,15 @@
-import React from "react";
-import { useHistory } from "react-router-dom";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 //Importing Material UI stuff
-import { makeStyles } from "@material-ui/core/styles";
-import { ContainedButton, OutlinedButton } from "../../components/Buttons";
+import { makeStyles } from '@material-ui/core/styles';
 
 //Importing Components
-import { Grid, Typography, Divider } from "@material-ui/core";
-import heroIllustration from "../../assets/placeholders/Group 55.png";
+import { Grid, Typography } from '@material-ui/core';
 
-import style from "./style";
-import Member from "../../components/Member";
-import aboutIllustration from "../../assets/illustrations/aboutIllustration.svg";
-import image from "../../assets/placeholders/partner.png";
-import Partner from "../../components/PartnersAndSponsors";
-import ReadyToStart from "../../components/ReadyToStart";
-import partners from "../../components/PartnersAndSponsors/partners";
-import sponsors from "../../components/PartnersAndSponsors/sponsors";
+import aboutIllustration from '../../assets/illustrations/aboutIllustration.svg';
+import ReadyToStart from '../../components/ReadyToStart';
+import style from './style';
 
 const useStyles = makeStyles(style);
 function AboutPage() {
@@ -72,52 +65,8 @@ function AboutPage() {
         </Grid>
       </Grid>
 
-      {/* Partners and sponsors section*/}
-      <Grid container className={`${classes.section}`}>
-        <Typography variant="h2" gutterBottom className={classes.subtitle}>
-          Our Partners
-        </Typography>
-        <Grid 
-          container 
-          spacing={2} 
-          className={classes.sponsors}
-        >
-          {partners.map(partner => (
-            <Partner
-              xs={6}
-              sm={4}
-              md={3}
-              key={partner.id}
-              image={partner.logo}
-              name={partner.name}
-            />
-          ))}
-        </Grid>
-      </Grid>
-
-      <Grid container className={`${classes.section}`}>
-        <Typography variant="h2" gutterBottom className={classes.subtitle}>
-          Our Sponsors
-        </Typography>
-        <Grid 
-          container 
-          spacing={2} 
-          className={classes.sponsors}
-        >
-          {sponsors.map(sponsor => (
-            <Partner
-              xs={6}
-              sm={4}
-              md={3}
-              key={sponsor.id}
-              image={sponsor.logo}
-              name={sponsor.name}
-            />
-          ))}
-        </Grid>
-      </Grid>
       {/* Ready to start Journey section */}
-      <ReadyToStart/>
+      <ReadyToStart />
     </div>
   );
 }

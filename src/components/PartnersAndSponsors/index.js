@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Grid, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
+import React, { useEffect, useState } from 'react';
+import { Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 
 //Importing Components
 
-import style from "./style";
+import style from './style';
 const useStyles = makeStyles(style);
 
 function Partner({ image, name }) {
@@ -14,8 +14,8 @@ function Partner({ image, name }) {
     setIsDesktop(window.innerWidth > 900);
   };
   useEffect(() => {
-    window.addEventListener("resize", updateMedia);
-    return () => window.removeEventListener("resize", updateMedia);
+    window.addEventListener('resize', updateMedia);
+    return () => window.removeEventListener('resize', updateMedia);
   });
 
   return (
