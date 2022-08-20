@@ -36,7 +36,7 @@ export const HeroSectionWrapper = styled(SectionWrapper)(({ theme }) => ({
     position: 'absolute',
     objectFit: 'contain',
     objectPosition: 'center',
-    margin: '0 auto 50px auto',
+    // margin: '0 auto 50px auto',
     width: '90%',
     zIndex: -1,
   },
