@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  text-decoration: none;
+  box-sizing: 'border-box';
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.bannerOuter {
+  transition: 0.5s;
+}
+
+.eventsCard:hover > .bannerOuter {
+  transform: scale(1.02);
+}
+
+.shine {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  height: 98px;
+  width: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: all 0.3s linear;
+  transform: skewX(20deg) translateX(0);
+}
+
+.shine2 {
+  position: absolute;
+  top: 0;
+  right: -70px;
+  height: 98px;
+  width: 50px;
+  background: rgba(63, 155, 254, 0.4);
+  transition: all 0.3s linear;
+  transform: skewX(20deg) translateX(0);
+}
+
+.container-btns {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.bannerOuterPast {
+  transition: 0.5s;
+  position: relative;
+}
+.bannerOuterPast:hover > .bannerPastImage {
+  filter: brightness(50%);
+}
+.bannerOuterPast > .play {
+  visibility: hidden;
+  position: absolute;
+  left: 25%;
+  top: 32%;
+  z-index: 10;
+}
+.bannerOuterPast:hover > .play {
+  visibility: visible;
+}
+
+.container-btns:hover .shine {
+  transform: skewX(20deg) translateX(-1000%);
+}
+
+.container-btns:hover .shine2 {
+  transform: skewX(20deg) translateX(-1000%);
+}
+
+.rsvp-outer > .container-btns {
+  width: 100%;
+}
+.event-header > .container-btns {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .event-header > .container-btns {
+    margin: auto;
+    margin-top: 1rem;
+  }
+}

@@ -2,44 +2,36 @@
   "name": "design-and-code",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@material-ui/core": "^4.11.3",
-    "@material-ui/icons": "^5.0.0-alpha.28",
-    "@material-ui/lab": "^4.0.0-alpha.57",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "aos": "^2.3.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-multi-carousel": "^2.6.5",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "react-swipeable-views": "^0.13.9",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@emotion/cache": "^11.9.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.2",
+    "@mui/styles": "^5.9.2",
+    "aos": "^2.3.4",
+    "axios": "^0.27.2",
+    "next": "12.2.3",
+    "next-progress": "^2.2.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-multi-carousel": "^2.8.2",
+    "react-swipeable-views": "^0.13.9"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@types/aos": "^3.0.4",
+    "@types/node": "18.6.2",
+    "@types/react": "18.0.15",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.20.0",
+    "eslint-config-next": "12.2.3",
+    "typescript": "4.7.4"
   }
 }
