@@ -1,21 +1,25 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import ReadyToStart from '~/components/common/ReadyToStart';
 import ContactForm from '~/components/contact/sections/ContactForm';
-import Contactus from '~/components/contact/sections/Contactus';
-
+import ContactUs from '~/components/contact/sections/ContactUs';
+import Options from '~/components/contact/sections/Options';
+import { ContactGridWrapper, ContactSectionWrapper } from '~/components/contact/styles';
 
 const Page: NextPage = () => {
-    return (
-        <div>
-            <Head>
-                <title>Contact | Design and Code</title>
-            </Head>
-            <Contactus />
-            <ContactForm />
-            <ReadyToStart />
-        </div>
-    );
+  return (
+    <div>
+      <Head>
+        <title>Contact | Design and Code</title>
+      </Head>
+      <ContactSectionWrapper>
+        <ContactUs/>
+        <ContactGridWrapper container>
+          <ContactForm/>
+          <Options/>
+        </ContactGridWrapper>
+      </ContactSectionWrapper>
+    </div>
+  );
 };
 
 export default Page;
