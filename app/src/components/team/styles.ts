@@ -47,9 +47,9 @@ export const HeroSectionWrapper = styled(SectionWrapper)(({ theme }) => ({
     alignItems: "center",
     background: theme.palette.primary.backgroundBlurColor,
     borderRadius: "8px",
+    padding: theme.spacing(3),
     [theme.breakpoints.down("sm")]: {
       flexDirection: "column",
-      padding: theme.spacing(3),
     },
   },
   '.imageWrapper': {
@@ -133,4 +133,33 @@ export const TeamSectionWrapper = styled(SectionWrapper)(({ theme }) => ({
       color: theme.palette.text.secondary,
       flexGrow: 100
     },
+}))
+
+export const WebsiteTeamWrapper = styled(SectionWrapper)(({ theme }) => ({
+  backgroundColor: "hsla(218, 20%, 16%, 0.5)",
+  borderRadius: "20px",
+  padding: "50px",
+  marginLeft: '0px',
+  width: '100%',
+  [theme.breakpoints.down("sm")]: {
+    padding: "30px"
+  },
+  '.contributorImage': {
+    width: '100%',
+    height: 'auto'
+  },
+  '.contributor': {
+    padding: '0px',
+    width: "75px",
+    height: "75px", 
+    border: '2px solid hsla(222, 100%, 64%, 1)',
+    borderRadius: "50%",
+    overflow: 'hidden',
+  },
+  '.subtitle': {
+    display: "block",
+    width: "100%",
+    textAlign: "center",
+    ...theme.palette.text.gradient,
+  }
 }))
