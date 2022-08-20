@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Grid, Tooltip, Typography } from '@mui/material';
 import { WebsiteTeamWrapper } from '../styles';
 import useSWR from 'swr';

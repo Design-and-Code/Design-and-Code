@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import ContactForm from '~/components/contact/sections/ContactForm';
-import ContactUs from '~/components/contact/sections/ContactUs';
+import ContactUs from '~/components/contact/sections/Contact';
 import Options from '~/components/contact/sections/Options';
 import { ContactGridWrapper, ContactSectionWrapper } from '~/components/contact/styles';
 
