@@ -1,6 +1,7 @@
-import { Grid, Typography } from "@mui/material"
-import Links from "../Links";
-import { HeroSectionWrapper } from "../styles"
+import { Grid, Typography } from '@mui/material';
+import Image from 'next/image';
+import Links from '../Links';
+import { HeroSectionWrapper } from '../styles';
 
 const HeroSection = () => {
   return (
@@ -11,15 +12,17 @@ const HeroSection = () => {
             Our Team
           </Typography>
           <Typography variant="h6" gutterBottom className={'description'}>
-            Meet the spirited team that work behind the scenes to establish
-            this platform.
+            Meet the spirited team that work behind the scenes to establish this
+            platform.
           </Typography>
           <div>
             <div className={'infoHolder'}>
               <div className={'imageWrapper'}>
-                <img
+                <Image
                   className={'image'}
-                  src="static/team/Devraj Chatribin.jpeg"
+                  width={250}
+                  height={250}
+                  src="/static/team/Devraj Chatribin.jpeg"
                   alt="Member"
                 />
               </div>
@@ -48,23 +51,20 @@ const HeroSection = () => {
                   that we can impact as many people as possible in the coming
                   future.
                 </Typography>
-                <div>
-                  <Links
-                    linkedIn={"https://www.linkedin.com/in/devraj-chatribin/"}
-                    instagram={"https://www.instagram.com/designfordev/"}
-                    twitter={"https://twitter.com/devrajchatribin"}
-                    github={"https://github.com/DevrajDC"}
-                    website={"https://devrajchatribin.co/"}
-                  />
-                </div>
+                <Links
+                  linkedIn={'https://www.linkedin.com/in/devraj-chatribin/'}
+                  instagram={'https://www.instagram.com/designfordev/'}
+                  twitter={'https://twitter.com/devrajchatribin'}
+                  github={'https://github.com/DevrajDC'}
+                  website={'https://devrajchatribin.co/'}
+                />
               </div>
             </div>
           </div>
         </div>
       </HeroSectionWrapper>
-
     </>
-  )
-}
+  );
+};
 
 export default HeroSection;

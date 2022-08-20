@@ -26,6 +26,7 @@ export const SectionWrapper = styled(Grid)(({ theme }) => ({
   },
   '.link':{
     objectFit:'contain',
+    cursor: "pointer",
     width:'2rem',
     margin:'1rem 1.5rem 1rem 0rem'
   },
