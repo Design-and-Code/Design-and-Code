@@ -2,12 +2,9 @@ import { Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
 import { CommunitySectionWrapper } from "../styles";
+import aboutIllustration from "~/assets/aboutIllustration.svg";
 
 const CommunitySection = () => {
-	const [imageURL, setImageURL] = useState(
-		"/static/illustrations/aboutIllustrationStatic.svg"
-	);
-
 	return (
 		<CommunitySectionWrapper container>
 			<Grid container>
@@ -31,13 +28,12 @@ const CommunitySection = () => {
 				<Grid container item xs={12} sm={6}>
 					<div className={"communityGrid2"}>
 						<Image
-							src={imageURL}
+							src={aboutIllustration}
+							placeholder="blur"
+							blurDataURL="../../../assets/aboutIllustrationPlaceholder.png"
 							loading="lazy"
 							height={400}
 							width={400}
-							onLoad={() =>
-								setImageURL("/static/illustrations/aboutIllustration.svg")
-							}
 							alt="community illustration"
 						/>
 						{/* <img
