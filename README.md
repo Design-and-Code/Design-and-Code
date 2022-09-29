@@ -1,6 +1,10 @@
 ![DC Banner](https://user-images.githubusercontent.com/65373279/116761730-055f0000-aa36-11eb-80b0-96f321958926.png)
+
 # Design-and-Code
+
 **Welcome to Design & Code where anyone interested in designing and coding can connect and interact with fellow peers from all over the globe and not only learn but also collaborate on various projects!**
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/Design-and-Code/Design-and-Code)
 
 <p align="left">
 <a href="mailto:designandcode.community@gmail.com" style="text-decoration:none">
