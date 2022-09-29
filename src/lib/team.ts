@@ -187,7 +187,7 @@ export const TEAM_INFO = [
     linkedinUrl: "https://www.linkedin.com/in/harshjot-singh/",
     instagramUrl: "https://instagram.com/_.harshjot._",
     twitterUrl: undefined,
-    githubUrl: "http://github.com/Harsh-jot",
+    githubUrl: "https://github.com/Harsh-jot",
     websiteUrl: undefined,
     image: "https://i.imgur.com/g5Z3oLz.png",
   },

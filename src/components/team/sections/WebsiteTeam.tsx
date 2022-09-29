@@ -38,17 +38,21 @@ const WebsiteTeam = () => {
       {contributors &&
         contributors.map((i) => (
           <Grid item className={'contributor'} key={i.id}>
-            <Link href={i.html_url} target="_blank" rel="noreferrer">
-              <Tooltip arrow title={i.login} placement="top">
-                <Image
-                  width={250}
-                  height={250}
-                  src={i.avatar_url}
-                  alt=" "
-                  className="contributorImage"
-                />
-              </Tooltip>
-            </Link>
+            <Tooltip arrow title={i.login} placement="top">
+              <div>
+                <Link href={i.html_url} rel="noreferrer">
+                  <a target="_blank">
+                      <Image
+                        width={250}
+                        height={250}
+                        src={i.avatar_url}
+                        alt=" "
+                        className="contributorImage"
+                      />
+                  </a>
+                </Link>
+              </div>
+            </Tooltip>
           </Grid>
         ))}
     </WebsiteTeamWrapper>

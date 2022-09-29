@@ -17,6 +17,22 @@ interface ILinksProps {
   website: string;
 }
 
+interface ICustomImageProps {
+  icon: string[];
+}
+
+const CustomImage = React.forwardRef(function CustomImage (props: ICustomImageProps, ref) {
+  return (
+    <Image
+      width={30}
+      className={'link'}
+      height={30}
+      src={props.icon[1]}
+      alt={props.icon[0]}
+    />
+  )
+})
+
 const Links: React.FC<ILinksProps> = (props) => {
   const icons = useMemo(
     () => [
@@ -34,14 +50,8 @@ const Links: React.FC<ILinksProps> = (props) => {
       {icons.map((icon) => {
         if (!icon[0]) return;
         return (
-          <Link href={icon[0]} key={icon[0]} target="_blank" rel="noreferrer">
-            <Image
-              width={30}
-              className={'link'}
-              height={30}
-              src={icon[1]}
-              alt={icon[0]}
-            />
+          <Link href={icon[0]} key={icon[0]} target="_blank" rel="noreferrer" passHref>
+            <CustomImage icon={icon}/>
           </Link>
         );
       })}
