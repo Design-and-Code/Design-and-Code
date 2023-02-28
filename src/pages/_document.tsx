@@ -11,7 +11,6 @@ export default class MyDocument extends Document {
           <link rel="shortcut icon" href="favicon.ico" />
           <meta name="emotion-insertion-point" content="" />
           {/* <!-- Primary Meta Tags --> */}
-          <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <meta name="description" content="Design and Code a global community where anyone can learn and network with fellow developers and designers." />
           {/* <!-- Facebook --> */}
