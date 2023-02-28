@@ -19,7 +19,7 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.designandcode.us/" />
           <meta property="og:title" content="Home | Design and Code" />
-          <meta property="og:description" content="Design and Code a global community where anyone can learn and network with fellow developers and designers.">
+          <meta property="og:description" content="Design and Code a global community where anyone can learn and network with fellow developers and designers." />
           <meta property="og:image" content="static\branding-logos\branding-transparent-logo.svg" />
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
