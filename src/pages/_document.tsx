@@ -15,13 +15,13 @@ export default class MyDocument extends Document {
           {/* <!-- Facebook --> */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://www.designandcode.us/" />
-          <meta property="og:title" content="Design and Code" />
+          <meta property="og:title" content={metaTitle} />
           <meta property="og:description" content="Design and Code a global community where anyone can learn and network with fellow developers and designers." />
           <meta property="og:image" content="static\branding-logos\branding-transparent-logo.svg" />
           {/* <!-- Twitter --> */}
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://www.designandcode.us/" />
-          <meta property="twitter:title" content="Design and Code" />
+          <meta property="twitter:title" content={metaTitle} />
           <meta property="twitter:description" content="Design and Code a global community where anyone can learn and network with fellow developers and designers." />
           <meta property="twitter:image" content="static\branding-logos\branding-transparent-logo.svg" />
           {/* <!-- SEO Tags --> */}
@@ -103,6 +103,9 @@ MyDocument.getInitialProps = async (ctx) => {
   const { head } = initialProps;
   const titleElement = head.find((h) => h.type === 'title');
   const title = titleElement ? titleElement.props.children : 'Design and Code';
+
+  /* get page title and set to meta content */
+  const metaTitle = document.title;
 
   return {
     ...initialProps,
