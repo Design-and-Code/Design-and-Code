@@ -96,6 +96,14 @@ MyDocument.getInitialProps = async (ctx) => {
     />
   ));
 
+/*   
+  the title variable will be set to the text content of the 
+  title tag if it exists, or to a default value of "Design and Code" if it doesn't.
+*/  
+  const { head } = initialProps;
+  const titleElement = head.find((h) => h.type === 'title');
+  const title = titleElement ? titleElement.props.children : 'Design and Code';
+
   return {
     ...initialProps,
     emotionStyleTags,
