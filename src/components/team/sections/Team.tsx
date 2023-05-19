@@ -1,7 +1,8 @@
-import { Grid, Typography } from '@mui/material';
-import { TEAM_INFO } from '~/lib/team';
-import Links from '../Links';
-import { TeamSectionWrapper } from '../styles';
+import { Grid, Typography } from "@mui/material";
+import { TEAM_INFO } from "~/lib/team";
+import Links from "../Links";
+import { TeamSectionWrapper } from "../styles";
+import Image from "next/image";
 
 interface IMemberProps {
   name: string;
@@ -19,18 +20,18 @@ interface IMemberProps {
 const Member: React.FC<IMemberProps> = (props) => {
   return (
     <>
-      <div className={'infoHolder'}>
-        <div className={'imageWrapper'}>
-          <img className={'image'} src={props.image} alt="Member" />
+      <div className={"infoHolder"}>
+        <div className={"imageWrapper"}>
+          <Image className={"image"} src={props.image} alt="Member" />
         </div>
-        <div className={'infoBox'}>
-          <Typography variant="h5" className={'titlee'}>
+        <div className={"infoBox"}>
+          <Typography variant="h5" className={"titlee"}>
             {props.name}
           </Typography>
-          <Typography variant="subtitle1" className={'role'}>
+          <Typography variant="subtitle1" className={"role"}>
             {props.responsibility}
           </Typography>
-          <Typography variant="subtitle2" className={'descriptionn'}>
+          <Typography variant="subtitle2" className={"descriptionn"}>
             {props.aboutMe}
           </Typography>
           <Links
@@ -50,7 +51,7 @@ const TeamSection = () => {
   return (
     <TeamSectionWrapper container spacing={4}>
       {TEAM_INFO.map((item, index) => (
-        <Grid item className={'member'} xs={12} sm={6} md={4} key={index}>
+        <Grid item className={"member"} xs={12} sm={6} md={4} key={index}>
           <Member {...item} />
         </Grid>
       ))}

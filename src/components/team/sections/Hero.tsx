@@ -1,47 +1,47 @@
-import { Grid, Typography } from '@mui/material';
-import Image from 'next/image';
-import Links from '../Links';
-import { HeroSectionWrapper } from '../styles';
+import { Grid, Typography } from "@mui/material";
+import Image from "next/image";
+import Links from "../Links";
+import { HeroSectionWrapper } from "../styles";
 
 const HeroSection = () => {
   return (
     <>
       <HeroSectionWrapper>
-        <div className={'heroSectionContent'}>
-          <Typography variant="h2" gutterBottom className={'title'}>
+        <div className={"heroSectionContent"}>
+          <Typography variant="h2" gutterBottom className={"title"}>
             Our Team
           </Typography>
-          <Typography variant="h6" gutterBottom className={'description'}>
+          <Typography variant="h6" gutterBottom className={"description"}>
             Meet the spirited team that work behind the scenes to establish this
             platform.
           </Typography>
           <div>
-            <div className={'infoHolder'}>
-              <div className={'imageWrapper'}>
-                <img
-                  className={'image'}
+            <div className={"infoHolder"}>
+              <div className={"imageWrapper"}>
+                <Image
+                  className={"image"}
                   width={250}
                   height={250}
                   src="/static/team/Devraj Chatribin.jpeg"
                   alt="Member"
                 />
               </div>
-              <div className={'infoBox'}>
-                <Typography variant="h5" className={'title__color'}>
+              <div className={"infoBox"}>
+                <Typography variant="h5" className={"title__color"}>
                   Devraj Chatribin
                 </Typography>
-                <Typography variant="h6" className={'role'}>
+                <Typography variant="h6" className={"role"}>
                   FOUNDER & DESIGN LEAD
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  className={'description__color'}
+                  className={"description__color"}
                 >
                   Web Developer | UI/UX Designer
                 </Typography>
                 <Typography
                   variant="subtitle2"
-                  className={'foundDesc description__color'}
+                  className={"foundDesc description__color"}
                 >
                   I take immense pleasure to welcome you to Design and Code. We
                   offer an inclusive and holistic approach to learning
@@ -52,11 +52,11 @@ const HeroSection = () => {
                   future.
                 </Typography>
                 <Links
-                  linkedIn={'https://www.linkedin.com/in/devraj-chatribin/'}
-                  instagram={'https://www.instagram.com/designfordev/'}
-                  twitter={'https://twitter.com/devrajchatribin'}
-                  github={'https://github.com/DevrajDC'}
-                  website={'https://devrajchatribin.co/'}
+                  linkedIn={"https://www.linkedin.com/in/devraj-chatribin/"}
+                  instagram={"https://www.instagram.com/designfordev/"}
+                  twitter={"https://twitter.com/devrajchatribin"}
+                  github={"https://github.com/DevrajDC"}
+                  website={"https://devrajchatribin.co/"}
                 />
               </div>
             </div>
