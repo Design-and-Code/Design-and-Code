@@ -1,23 +1,30 @@
-import { Accordion, AccordionDetails, AccordionSummary, Grid, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Grid,
+  Typography,
+} from "@mui/material";
 import React, { Dispatch, SetStateAction, useState } from "react";
 import { AccordionWrapper, FAQWrapper } from "../styles";
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 import { FAQ_DATA } from "~/lib/constants";
 
 interface ISimpleAccordionProps {
-  id: number | false,
-  expanded: number | false,
-  setExpanded: Dispatch<SetStateAction<number | false>>,
-  title: string,
-  description: string,
+  id: number | false;
+  expanded: number | false;
+  setExpanded: Dispatch<SetStateAction<number | false>>;
+  title: string;
+  description: string;
 }
 
 const SimpleAccordion: React.FC<ISimpleAccordionProps> = (props) => {
-
-  const handleChange = (panel: number | false) => (event: React.SyntheticEvent<Element, Event>, isExpanded: boolean) => {
-    props.setExpanded(isExpanded ? panel : false);
-  };
+  const handleChange =
+    (panel: number | false) =>
+    (event: React.SyntheticEvent<Element, Event>, isExpanded: boolean) => {
+      props.setExpanded(isExpanded ? panel : false);
+    };
 
   return (
     <div data-aos="fade-up" data-aos-delay="500">
@@ -26,53 +33,55 @@ const SimpleAccordion: React.FC<ISimpleAccordionProps> = (props) => {
         onChange={handleChange(props.id)}
       >
         <AccordionSummary
-          expandIcon={props.expanded === props.id ? <RemoveIcon /> : <AddIcon />}
+          expandIcon={
+            props.expanded === props.id ? (
+              <RemoveIcon />
+            ) : (
+              <AddIcon style={{ color: "#c0d5ff" }} />
+            )
+          }
           classes={{
-            root: 'icon',
-            expanded: 'icon',
+            root: "icon",
+            expanded: "icon",
           }}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={'heading'}>{props.title}</Typography>
+          <Typography className={"heading"}>{props.title}</Typography>
         </AccordionSummary>
-        <AccordionDetails style={{padding: 0}}>
-          <Typography className={'description'}>
-            {props.description}
-          </Typography>
+        <AccordionDetails style={{ padding: 0 }}>
+          <Typography className={"description"}>{props.description}</Typography>
         </AccordionDetails>
       </AccordionWrapper>
     </div>
-  )
-}
+  );
+};
 
 const FAQ = () => {
-
   const [expanded, setExpanded] = useState<number | false>(false);
 
   return (
     <FAQWrapper data-aos="fade-up" data-aos-delay="200">
       <Grid container>
-        <Typography variant="h2" gutterBottom className={'title'}>
+        <Typography variant="h2" gutterBottom className={"title"}>
           FAQ&apos;s
         </Typography>
         <Grid container>
           {FAQ_DATA.map((item, index) => (
-          <Grid item xs={12} sm={6} key={index}>
-            {item.map(faq => (
-              <SimpleAccordion
-                key={faq.id}
-                expanded={expanded}
-                setExpanded={setExpanded}
-                {...faq}
-              />
-            ))}
-          </Grid>
+            <Grid item xs={12} sm={6} key={index}>
+              {item.map((faq) => (
+                <SimpleAccordion
+                  key={faq.id}
+                  expanded={expanded}
+                  setExpanded={setExpanded}
+                  {...faq}
+                />
+              ))}
+            </Grid>
           ))}
-          
         </Grid>
       </Grid>
-              {/* <Grid container>
+      {/* <Grid container>
             <Typography variant="h2" gutterBottom className={classes.title}>
               FAQ's
             </Typography>
@@ -140,9 +149,8 @@ const FAQ = () => {
           </Grid>
         </Grid>
       </Grid> */}
-
     </FAQWrapper>
-  )
-}
+  );
+};
 
 export default FAQ;
