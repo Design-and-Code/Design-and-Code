@@ -2,7 +2,6 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { SPONSORS } from "~/lib/constants";
 import { SponsorsSectionsWrapper } from "../styles";
-import Image from "next/image";
 
 interface ISponsorProps {
   logo: string,
@@ -13,7 +12,7 @@ interface ISponsorProps {
 const Sponsor: React.FC<ISponsorProps> = (props) => {
   return (
     <>
-      <Image className={'image'} src={props.logo} alt="Partner" />
+      <img className={'image'} src={props.logo} alt="Partner" />
     </>
   )
 }

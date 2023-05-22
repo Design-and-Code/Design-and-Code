@@ -35,7 +35,7 @@ const CommunitySection = () => {
 							width={400}
 							alt="community illustration"
 						/>
-						{/* <Image
+						{/* <img
 							id="img"
 							src={"/static/illustrations/aboutIllustrationStatic.svg"}
 							onLoad={e => console.log("Loaded")}
