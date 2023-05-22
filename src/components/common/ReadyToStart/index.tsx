@@ -1,6 +1,7 @@
 import { Grid, Typography } from "@mui/material";
 import { ContainedButton } from "../Button";
 import { ReadyToStartWrapper } from "./styles";
+import Image from "next/image";
 
 const ReadyToStart = () => {
   return (
@@ -33,21 +34,21 @@ const ReadyToStart = () => {
       <Grid container className={'journeyImageSection'}>
         <Grid container className={'imgContainer'}>
           <div className={'imgCenter'}>
-            <img
+            <Image
               alt=" "
               src="/static/team/Devraj Chatribin.jpeg"
               className={'imgSmall'}
             />
           </div>
           <div className={'imgLeft'}>
-            <img
+            <Image
               alt=" "
               src="/static/team/Shriram Parab.jpeg"
               className={'imgMedium middleImage'}
             />
           </div>
           <div className={'imgRight'}>
-            <img
+            <Image
               alt=" "
               src="/static/team/Nandani Paliwal.jpg"
               className={'imgBig'}
@@ -56,21 +57,21 @@ const ReadyToStart = () => {
         </Grid>
         <Grid container className={'imgContainer'}>
           <div className={'imgCenter'}>
-            <img
+            <Image
               alt=" "
               src="/static/team/Falguni Sarkar.jpeg"
               className={'imgBig'}
             />
           </div>
           <div className={'imgRight'}>
-            <img
+            <Image
               alt=" "
               src="/static/team/Macy So.JPG"
               className={'imgSmall middleImage'}
             />
           </div>
           <div className={'imgLeft'}>
-            <img
+            <Image
               alt=" "
               src="/static/team/pratham krishna.jpg"
               className={'imgMedium'}

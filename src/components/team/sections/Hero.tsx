@@ -18,7 +18,7 @@ const HeroSection = () => {
           <div>
             <div className={'infoHolder'}>
               <div className={'imageWrapper'}>
-                <img
+                <Image
                   className={'image'}
                   width={250}
                   height={250}

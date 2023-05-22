@@ -1,5 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import { ChannelsWrapper } from "../styles";
+import Image from "next/image";
 
 const VoiceChannels = () => {
   return (
@@ -7,7 +8,7 @@ const VoiceChannels = () => {
     <ChannelsWrapper container>
       <Grid item xs={12} sm={6}>
         <div data-aos="fade-up" data-aos-delay="200">
-          <img
+          <Image
             src="/static/illustrations/voiceChannelsIllustration.png"
             className={'channelIllustration'}
             alt="Categories Illustration"

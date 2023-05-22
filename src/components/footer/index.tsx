@@ -1,6 +1,7 @@
 import { Container, Divider, Grid, Hidden, Typography } from "@mui/material";
 import { FooterWrapper } from "./styles";
 import { NAV_LINKS } from '../../lib/constants';
+import Image from "next/image";
 
 const brandingLogo = "/static/branding-logos/branding-transparent-logo.svg";
 const emailIcon = "/static/social-icons/BgEmailIcon.svg";
@@ -20,7 +21,7 @@ const Footer = () => {
         <Grid container className={'footerContent'}>
           <Grid item>
             <div className={'branding'}>
-              <img
+              <Image
                 src={brandingLogo}
                 className={'brandingLogo'}
                 alt="branding-logo"
@@ -42,19 +43,18 @@ const Footer = () => {
             <Grid container className={'footerSectionContainer'}>
               {NAV_LINKS.map((data, index) => {
                 return (
-                    <div key={`link-index-${index}`}>
-                      <Link href={data.url}>
-                        <Typography
-                          variant="subtitle1"
-                          className={`${'footerSectionTitle'} ${
-                            index !== NAV_LINKS.length - 1 &&
-                            'footerSectionBorder'
+                  <div key={`link-index-${index}`}>
+                    <Link href={data.url}>
+                      <Typography
+                        variant="subtitle1"
+                        className={`${'footerSectionTitle'} ${index !== NAV_LINKS.length - 1 &&
+                          'footerSectionBorder'
                           }`}
-                        >
-                          {data.label}
-                        </Typography>
-                      </Link>
-                    </div>
+                      >
+                        {data.label}
+                      </Typography>
+                    </Link>
+                  </div>
                 );
               })}
             </Grid>
@@ -65,42 +65,42 @@ const Footer = () => {
           <Grid item md={6}>
             <div className={'socialLinks'}>
               <a href="mailto:designandcode.community@gmail.com">
-                <img src={emailIcon} alt="Email icon" />
+                <Image src={emailIcon} alt="Email icon" />
               </a>
               <a
                 href="https://twitter.com/DesignandCode3"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={twitterIcon} alt="Twitter icon" />
+                <Image src={twitterIcon} alt="Twitter icon" />
               </a>
               <a
                 href="https://www.linkedin.com/company/designandcode/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={linkedinIcon} alt="Linkedin icon" />
+                <Image src={linkedinIcon} alt="Linkedin icon" />
               </a>
               <a
                 href="https://www.instagram.com/designandcode.community/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={instagramIcon} alt="Instagram icon" />
+                <Image src={instagramIcon} alt="Instagram icon" />
               </a>
               <a
                 href="https://www.youtube.com/channel/UCd4E0oe8MtnZu_48WvYeLMw?sub_confirmation=1"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={youtubeIcon} alt="YouTube icon" />
+                <Image src={youtubeIcon} alt="YouTube icon" />
               </a>
               <a
                 href="https://github.com/Design-and-Code"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img src={githubIcon} alt="GitHub icon" />
+                <Image src={githubIcon} alt="GitHub icon" />
               </a>
             </div>
           </Grid>
@@ -110,7 +110,7 @@ const Footer = () => {
                 <ContainedButton
                   size="large"
                   href="https://discord.gg/gM3bG4rAU5"
-                  // target="_blank"
+                // target="_blank"
                 >
                   JOIN US
                 </ContainedButton>

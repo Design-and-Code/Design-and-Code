@@ -2,6 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import { TEAM_INFO } from '~/lib/team';
 import Links from '../Links';
 import { TeamSectionWrapper } from '../styles';
+import Image from 'next/image';
 
 interface IMemberProps {
   name: string;
@@ -21,7 +22,7 @@ const Member: React.FC<IMemberProps> = (props) => {
     <>
       <div className={'infoHolder'}>
         <div className={'imageWrapper'}>
-          <img className={'image'} src={props.image} alt="Member" />
+          <Image className={'image'} src={props.image} alt="Member" />
         </div>
         <div className={'infoBox'}>
           <Typography variant="h5" className={'titlee'}>
